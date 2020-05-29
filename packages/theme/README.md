@@ -1,11 +1,11 @@
-# @fdk/theme
+# @fellesdatakatalog/theme
 
 Common theme module that provides global styles and design tokens.
 
 ## Installation
 
 ```bash
-npm i @fdk/theme
+npm i @fellesdatakatalog/theme
 ```
 
 ## Dependencies
@@ -21,7 +21,7 @@ In order to add global styles and expose design tokens to the application, wrap 
 
 ```tsx
 import React, { FC } from 'react';
-import ThemeProvider from '@fdk/theme';
+import ThemeProvider from '@fellesdatakatalog/theme';
 
 const App: FC = () => (
   <ThemeProvider>
@@ -38,7 +38,7 @@ By default, theme provider will add global styles to document head. However, thi
 
 ```tsx
 import React, { FC } from 'react';
-import ThemeProvider from '@fdk/theme';
+import ThemeProvider from '@fellesdatakatalog/theme';
 
 const App: FC = () => (
   <ThemeProvider target={document.head}>
@@ -55,7 +55,7 @@ Design tokens can be accessed through various selectors exposed by the library.
 
 ```ts
 import styled from 'styled-components';
-import { theme, Colour } from '@fdk/theme';
+import { theme, Colour } from '@fellesdatakatalog/theme';
 
 const Box = styled.div`
   font-family: ${theme.fontFamily()};
@@ -73,7 +73,7 @@ In a rare case when default theme needs to be extended, it is possible to provid
 
 ```tsx
 import React, { FC } from 'react';
-import ThemeProvider from '@fdk/theme';
+import ThemeProvider from '@fellesdatakatalog/theme';
 
 const theme = {
   additionalColour: 'red'
