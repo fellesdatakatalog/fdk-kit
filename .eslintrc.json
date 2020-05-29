@@ -123,22 +123,6 @@
     },
     {
       "files": [
-        ".storybook/main.js"
-      ],
-      "rules": {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    },
-    {
-      "files": [
-        ".storybook/preview.js"
-      ],
-      "rules": {
-        "react/jsx-filename-extension": "off"
-      }
-    },
-    {
-      "files": [
         "**/stories/*",
         "**/__tests__/**/*"
       ],
