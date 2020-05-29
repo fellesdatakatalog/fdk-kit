@@ -1,0 +1,113 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  ColorPalette,
+  ColorItem,
+  Heading,
+  Subheading
+} from '@storybook/addon-docs/dist/blocks';
+
+import { version } from '../package.json';
+
+import theme from '../src/theme';
+
+<Meta
+  title="System/Colours"
+  parameters={{ previewTabs: { canvas: { hidden: true } } }}
+/>
+
+<Title>Colours</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle></Subtitle>
+<Heading>Colour palette</Heading>
+<Subheading>Neutral colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.neutral).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Neutral - ${key}`}
+      subtitle={`theme.colour.neutral.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Blue colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.blue).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Blue - ${key}`}
+      subtitle={`theme.colour.blue.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Brown colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.brown).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Brown - ${key}`}
+      subtitle={`theme.colour.brown.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Cyan colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.cyan).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Cyan - ${key}`}
+      subtitle={`theme.colour.cyan.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Violet colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.violet).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Violet - ${key}`}
+      subtitle={`theme.colour.violet.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Red colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.red).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Red - ${key}`}
+      subtitle={`theme.colour.red.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Yellow colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.yellow).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Yellow - ${key}`}
+      subtitle={`theme.colour.yellow.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>
+<Subheading>Green colours</Subheading>
+<ColorPalette>
+  {Object.entries(theme.colour.green).map(([key, value]) => (
+    <ColorItem
+      key={key}
+      title={`Green - ${key}`}
+      subtitle={`theme.colour.green.${key}`}
+      colors={[value]}
+    />
+  ))}
+</ColorPalette>

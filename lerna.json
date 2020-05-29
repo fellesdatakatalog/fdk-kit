@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "tagVersionPrefix": "",
+  "stream": true,
+  "hoist": true,
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish [skip ci]"
+    },
+    "publish": {
+      "allowBranch": "master",
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
+}
