@@ -1,0 +1,39 @@
+{
+  "name": "@fellesdatakatalog/internal-footer",
+  "version": "0.0.0",
+  "description": "Felles datakatalog UI footer component",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:fellesdatakatalog/fdk-kit.git"
+  },
+  "author": {
+    "name": "Alexander Zakharov (azaxarov)",
+    "email": "alexander.zakharov@capgemini.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 12.16.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s build:webpack",
+    "build:webpack": "cross-env TS_NODE_PROJECT=\"../../tsconfig.webpack.json\" webpack --config ../../webpack/prod.config.ts",
+    "prepublishOnly": "run-s build"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "dependencies": {
+    "@fellesdatakatalog/link": "^0.1.0",
+    "@fellesdatakatalog/theme": "^0.0.2"
+  }
+}
