@@ -1,0 +1,149 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Preview,
+  Story,
+  Props
+} from '@storybook/addon-docs/dist/blocks';
+import { theme, Colour } from '@fellesdatakatalog/theme';
+import FavouriteIcon from '@material-ui/icons/Favorite'
+
+import { name, version } from '../package.json';
+
+import Link from '../src';
+
+<Meta title='Components/Link' />
+
+<Title>Link</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK Link component allows for easy customisation of anchor elements.
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${Link.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Basic link</Subheading>
+<Subtitle>
+  Link component is an extension of HTML anchor element. It supports all the
+  props of its HTML counterpart.
+</Subtitle>
+
+<Preview>
+  <Story name='Basic link'>
+    <div style={{ padding: '10px' }}>
+      <Link href='#'>
+        Take me places!
+      </Link>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>External link</Subheading>
+<Subtitle>
+  It is possible to indicate that a link is external by providing external prop.
+</Subtitle>
+
+<Preview>
+  <Story name='Basic usage'>
+    <div style={{ padding: '10px' }}>
+      <Link href='#' external>
+        Take me places!
+      </Link>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Link with an icon</Subheading>
+<Subtitle>
+  It is possible to add an icon before link text by providing icon prop.
+</Subtitle>
+
+<Preview>
+  <Story name='Link with an icon'>
+    <div style={{ padding: '10px' }}>
+      <Link href='#' icon={<FavouriteIcon />}>
+        Take me places!
+      </Link>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Colour inheritance</Subheading>
+<Subtitle>
+  The link will inherit colours from its parent component.
+</Subtitle>
+
+<Preview>
+  <Story name='Colour inheritance'>
+    <div style={
+      {
+        display: 'flex',
+        padding: '10px',
+        background: theme.colour(Colour.NEUTRAL, 'N60')({}),
+        color: theme.colour(Colour.NEUTRAL, 'N0')({})
+      }
+    }>
+      <Link href='#'>
+        Take me places!
+      </Link>
+      <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+        Take me places!
+      </Link>
+      <Link href='#' external icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+        Take me places!
+      </Link>
+    </div>
+    <div style={
+      {
+        display: 'flex',
+        padding: '10px',
+        background: theme.colour(Colour.NEUTRAL, 'N60')({}),
+        color: theme.colour(Colour.RED, 'R40')({})
+      }
+    }>
+      <Link href='#'>
+        Take me places!
+      </Link>
+      <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+        Take me places!
+      </Link>
+      <Link href='#' external icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+        Take me places!
+      </Link>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Polymorphism</Subheading>
+<Subtitle>
+  The base element in a link component is polymorphic, meaning that it is
+  possible to render any other HTML element as a base element in a link
+  component. This is useful when rendering link elements from third-party
+  routing libraries.
+  <br />
+  <br />
+  Note: it is important not to break semantics.
+</Subtitle>
+
+<Preview>
+  <Story name='Polymorphism'>
+    <div style={{ padding: '10px' }}>
+      <Link href='#' as='span'>
+        Take me places!
+      </Link>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+<Props of={Link} />
