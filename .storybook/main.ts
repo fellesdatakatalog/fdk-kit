@@ -3,7 +3,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import type { StorybookConfig } from '@storybook/core/types';
 
 const storybookConfig: StorybookConfig = {
-  stories: ['../packages/**/stories/*.stories.(js|jsx|ts|tsx|mdx)'],
+  stories: ['../packages/**/stories/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-controls',
