@@ -1,0 +1,46 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Preview,
+  Story,
+  Props
+} from '@storybook/addon-docs/dist/blocks';
+import { Colour, theme } from '@fellesdatakatalog/theme';
+
+import { name, version } from '../package.json';
+
+import Footer from '../src';
+
+<Meta title='Components/External footer' />
+
+<Title>External footer</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK footer component intended for external use.
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${Footer.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Basic usage</Subheading>
+<Subtitle>
+  External footer component is intended for usage in FDK portal.
+</Subtitle>
+
+<Preview>
+  <Story name='Basic usage'>
+    <Footer />
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+<Props of={Footer} />
