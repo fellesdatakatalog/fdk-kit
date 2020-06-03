@@ -1,0 +1,11 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.1.0 (2020-06-03)
+
+
+### Features
+
+* **external-footer:** add external footer component ([33a8ef6](https://github.com/fellesdatakatalog/fdk-kit/commit/33a8ef65ef8ca37bccfae4b0c14fa226b25cc8e9))
