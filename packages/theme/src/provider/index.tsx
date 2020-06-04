@@ -7,15 +7,17 @@ import defaultTheme from '../theme';
 interface Props {
   target?: HTMLElement;
   theme?: Record<string, unknown>;
+  useGlobalStyles?: boolean;
 }
 
 const ThemeProvider: FC<PropsWithChildren<Props>> = ({
   children,
   target = document.head,
-  theme = {}
+  theme = {},
+  useGlobalStyles = true
 }) => (
   <BaseThemeProvider theme={{ ...defaultTheme, ...theme }}>
-    <GlobalStyles target={target} />
+    {useGlobalStyles && <GlobalStyles target={target} />}
     {children}
   </BaseThemeProvider>
 );

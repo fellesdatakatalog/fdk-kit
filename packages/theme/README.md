@@ -49,6 +49,24 @@ const App: FC = () => (
 export default App;
 ```
 
+### Disabling global styles
+
+Global styles can be disabled by `useGlobalStyles` prop to theme provider.
+
+```tsx
+import React, { FC } from 'react';
+import ThemeProvider from '@fellesdatakatalog/theme';
+
+const App: FC = () => (
+  <ThemeProvider useGlobalStyles={false}>
+    <div>App</div>
+  </ThemeProvider>
+)
+
+export default App;
+```
+
+
 ### Design token selectors
 
 Design tokens can be accessed through various selectors exposed by the library.
