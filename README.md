@@ -14,4 +14,5 @@ A collection of reusable UI components for Felles datakatalog.
 
 - Install dependencies by running `npm install`
 - Bootstrap dependencies using `npx lerna bootstrap`
+- Build dependencies by running `npx lerna run build`
 - Run `npm run storybook` to start local Storybook development server
