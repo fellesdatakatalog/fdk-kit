@@ -8,6 +8,7 @@ const Link = styled.a`
   align-items: center;
   color: currentColor;
   font-family: ${theme.fontFamily()};
+  text-decoration: none;
   cursor: pointer;
 `;
 
