@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.1.2...@fellesdatakatalog/link@0.1.3) (2020-06-12)
+
+**Note:** Version bump only for package @fellesdatakatalog/link
+
+
+
+
+
 ## [0.1.2](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.1.1...@fellesdatakatalog/link@0.1.2) (2020-06-08)
 
 **Note:** Version bump only for package @fellesdatakatalog/link
