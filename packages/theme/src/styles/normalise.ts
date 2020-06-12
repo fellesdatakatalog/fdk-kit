@@ -220,27 +220,27 @@ export default css`
   }
 
   ::-webkit-input-placeholder {
-    color: #a1a1a1;
-    font-weight: 300;
+    color: #6c757d;
+    opacity: 1;
   }
 
   ::-moz-placeholder {
-    color: #a1a1a1;
-    font-weight: 300;
+    color: #6c757d;
+    opacity: 1;
   }
 
   :-ms-input-placeholder {
-    color: #a1a1a1 !important;
-    font-weight: 300 !important;
+    color: #6c757d !important;
+    opacity: 1;
   }
 
   ::-ms-input-placeholder {
-    color: #a1a1a1;
-    font-weight: 300;
+    color: #6c757d;
+    opacity: 1;
   }
 
   ::placeholder {
-    color: #a1a1a1;
-    font-weight: 300;
+    color: #6c757d;
+    opacity: 1;
   }
 `;
