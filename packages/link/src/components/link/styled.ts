@@ -6,9 +6,9 @@ import ExternalLinkSVG from '../../images/external-link.svg';
 const Link = styled.a`
   display: inline-flex;
   align-items: center;
-  color: currentColor;
+  color: currentColor !important;
   font-family: ${theme.fontFamily()};
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 `;
 
