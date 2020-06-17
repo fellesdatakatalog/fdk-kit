@@ -14,3 +14,9 @@ export enum Colour {
   YELLOW = 'yellow',
   GREEN = 'green'
 }
+
+export enum Unit {
+  PX = 'px',
+  EM = 'em',
+  REM = 'rem'
+}
