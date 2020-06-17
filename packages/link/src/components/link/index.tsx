@@ -27,7 +27,7 @@ export interface Props extends ComponentPropsWithoutRef<'a'> {
   as?: keyof JSX.IntrinsicElements | ComponentType<any>;
 }
 
-const Link: FC<PropsWithChildren<Props>> = ({
+export const Link: FC<PropsWithChildren<Props>> = ({
   external,
   icon,
   children,
