@@ -1,4 +1,4 @@
-import defaultTheme, { Token } from '.';
+import defaultTheme, { Token, Unit } from '.';
 
 import { valueToHex } from './utils';
 
@@ -25,12 +25,15 @@ export const selectColour = <C extends keyof Colour>(
 export const selectFontFamily = () => (props: ThemeProps) =>
   getFont(props).family;
 
-export const selectFontSize = (size: keyof FontSize) => (props: ThemeProps) =>
-  `${getFont(props).size[size]}px`;
+export const selectFontSize = (size: keyof FontSize, unit: Unit = Unit.REM) => (
+  props: ThemeProps
+) => `${getFont(props).size[size][unit]}${unit}`;
 
 export const selectFontWeight = (weight: keyof FontWeight) => (
   props: ThemeProps
 ) => getFont(props).weight[weight];
 
-export const selectSpacing = (spacing: keyof Spacing) => (props: ThemeProps) =>
-  `${getSpacing(props)[spacing]}px`;
+export const selectSpacing = (
+  spacing: keyof Spacing,
+  unit: Unit = Unit.REM
+) => (props: ThemeProps) => `${getSpacing(props)[spacing][unit]}${unit}`;

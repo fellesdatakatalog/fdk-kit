@@ -1,4 +1,4 @@
-import { Token, Colour } from './enums';
+import { Token, Colour, Unit } from './enums';
 
 import {
   selectColour as colour,
@@ -64,15 +64,51 @@ export default {
   [Token.FONT]: {
     family: 'Heebo, sans-serif',
     size: {
-      FS12: 12,
-      FS14: 14,
-      FS16: 16,
-      FS20: 20,
-      FS24: 24,
-      FS28: 28,
-      FS32: 32,
-      FS40: 40,
-      FS48: 48
+      FS12: {
+        [Unit.PX]: 12,
+        [Unit.REM]: 1.2,
+        [Unit.EM]: 1.2
+      },
+      FS14: {
+        [Unit.PX]: 14,
+        [Unit.REM]: 1.4,
+        [Unit.EM]: 1.4
+      },
+      FS16: {
+        [Unit.PX]: 16,
+        [Unit.REM]: 1.6,
+        [Unit.EM]: 1.6
+      },
+      FS20: {
+        [Unit.PX]: 20,
+        [Unit.REM]: 2.0,
+        [Unit.EM]: 2.0
+      },
+      FS24: {
+        [Unit.PX]: 24,
+        [Unit.REM]: 2.4,
+        [Unit.EM]: 2.4
+      },
+      FS28: {
+        [Unit.PX]: 28,
+        [Unit.REM]: 2.8,
+        [Unit.EM]: 2.8
+      },
+      FS32: {
+        [Unit.PX]: 32,
+        [Unit.REM]: 3.2,
+        [Unit.EM]: 3.2
+      },
+      FS40: {
+        [Unit.PX]: 40,
+        [Unit.REM]: 4.0,
+        [Unit.EM]: 4.0
+      },
+      FS48: {
+        [Unit.PX]: 48,
+        [Unit.REM]: 4.8,
+        [Unit.EM]: 4.8
+      }
     },
     weight: {
       FW100: 100,
@@ -85,22 +121,86 @@ export default {
     }
   },
   [Token.SPACING]: {
-    S4: 4,
-    S6: 6,
-    S8: 8,
-    S10: 10,
-    S12: 12,
-    S16: 16,
-    S24: 24,
-    S32: 32,
-    S40: 40,
-    S48: 48,
-    S56: 56,
-    S64: 64,
-    S72: 72,
-    S80: 80,
-    S88: 88,
-    S96: 96
+    S4: {
+      [Unit.PX]: 4,
+      [Unit.REM]: 0.4,
+      [Unit.EM]: 0.4
+    },
+    S6: {
+      [Unit.PX]: 6,
+      [Unit.REM]: 0.6,
+      [Unit.EM]: 0.6
+    },
+    S8: {
+      [Unit.PX]: 8,
+      [Unit.REM]: 0.8,
+      [Unit.EM]: 0.8
+    },
+    S10: {
+      [Unit.PX]: 10,
+      [Unit.REM]: 1.0,
+      [Unit.EM]: 1.0
+    },
+    S12: {
+      [Unit.PX]: 12,
+      [Unit.REM]: 1.2,
+      [Unit.EM]: 1.2
+    },
+    S16: {
+      [Unit.PX]: 16,
+      [Unit.REM]: 1.6,
+      [Unit.EM]: 1.6
+    },
+    S24: {
+      [Unit.PX]: 24,
+      [Unit.REM]: 2.4,
+      [Unit.EM]: 2.4
+    },
+    S32: {
+      [Unit.PX]: 32,
+      [Unit.REM]: 3.2,
+      [Unit.EM]: 3.2
+    },
+    S40: {
+      [Unit.PX]: 40,
+      [Unit.REM]: 4.0,
+      [Unit.EM]: 4.0
+    },
+    S48: {
+      [Unit.PX]: 48,
+      [Unit.REM]: 4.8,
+      [Unit.EM]: 4.8
+    },
+    S56: {
+      [Unit.PX]: 56,
+      [Unit.REM]: 5.6,
+      [Unit.EM]: 5.6
+    },
+    S64: {
+      [Unit.PX]: 64,
+      [Unit.REM]: 6.4,
+      [Unit.EM]: 6.4
+    },
+    S72: {
+      [Unit.PX]: 72,
+      [Unit.REM]: 7.2,
+      [Unit.EM]: 7.2
+    },
+    S80: {
+      [Unit.PX]: 80,
+      [Unit.REM]: 8.0,
+      [Unit.EM]: 8.0
+    },
+    S88: {
+      [Unit.PX]: 88,
+      [Unit.REM]: 8.8,
+      [Unit.EM]: 8.8
+    },
+    S96: {
+      [Unit.PX]: 96,
+      [Unit.REM]: 9.6,
+      [Unit.EM]: 9.6
+    }
   }
 };
 
