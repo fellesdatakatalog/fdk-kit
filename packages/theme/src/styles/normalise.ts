@@ -8,6 +8,11 @@ export default css`
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
   }
 
   *,
