@@ -9,7 +9,7 @@ import {
   Story,
   Props
 } from '@storybook/addon-docs/dist/blocks';
-import { Colour, theme } from '@fellesdatakatalog/theme';
+import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
 
 import { name, version } from '../package.json';
 
@@ -39,6 +39,18 @@ import Footer from '../src';
 <Preview>
   <Story name='Basic usage'>
     <Footer />
+  </Story>
+</Preview>
+
+
+<Subheading>Skatteetaten usage</Subheading>
+<Subtitle>
+  Internal footer with Skatteetaten footer wrapper, intended for usage in FDK registration portal.
+</Subtitle>
+
+<Preview>
+  <Story name='Skatteetaten usage'>
+    <Footer themeProfile={ThemeProfile.SKE} />
   </Story>
 </Preview>
 
