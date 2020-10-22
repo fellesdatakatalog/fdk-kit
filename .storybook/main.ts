@@ -1,5 +1,4 @@
 import { resolve } from 'path';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 import type { StorybookConfig } from '@storybook/core/types';
 
 const storybookConfig: StorybookConfig = {
@@ -11,9 +10,6 @@ const storybookConfig: StorybookConfig = {
     '@storybook/addon-a11y'
   ],
   webpackFinal: async config => {
-    const outputPath = config.output.path;
-    const storybookStaticPath = 'storybook-static';
-
     const assetRule = config.module.rules.find(({ test }) =>
       (test as any).test('.svg')
     );
@@ -37,25 +33,6 @@ const storybookConfig: StorybookConfig = {
       ],
       include: [resolve(__dirname, '../packages')]
     });
-
-    config.plugins.push(
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: resolve(
-              __dirname,
-              '../node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js'
-            ),
-            to: resolve(
-              outputPath,
-              outputPath.includes(storybookStaticPath)
-                ? ''
-                : storybookStaticPath
-            )
-          }
-        ]
-      })
-    );
 
     return config;
   }
