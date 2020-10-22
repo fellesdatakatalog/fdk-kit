@@ -20,3 +20,8 @@ export enum Unit {
   EM = 'em',
   REM = 'rem'
 }
+
+export enum ThemeProfile {
+  FDK = 'fdk',
+  SKE = 'ske'
+}
