@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme, Colour } from '@fellesdatakatalog/theme';
+import SkeFooterBase from '@skatteetaten/frontend-components/FooterContent';
 
 import FooterIllustrationSVG from '../../images/footer-illustration.svg';
 
@@ -33,4 +34,12 @@ const Illustration = styled(FooterIllustrationSVG)`
   }
 `;
 
-export default { Footer, Illustration };
+const SkeFooter = styled(SkeFooterBase)`
+  & > footer > div {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export default { Footer, Illustration, SkeFooter };
