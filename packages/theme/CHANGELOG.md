@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.2.0...@fellesdatakatalog/theme@0.3.0) (2020-10-26)
+
+
+### Features
+
+* **theme:** add and export enum ThemeProfile ([3a53cb5](https://github.com/fellesdatakatalog/fdk-kit/commit/3a53cb5d360cb2acb6e08e90ddd4a32e0abae438))
+
+
+
+
+
 # [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.1.2...@fellesdatakatalog/theme@0.2.0) (2020-06-18)
 
 

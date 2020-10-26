@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.1.6...@fellesdatakatalog/internal-footer@0.2.0) (2020-10-26)
+
+
+### Features
+
+* **internal-footer:** add Ske theme profile footer ([dc4f377](https://github.com/fellesdatakatalog/fdk-kit/commit/dc4f377500648e6eb6baf4598a550b39f17b5e2a))
+
+
+
+
+
 ## [0.1.7](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.1.6...@fellesdatakatalog/internal-footer@0.1.7) (2020-06-18)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-footer
