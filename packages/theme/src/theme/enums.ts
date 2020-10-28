@@ -25,3 +25,9 @@ export enum ThemeProfile {
   FDK = 'fdk',
   SKE = 'ske'
 }
+
+export enum Alignment {
+  LEFT = 'left',
+  RIGHT = 'right',
+  CENTRE = 'centre'
+}
