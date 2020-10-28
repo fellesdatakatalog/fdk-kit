@@ -9,6 +9,7 @@ const Link = styled.a`
   color: currentColor !important;
   font-family: ${theme.fontFamily()};
   text-decoration: none !important;
+  line-height: 1;
   cursor: pointer;
 `;
 
@@ -16,6 +17,7 @@ const Icon = styled.i`
   height: 18px;
   width: 18px;
   margin-right: ${theme.spacing('S6')};
+  margin-top: -0.25rem;
   color: currentColor;
 
   & > svg {
@@ -29,6 +31,7 @@ const ExternalLinkIcon = styled(ExternalLinkSVG)`
   height: 18px;
   width: 18px;
   margin-left: ${theme.spacing('S6')};
+  margin-top: -0.25rem;
 
   & > path {
     fill: currentColor;
