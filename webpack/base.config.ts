@@ -1,4 +1,4 @@
-import { Configuration } from 'webpack';
+import type { Configuration } from 'webpack';
 import { resolve } from 'path';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
