@@ -66,6 +66,31 @@ const App: FC = () => (
 export default App;
 ```
 
+### Tabs alignment
+
+If not otherwise specified, tabs will be centrally aligned. In order to overwrite this behaviour, pass a `tabsAlignment` prop to `Tabs` component.
+
+```tsx
+import React, { FC } from 'react';
+import ThemeProvider, { Alignment } from '@fellesdatakatalog/theme';
+import Tabs, { Tab, Pane } from '@fellesdatakatalog/tabs';
+
+const App: FC = () => (
+  <ThemeProvider>
+    <Tabs tabsAlignment={Alignment.LEFT}>
+      <Tab for="pane-1">Tab 1</Tab>
+      <Tab for="pane-2" active>Tab 2</Tab>
+      <Tab for="pane-3">Tab 3</Tab>
+      <Pane id="pane-1">Pane 1</Pane>
+      <Pane id="pane-2">Pane 2</Pane>
+      <Pane id="pane-3">Pane 3</Pane>
+    </Tabs>
+  </ThemeProvider>
+)
+
+export default App;
+```
+
 ### Custom Tab and Pane children
 
 Tab and Pane components both accept text and element nodes as children.

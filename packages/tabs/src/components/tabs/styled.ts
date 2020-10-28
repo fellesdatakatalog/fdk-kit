@@ -1,12 +1,29 @@
 import styled, { css } from 'styled-components';
-import { theme, Colour } from '@fellesdatakatalog/theme';
+import { theme, Colour, Alignment } from '@fellesdatakatalog/theme';
 
 const Tabs = styled.div``;
 
-const Bar = styled.ul`
+const Bar = styled.ul<{ alignment: Alignment }>`
   display: flex;
-  justify-content: center;
   overflow: hidden;
+
+  ${({ alignment }) => {
+    switch (alignment) {
+      case Alignment.LEFT:
+        return css`
+          justify-content: flex-start;
+        `;
+      case Alignment.RIGHT:
+        return css`
+          justify-content: flex-end;
+        `;
+      case Alignment.CENTRE:
+      default:
+        return css`
+          justify-content: center;
+        `;
+    }
+  }}
 `;
 
 const Tab = styled.li<{ active: boolean }>`

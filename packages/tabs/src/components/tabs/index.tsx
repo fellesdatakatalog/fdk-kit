@@ -5,15 +5,27 @@ import React, {
   isValidElement,
   useState
 } from 'react';
+import { Alignment } from '@fellesdatakatalog/theme';
 
 import Tab from '../tab';
 import Pane from '../pane';
 
 import SC from './styled';
 
-export interface Props {}
+export interface Props {
+  /**
+   * An indication whether tab is active
+   * @type {Alignment}
+   * @default Alignment.CENTRE
+   */
+  tabsAlignment?: Alignment;
+}
 
-const Tabs: FC<PropsWithChildren<Props>> = ({ children, ...props }) => {
+const Tabs: FC<PropsWithChildren<Props>> = ({
+  tabsAlignment,
+  children,
+  ...props
+}) => {
   const tabsChildren = Children.map(children, child =>
     isValidElement(child) && child.type === Tab ? child : null
   )?.filter(Boolean);
@@ -31,7 +43,7 @@ const Tabs: FC<PropsWithChildren<Props>> = ({ children, ...props }) => {
 
   return (
     <SC.Tabs {...props}>
-      <SC.Bar>
+      <SC.Bar alignment={tabsAlignment ?? Alignment.CENTRE}>
         {tabsChildren?.map(child => (
           <SC.Tab
             key={child.props.for}

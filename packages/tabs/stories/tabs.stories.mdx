@@ -9,7 +9,7 @@ import {
   Story,
   ArgsTable
 } from '@storybook/addon-docs/dist/blocks';
-import { theme, Colour } from '@fellesdatakatalog/theme';
+import { theme, Colour, Alignment } from '@fellesdatakatalog/theme';
 import FavouriteIcon from '@material-ui/icons/Favorite'
 
 import { name, version } from '../package.json';
@@ -62,6 +62,47 @@ import Tabs, { Tab, Pane } from '../src';
   <Story name='Active tab'>
     <div style={{ padding: '10px' }}>
       <Tabs>
+        <Tab for="pane-1">Tab 1</Tab>
+        <Tab for="pane-2" active>Tab 2</Tab>
+        <Tab for="pane-3">Tab 3</Tab>
+        <Pane id="pane-1">Pane 1</Pane>
+        <Pane id="pane-2">Pane 2</Pane>
+        <Pane id="pane-3">Pane 3</Pane>
+      </Tabs>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Tabs alignment</Subheading>
+<Subtitle>
+  By default, tabs will be centrally aligned. In order to overwrite this
+  behaviour, pass a tabsAlignment prop to the tabs component.
+</Subtitle>
+
+<Canvas>
+  <Story name='Tabs alignment'>
+    <div style={{ padding: '10px' }}>
+      <Tabs tabsAlignment={Alignment.LEFT}>
+        <Tab for="pane-1">Tab 1</Tab>
+        <Tab for="pane-2" active>Tab 2</Tab>
+        <Tab for="pane-3">Tab 3</Tab>
+        <Pane id="pane-1">Pane 1</Pane>
+        <Pane id="pane-2">Pane 2</Pane>
+        <Pane id="pane-3">Pane 3</Pane>
+      </Tabs>
+    </div>
+    <div style={{ padding: '10px', marginTop: '20px' }}>
+      <Tabs tabsAlignment={Alignment.CENTRE}>
+        <Tab for="pane-1">Tab 1</Tab>
+        <Tab for="pane-2" active>Tab 2</Tab>
+        <Tab for="pane-3">Tab 3</Tab>
+        <Pane id="pane-1">Pane 1</Pane>
+        <Pane id="pane-2">Pane 2</Pane>
+        <Pane id="pane-3">Pane 3</Pane>
+      </Tabs>
+    </div>
+    <div style={{ padding: '10px', marginTop: '20px' }}>
+      <Tabs tabsAlignment={Alignment.RIGHT}>
         <Tab for="pane-1">Tab 1</Tab>
         <Tab for="pane-2" active>Tab 2</Tab>
         <Tab for="pane-3">Tab 3</Tab>

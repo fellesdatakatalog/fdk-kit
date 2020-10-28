@@ -16,8 +16,14 @@ export interface Props {
   active?: boolean;
 }
 
-export const Tab: FC<PropsWithChildren<Props>> = ({ children, ...props }) => (
-  <SC.Tab {...props}>{children}</SC.Tab>
+export const Tab: FC<PropsWithChildren<Props>> = ({
+  for: forPane,
+  children,
+  ...props
+}) => (
+  <SC.Tab $for={forPane} {...props}>
+    {children}
+  </SC.Tab>
 );
 
 export default Tab;
