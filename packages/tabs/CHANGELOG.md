@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.1.4...@fellesdatakatalog/tabs@0.1.5) (2020-10-28)
+
+
+### Bug Fixes
+
+* **tabs:** add required props to tab and pane components ([462afa2](https://github.com/fellesdatakatalog/fdk-kit/commit/462afa2dbf8680779bdd1abe46c1808256e879ac))
+
+
+
+
+
 ## [0.1.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.1.3...@fellesdatakatalog/tabs@0.1.4) (2020-10-26)
 
 **Note:** Version bump only for package @fellesdatakatalog/tabs

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.1.7...@fellesdatakatalog/link@0.2.0) (2020-10-28)
+
+
+### Features
+
+* **link:** add to prop so that link can work with react-router ([fdb3c8a](https://github.com/fellesdatakatalog/fdk-kit/commit/fdb3c8a06655d0ae9ad1b3ffb3d6628ff0932edc))
+
+
+
+
+
 ## [0.1.7](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.1.6...@fellesdatakatalog/link@0.1.7) (2020-10-26)
 
 **Note:** Version bump only for package @fellesdatakatalog/link
