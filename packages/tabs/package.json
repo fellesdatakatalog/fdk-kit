@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/tabs",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Felles datakatalog UI tabs component",
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
     "styled-components": "^5.2.0"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.3.1"
+    "@fellesdatakatalog/theme": "^0.4.0"
   }
 }

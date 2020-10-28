@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.3.1...@fellesdatakatalog/theme@0.4.0) (2020-10-28)
+
+
+### Features
+
+* **theme:** add Alignment enum ([35ab7a0](https://github.com/fellesdatakatalog/fdk-kit/commit/35ab7a07c94fdd0b247a51d39b1413b0e31aa2d0))
+
+
+
+
+
 ## [0.3.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.3.0...@fellesdatakatalog/theme@0.3.1) (2020-10-28)
 
 **Note:** Version bump only for package @fellesdatakatalog/theme

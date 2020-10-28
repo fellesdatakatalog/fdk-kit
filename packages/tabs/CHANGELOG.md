@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.1.5...@fellesdatakatalog/tabs@0.2.0) (2020-10-28)
+
+
+### Features
+
+* **tabs:** add functionality to control tabs alignment ([eaf66e2](https://github.com/fellesdatakatalog/fdk-kit/commit/eaf66e22590737314dd629b41bcc25a5baf759f3))
+* **tabs:** allow Tab and Pane components to accept external styles ([87da802](https://github.com/fellesdatakatalog/fdk-kit/commit/87da802c991d0260e139580c87be8bce3c44c0a4))
+
+
+
+
+
 ## [0.1.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.1.4...@fellesdatakatalog/tabs@0.1.5) (2020-10-28)
 
 
