@@ -10,6 +10,10 @@ import SC from './styled';
 
 export interface Props extends ComponentPropsWithoutRef<'a'> {
   /**
+   * An alternative to href
+   */
+  to?: string;
+  /**
    * An indication whether link points to an external resource
    * @type {boolean}
    * @default false

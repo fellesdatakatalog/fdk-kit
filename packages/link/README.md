@@ -31,7 +31,7 @@ const App: FC = () => (
       Take me places!
     </Link>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
@@ -51,7 +51,7 @@ const App: FC = () => (
       Take me places!
     </Link>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
@@ -72,7 +72,7 @@ const App: FC = () => (
       Take me places!
     </Link>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
@@ -84,3 +84,21 @@ All parts of a link component will attempt to inherit the colour from its parent
 ### Polymorphism
 
 The base element in a link component is polymorphic, meaning that it is possible to render any other HTML element as a base element in a link component. This is useful when rendering link elements from third-party routing libraries. Given this freedom, it is important not to break semantics.
+
+
+```tsx
+import React, { FC } from 'react';
+import { Link as RouteLink } from 'react-router-dom';
+import ThemeProvider from '@fellesdatakatalog/theme';
+import Link from '@fellesdatakatalog/link';
+
+const App: FC = () => (
+  <ThemeProvider>
+    <Link href='https://world/go/places' as={RouteLink}>
+      Take me places!
+    </Link>
+  </ThemeProvider>
+);
+
+export default App;
+```
