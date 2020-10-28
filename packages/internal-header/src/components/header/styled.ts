@@ -16,9 +16,6 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   padding: ${theme.spacing('S48')} 0;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   height: 74px;
   width: 100%;
   z-index: 1000;
@@ -27,9 +24,6 @@ const Header = styled.header`
 const SkeWrapper = styled.div`
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   z-index: 1000;
 
@@ -55,6 +49,7 @@ const SkeWrapper = styled.div`
 
 const SkeBasis = styled(SkeBasisBase)`
   flex-grow: 2;
+  max-width: 1140px;
 `;
 
 const SkeHeader = styled(TopBanner)`
