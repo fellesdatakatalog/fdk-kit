@@ -5,9 +5,9 @@ import {
   Heading,
   Subheading,
   Source,
-  Preview,
+  Canvas,
   Story,
-  Props
+  ArgsTable
 } from '@storybook/addon-docs/dist/blocks';
 import { theme, Colour } from '@fellesdatakatalog/theme';
 import FavouriteIcon from '@material-ui/icons/Favorite'
@@ -37,7 +37,7 @@ import Tabs, { Tab, Pane } from '../src';
   A basic tabs example.
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Basic tabs'>
     <div style={{ padding: '10px' }}>
       <Tabs>
@@ -50,7 +50,7 @@ import Tabs, { Tab, Pane } from '../src';
       </Tabs>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Subheading>Active tab</Subheading>
 <Subtitle>
@@ -58,7 +58,7 @@ import Tabs, { Tab, Pane } from '../src';
   this behaviour, a tab can be manually set to active using a prop.
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Active tab'>
     <div style={{ padding: '10px' }}>
       <Tabs>
@@ -71,14 +71,14 @@ import Tabs, { Tab, Pane } from '../src';
       </Tabs>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Subheading>Custom tab and pane children</Subheading>
 <Subtitle>
   Tab and Pane components both accept text and element nodes as children.
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Custom tabs and panes'>
     <div style={{ padding: '10px' }}>
       <Tabs>
@@ -167,13 +167,13 @@ import Tabs, { Tab, Pane } from '../src';
       </Tabs>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Heading>{Tabs.displayName} props</Heading>
-<Props of={Tabs} />
+<ArgsTable of={Tabs} />
 
 <Heading>{Tab.displayName} props</Heading>
-<Props of={Tab} />
+<ArgsTable of={Tab} />
 
 <Heading>{Pane.displayName} props</Heading>
-<Props of={Pane} />
+<ArgsTable of={Pane} />
