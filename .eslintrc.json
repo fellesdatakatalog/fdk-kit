@@ -76,6 +76,8 @@
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-shadow": ["error"],
     "react/jsx-one-expression-per-line": "off",
     "react/prefer-stateless-function": "off",
     "react/jsx-props-no-spreading": "off",
@@ -83,8 +85,10 @@
     "react/no-unused-state": "off",
     "react/jsx-curly-newline": "off",
     "no-restricted-globals": "off",
+    "no-use-before-define": "off",
     "no-param-reassign": "off",
     "no-plusplus": "off",
+    "no-shadow": "off",
     "react/prop-types": "off",
     "react/button-has-type": "off",
     "class-methods-use-this": "off",
@@ -124,6 +128,7 @@
     {
       "files": [
         "**/stories/*",
+        "**/test/**/*",
         "**/__tests__/**/*"
       ],
       "rules": {

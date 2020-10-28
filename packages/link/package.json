@@ -24,12 +24,12 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "run-s build:webpack",
-    "build:webpack": "cross-env TS_NODE_PROJECT=\"../../tsconfig.webpack.json\" webpack --config ../../webpack/prod.config.ts",
+    "build:webpack": "cross-env TS_NODE_PROJECT=\"../../tsconfig.json\" webpack --config ../../webpack/prod.config.ts",
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "react": "^17.0.1",
+    "styled-components": "^5.2.0"
   },
   "dependencies": {
     "@fellesdatakatalog/theme": "^0.3.0"
