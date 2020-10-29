@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.2.0...@fellesdatakatalog/tabs@0.2.1) (2020-10-29)
+
+
+### Bug Fixes
+
+* **tabs:** disallow wrappers for Tab and Pane components ([230a228](https://github.com/fellesdatakatalog/fdk-kit/commit/230a22816f20bc410e273cf75ff6cf760338893c))
+
+
+
+
+
 # [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.1.5...@fellesdatakatalog/tabs@0.2.0) (2020-10-28)
 
 
