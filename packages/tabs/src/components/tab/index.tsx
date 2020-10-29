@@ -1,7 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
 
-import SC from './styled';
-
 export interface Props {
   /**
    * A reference to tab ID
@@ -16,14 +14,8 @@ export interface Props {
   active?: boolean;
 }
 
-export const Tab: FC<PropsWithChildren<Props>> = ({
-  for: forPane,
-  children,
-  ...props
-}) => (
-  <SC.Tab $for={forPane} {...props}>
-    {children}
-  </SC.Tab>
+export const Tab: FC<PropsWithChildren<Props>> = ({ children }) => (
+  <>{children}</>
 );
 
 export default Tab;
