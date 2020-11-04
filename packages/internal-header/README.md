@@ -71,3 +71,21 @@ const App: FC = () => (
 
 export default App;
 ```
+
+### Skatteetaten usage with system name
+
+In order to use the header component, wrap the application in global theme provider from `@fellesdatakatalog/theme`. Then, use the header as any regular component.
+
+```tsx
+import React, { FC } from 'react';
+import ThemeProvider, { ThemeProfile } from '@fellesdatakatalog/theme';
+import Footer from '@fellesdatakatalog/internal-header';
+
+const App: FC = () => (
+  <ThemeProvider>
+    <Header themeProfile={ThemeProfile.SKE} skeHomeText="Datakataloger" username="Michelle" />
+  </ThemeProvider>
+)
+
+export default App;
+```

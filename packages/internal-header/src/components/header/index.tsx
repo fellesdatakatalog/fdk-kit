@@ -26,6 +26,11 @@ export interface Props {
    * @type {() => void;}
    */
   onLogout?: () => void;
+  /**
+   * Name to display in header for Skatteetaten theme
+   * @type {string}
+   */
+  skeHomeText?: string;
 }
 
 const FdkProfileHeader = ({ useDemoLogo, username, onLogout }: Props) => (
@@ -51,11 +56,11 @@ const FdkProfileHeader = ({ useDemoLogo, username, onLogout }: Props) => (
   </SC.Header>
 );
 
-const SkeProfileHeader = ({ username, onLogout }: Props) => (
+const SkeProfileHeader = ({ username, onLogout, skeHomeText }: Props) => (
   <SC.SkeWrapper>
     <div />
     <SC.SkeBasis>
-      <SC.SkeHeader compact homeUrl='/'>
+      <SC.SkeHeader compact homeUrl='/' homeText={skeHomeText}>
         <SC.Container>
           {username && (
             <SC.User>
@@ -79,10 +84,15 @@ export const Header: FC<Props> = ({
   themeProfile = ThemeProfile.FDK,
   useDemoLogo = false,
   username,
-  onLogout
+  onLogout,
+  skeHomeText
 }) =>
   themeProfile === ThemeProfile.SKE ? (
-    <SkeProfileHeader username={username} onLogout={onLogout} />
+    <SkeProfileHeader
+      username={username}
+      onLogout={onLogout}
+      skeHomeText={skeHomeText}
+    />
   ) : (
     <FdkProfileHeader
       useDemoLogo={useDemoLogo}
