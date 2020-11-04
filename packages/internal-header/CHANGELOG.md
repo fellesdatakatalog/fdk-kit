@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.1.3...@fellesdatakatalog/internal-header@0.2.0) (2020-11-04)
+
+
+### Features
+
+* **internal-header:** add name prop for ske-header ([162e23c](https://github.com/fellesdatakatalog/fdk-kit/commit/162e23c4f0f8d48298e98cb2c32242a2b1387e0e))
+
+
+
+
+
 ## [0.1.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.1.2...@fellesdatakatalog/internal-header@0.1.3) (2020-10-28)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-header
