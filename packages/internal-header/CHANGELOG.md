@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.2.0...@fellesdatakatalog/internal-header@0.3.0) (2020-11-19)
+
+
+### Features
+
+* **internal-header:** add prop homeUrl ([8ba45fd](https://github.com/fellesdatakatalog/fdk-kit/commit/8ba45fd47bc3f2d04c51711e62f88b48ce56b53f))
+
+
+
+
+
 # [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.1.3...@fellesdatakatalog/internal-header@0.2.0) (2020-11-04)
 
 
