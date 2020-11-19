@@ -11,6 +11,11 @@ export interface Props {
    */
   themeProfile?: ThemeProfile;
   /**
+   * Url on logo
+   * @type {string}
+   */
+  homeUrl?: string;
+  /**
    * Use demo logo when ThemeProfile.FDK
    * @type {boolean}
    * * @default {false}
@@ -33,11 +38,16 @@ export interface Props {
   skeHomeText?: string;
 }
 
-const FdkProfileHeader = ({ useDemoLogo, username, onLogout }: Props) => (
+const FdkProfileHeader = ({
+  homeUrl,
+  useDemoLogo,
+  username,
+  onLogout
+}: Props) => (
   <SC.Header>
     <SC.Container>
       <SC.LogoWrapper>
-        <SC.Link href='/'>
+        <SC.Link href={homeUrl}>
           {useDemoLogo ? <SC.LogoDemo /> : <SC.Logo />}
         </SC.Link>
       </SC.LogoWrapper>
@@ -56,11 +66,16 @@ const FdkProfileHeader = ({ useDemoLogo, username, onLogout }: Props) => (
   </SC.Header>
 );
 
-const SkeProfileHeader = ({ username, onLogout, skeHomeText }: Props) => (
+const SkeProfileHeader = ({
+  homeUrl,
+  username,
+  onLogout,
+  skeHomeText
+}: Props) => (
   <SC.SkeWrapper>
     <div />
     <SC.SkeBasis>
-      <SC.SkeHeader compact homeUrl='/' homeText={skeHomeText}>
+      <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
         <SC.Container>
           {username && (
             <SC.User>
@@ -82,6 +97,7 @@ const SkeProfileHeader = ({ username, onLogout, skeHomeText }: Props) => (
 
 export const Header: FC<Props> = ({
   themeProfile = ThemeProfile.FDK,
+  homeUrl = '/',
   useDemoLogo = false,
   username,
   onLogout,
@@ -89,12 +105,14 @@ export const Header: FC<Props> = ({
 }) =>
   themeProfile === ThemeProfile.SKE ? (
     <SkeProfileHeader
+      homeUrl={homeUrl}
       username={username}
       onLogout={onLogout}
       skeHomeText={skeHomeText}
     />
   ) : (
     <FdkProfileHeader
+      homeUrl={homeUrl}
       useDemoLogo={useDemoLogo}
       username={username}
       onLogout={onLogout}
