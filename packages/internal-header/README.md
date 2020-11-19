@@ -36,7 +36,7 @@ const App: FC = () => (
 export default App;
 ```
 
-### Basic usage with logout event handler
+### Basic usage with logout event handler and homeUrl
 
 Pass an event handler as a prop to the header component. Then wrap the application in global theme provider from `@fellesdatakatalog/theme` and use the header as any regular component.
 
@@ -47,7 +47,7 @@ import Footer from '@fellesdatakatalog/internal-header';
 
 const App: FC = () => (
   <ThemeProvider>
-    <Header username="Michelle" onLogout={() => {}} />
+    <Header homeUrl="https://data.norge.no" username="Michelle" onLogout={() => {}} />
   </ThemeProvider>
 )
 
