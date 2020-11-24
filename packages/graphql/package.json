@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/graphql",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Felles datakatalog collection of reusable GraphQL modules.",
   "repository": {
     "type": "git",
