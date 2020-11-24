@@ -9,7 +9,7 @@ import {
 
 import { version } from '../package.json';
 
-import theme from '../src/theme';
+import theme, { Unit } from '../src/theme';
 import { createFontsStylesheet } from '../src/styles';
 
 <>{createFontsStylesheet()}</>
@@ -31,42 +31,42 @@ import { createFontsStylesheet } from '../src/styles';
 <Subheading>Thin ({theme.font.weight.FW100})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW100}
 />
 <Subheading>Light ({theme.font.weight.FW300})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW300}
 />
 <Subheading>Regular ({theme.font.weight.FW400})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW400}
 />
 <Subheading>Medium ({theme.font.weight.FW500})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW500}
 />
 <Subheading>Bold ({theme.font.weight.FW700})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW700}
 />
 <Subheading>Extra bold ({theme.font.weight.FW800})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW800}
 />
 <Subheading>Black ({theme.font.weight.FW900})</Subheading>
 <Typeset
   fontFamily='Heebo'
-  fontSizes={Object.values(theme.font.size)}
+  fontSizes={Object.values(theme.font.size).map(size => size[Unit.PX])}
   fontWeight={theme.font.weight.FW900}
 />
