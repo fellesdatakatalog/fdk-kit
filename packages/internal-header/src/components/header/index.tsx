@@ -1,5 +1,13 @@
-import React, { FC } from 'react';
+import React, {
+  Children,
+  FC,
+  isValidElement,
+  PropsWithChildren,
+  useState
+} from 'react';
 import { ThemeProfile } from '@fellesdatakatalog/theme';
+import Link from '@fellesdatakatalog/link';
+import { Menu, Trigger } from '@fellesdatakatalog/dropdown-menu';
 
 import SC from './styled';
 
@@ -38,33 +46,73 @@ export interface Props {
   skeHomeText?: string;
 }
 
-export const FdkProfileHeader = ({
+export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
   homeUrl,
   useDemoLogo,
   username,
-  onLogout
-}: Props) => (
-  <SC.Header>
-    <SC.Container>
-      <SC.LogoWrapper>
+  onLogout,
+  children
+}) => {
+  const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
+
+  const openDropdownMenu = () => setIsDropdownMenuOpen(true);
+  const closeDropdownMenu = () => setIsDropdownMenuOpen(false);
+
+  const renderNavigationLinks = () =>
+    Children.map(children, child =>
+      isValidElement(child) && child.type === Link ? (
+        <SC.NavigationLink>{child}</SC.NavigationLink>
+      ) : null
+    );
+
+  const renderDropdownLinks = () =>
+    Children.map(children, child =>
+      isValidElement(child) && child.type === Link ? (
+        <SC.DropdownMenuItem>{child}</SC.DropdownMenuItem>
+      ) : null
+    );
+
+  return (
+    <SC.Header>
+      <SC.Container>
         <SC.Link href={homeUrl}>
           {useDemoLogo ? <SC.LogoDemo /> : <SC.Logo />}
         </SC.Link>
-      </SC.LogoWrapper>
-      {username && (
-        <SC.User>
-          <SC.UserIcon />
-          <SC.UserName>{username}</SC.UserName>
-        </SC.User>
-      )}
-      {onLogout && (
-        <SC.LogoutButton onClick={onLogout}>
-          <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
-        </SC.LogoutButton>
-      )}
-    </SC.Container>
-  </SC.Header>
-);
+        {Children.count(renderNavigationLinks()) > 0 && (
+          <SC.NavigationLinks>{renderNavigationLinks()}</SC.NavigationLinks>
+        )}
+
+        <SC.DropdownMenu
+          isOpen={isDropdownMenuOpen}
+          onClose={closeDropdownMenu}
+        >
+          <Trigger>
+            <SC.MenuButton onClick={openDropdownMenu}>
+              {username && (
+                <SC.User>
+                  <SC.UserIcon />
+                  <SC.UserName>{username}</SC.UserName>
+                </SC.User>
+              )}
+            </SC.MenuButton>
+          </Trigger>
+          {onLogout && (
+            <Menu>
+              <SC.Menu>
+                <li>
+                  <SC.LogoutButton onClick={onLogout}>
+                    <span>Logg ut</span>
+                  </SC.LogoutButton>
+                </li>
+                {renderDropdownLinks()}
+              </SC.Menu>
+            </Menu>
+          )}
+        </SC.DropdownMenu>
+      </SC.Container>
+    </SC.Header>
+  );
+};
 
 const SkeProfileHeader = ({
   homeUrl,
@@ -95,13 +143,14 @@ const SkeProfileHeader = ({
   </SC.SkeWrapper>
 );
 
-export const Header: FC<Props> = ({
+export const Header: FC<PropsWithChildren<Props>> = ({
   themeProfile = ThemeProfile.FDK,
   homeUrl = '/',
   useDemoLogo = false,
   username,
   onLogout,
-  skeHomeText
+  skeHomeText,
+  children
 }) =>
   themeProfile === ThemeProfile.SKE ? (
     <SkeProfileHeader
@@ -116,7 +165,9 @@ export const Header: FC<Props> = ({
       useDemoLogo={useDemoLogo}
       username={username}
       onLogout={onLogout}
-    />
+    >
+      {children}
+    </FdkProfileHeader>
   );
 
 export default Header;
