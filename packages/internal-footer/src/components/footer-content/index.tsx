@@ -12,6 +12,9 @@ const FooterContent: FC = () => (
       Digitaliseringsdirektoratet forvalter Felles datakatalog.
     </SC.Column>
     <SC.Column>
+      <Link href='https://data.norge.no/publishing/terms-of-use'>
+        Bruksvilkår
+      </Link>
       <Link href='https://www.digdir.no/om-oss/personvernerklaering/706'>
         Personvernerklæring
       </Link>
