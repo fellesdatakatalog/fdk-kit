@@ -38,7 +38,7 @@ export interface Props {
   skeHomeText?: string;
 }
 
-const FdkProfileHeader = ({
+export const FdkProfileHeader = ({
   homeUrl,
   useDemoLogo,
   username,
