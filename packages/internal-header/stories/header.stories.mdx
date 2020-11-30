@@ -1,13 +1,13 @@
 import {
+  ArgsTable,
+  Canvas,
   Meta,
   Title,
   Subtitle,
   Heading,
   Subheading,
   Source,
-  Preview,
-  Story,
-  Props
+  Story
 } from '@storybook/addon-docs/dist/blocks';
 import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
 
@@ -36,33 +36,33 @@ import Header from '../src';
   Internal header component is intended for usage in FDK registration portal.
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Basic usage'>
     <Header username="Michelle" />
   </Story>
-</Preview>
+</Canvas>
 
 <Subtitle>
   Internal header with logout event handler and home url
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Basic usage with logout event handler and home url'>
     <Header homeUrl="https://data.norge.no" username="Michelle" onLogout={() => {}} />
   </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Story name='Skatteetaten usage'>
     <Header themeProfile={ThemeProfile.SKE} username="Michelle" />
   </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Story name='Skatteetaten usage with system name'>
     <Header themeProfile={ThemeProfile.SKE} skeHomeText="Datakataloger" username="Michelle" />
   </Story>
-</Preview>
+</Canvas>
 
-<Heading>Props</Heading>
-<Props of={Header} />
+<Heading>{Header.displayName} props</Heading>
+<ArgsTable of={Header} />
