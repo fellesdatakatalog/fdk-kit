@@ -1,0 +1,58 @@
+import {
+  ArgsTable,
+  Canvas,
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Story
+} from '@storybook/addon-docs/dist/blocks';
+
+import { name, version } from '../package.json';
+
+import DropdownMenu, { Trigger, Menu } from '../src';
+
+<Meta title='Components/Dropdown menu' />
+
+<Title>Dropdown menu</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK dropdown menu shows and hides list of menu links when clicked on dropdown label.
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${DropdownMenu.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Basic usage</Subheading>
+
+<Canvas>
+  <Story name='Basic usage'>
+    <DropdownMenu isOpen={true}>
+      <Trigger>
+        <button>
+          Meny
+        </button>
+      </Trigger>
+      <Menu>
+        <Link href="https://data.norge.no">Søk i Felles datakatalog</Link>
+      </Menu>
+    </DropdownMenu>
+  </Story>
+</Canvas>
+
+<Heading>{DropdownMenu.displayName} props</Heading>
+<ArgsTable of={DropdownMenu} />
+
+<Heading>{Trigger.displayName} props</Heading>
+<ArgsTable of={Trigger} />
+
+<Heading>{Menu.displayName} props</Heading>
+<ArgsTable of={Menu} />
+
