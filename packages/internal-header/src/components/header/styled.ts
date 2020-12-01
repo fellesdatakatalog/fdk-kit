@@ -198,6 +198,7 @@ const Menu = styled.ul`
   background: ${theme.colour(Colour.NEUTRAL, 'N0')};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   color: ${theme.colour(Colour.NEUTRAL, 'N70')};
+  list-style: none;
   padding: ${theme.spacing('S10', Unit.EM)};
   overflow: hidden;
 
