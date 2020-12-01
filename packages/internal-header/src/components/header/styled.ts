@@ -112,6 +112,14 @@ const UserIcon = styled(UserIconBase)`
 `;
 
 const UserName = styled.span`
+  max-width: 120px;
+  @media (min-width: 900px) {
+    & {
+      max-width: 155px;
+    }
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 `;
 
@@ -119,6 +127,7 @@ const LogoutButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
   white-space: nowrap;
 `;
 
@@ -130,13 +139,13 @@ const ButtonLabel = styled.span`
 
 const NavigationLinks = styled.ul`
   display: none;
+  margin: 0;
+
   @media (min-width: 900px) {
     & {
       display: flex;
     }
   }
-
-  margin-right: 1em;
 
   & > li:nth-of-type(n + 2) {
     margin-left: ${theme.spacing('S16')};
@@ -145,6 +154,7 @@ const NavigationLinks = styled.ul`
 
 const NavigationLink = styled.li`
   color: currentColor;
+  list-style-type: none;
 
   & > * div {
     border: none;
@@ -208,6 +218,7 @@ const Menu = styled.ul`
 
 const DropdownMenuItem = styled.li`
   display: none;
+  list-style-type: none;
 
   @media (max-width: 900px) {
     & {
