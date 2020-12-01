@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.2.3...@fellesdatakatalog/internal-footer@0.3.0) (2020-12-01)
+
+
+### Features
+
+* **internal-footer:** add footer link ([8329733](https://github.com/fellesdatakatalog/fdk-kit/commit/8329733bd02477e3ef09960371c8e83334687885))
+
+
+
+
+
 ## [0.2.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.2.2...@fellesdatakatalog/internal-footer@0.2.3) (2020-11-24)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-footer
