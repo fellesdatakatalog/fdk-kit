@@ -10,11 +10,12 @@ import {
   ArgsTable
 } from '@storybook/addon-docs/dist/blocks';
 import { theme, Colour, Alignment } from '@fellesdatakatalog/theme';
-import FavouriteIcon from '@material-ui/icons/Favorite'
 
 import { name, version } from '../package.json';
 
 import Tabs, { Tab, Pane } from '../src';
+
+import SC from './styled';
 
 <Meta title='Components/Tabs' />
 
@@ -34,7 +35,7 @@ import Tabs, { Tab, Pane } from '../src';
 
 <Subheading>Basic tabs</Subheading>
 <Subtitle>
-  A basic tabs example.
+  A basic usage example.
 </Subtitle>
 
 <Canvas>
@@ -54,8 +55,8 @@ import Tabs, { Tab, Pane } from '../src';
 
 <Subheading>Active tab</Subheading>
 <Subtitle>
-  By default, the first tab will be set to active. In order to overwrite
-  this behaviour, a tab can be manually set to active using a prop.
+  By default, the first tab will be active. In order to overwrite
+  this behaviour, a tab can be manually set to active using <pre style={{ display: 'inline' }}>active</pre> prop.
 </Subtitle>
 
 <Canvas>
@@ -76,7 +77,7 @@ import Tabs, { Tab, Pane } from '../src';
 <Subheading>Tabs alignment</Subheading>
 <Subtitle>
   By default, tabs will be centrally aligned. In order to overwrite this
-  behaviour, pass a tabsAlignment prop to the tabs component.
+  behaviour, pass a <pre style={{ display: 'inline' }}>tabsAlignment</pre> prop to the <pre style={{ display: 'inline' }}>Tabs</pre> component.
 </Subtitle>
 
 <Canvas>
@@ -114,96 +115,75 @@ import Tabs, { Tab, Pane } from '../src';
   </Story>
 </Canvas>
 
-<Subheading>Custom tab and pane children</Subheading>
+<Subheading>Custom tabs and panes</Subheading>
 <Subtitle>
-  Tab and Pane components both accept text and element nodes as children.
+  <pre style={{ display: 'inline' }}>Tab</pre> and <pre style={{ display: 'inline' }}>Pane</pre> components
+  are polymorphic and can thus be customised using <pre style={{ display: 'inline' }}>as</pre> prop.
+  Furthermore, <pre style={{ display: 'inline' }}>Tab</pre> and <pre style={{ display: 'inline' }}>Pane</pre> components
+  accept arbitrary text and element nodes as children.
 </Subtitle>
 
 <Canvas>
   <Story name='Custom tabs and panes'>
     <div style={{ padding: '10px' }}>
       <Tabs>
-        <Tab for="pane-1">
-          <div style={
-            {
-              padding: '8px 16px',
-              fontWeight: 'bold',
-              background: theme.colour(Colour.BLUE, 'B30')({})
-            }
-          }>
-            Tab 1
-          </div>
+        <Tab for="pane-1" as={SC.Tab}>
+          Tab 1
         </Tab>
-        <Tab for="pane-2">
-          <div style={
-            {
-              padding: '8px 16px',
-              fontWeight: 'bold',
-              background: theme.colour(Colour.BROWN, 'B30')({})
-            }
-          }>
-            Tab 2
-          </div>
+        <Tab for="pane-2" as={SC.Tab}>
+          Tab 2
         </Tab>
-        <Tab for="pane-3"><div style={
-            {
-              padding: '8px 16px',
-              fontWeight: 'bold',
-              background: theme.colour(Colour.CYAN, 'C30')({})
-            }
-          }>
-            Tab 3
-          </div>
+        <Tab for="pane-3" as={SC.Tab}>
+          Tab 3
         </Tab>
-        <Tab for="pane-4"><div style={
-            {
-              padding: '8px 16px',
-              fontWeight: 'bold',
-              background: theme.colour(Colour.VIOLET, 'V30')({})
-            }
-          }>
-            Tab 4
-          </div>
-        </Tab>
-        <Pane id="pane-1">
-           <div style={
-            {
-              padding: '8px 16px',
-              background: theme.colour(Colour.BLUE, 'B30')({})
-            }
-          }>
-            Pane 1
-          </div>
+        <Pane id="pane-1" as={SC.Pane}>
+          Pane 1
         </Pane>
-        <Pane id="pane-2">
-           <div style={
-            {
-              padding: '8px 16px',
-              background: theme.colour(Colour.BROWN, 'B30')({})
-            }
-          }>
-            Pane 2
-          </div>
+        <Pane id="pane-2" as={SC.Pane}>
+          Pane 2
         </Pane>
-        <Pane id="pane-3">
-           <div style={
-            {
-              padding: '8px 16px',
-              background: theme.colour(Colour.CYAN, 'C30')({})
-            }
-          }>
-            Pane 4
-          </div>
+        <Pane id="pane-3" as={SC.Pane}>
+          Pane 3
         </Pane>
-        <Pane id="pane-4">
-           <div style={
-            {
-              padding: '8px 16px',
-              background: theme.colour(Colour.VIOLET, 'V30')({})
-            }
-          }>
-            Pane 4
-          </div>
+      </Tabs>
+    </div>
+    <div style={{ padding: '10px', marginTop: '20px' }}>
+      <Tabs>
+        <Tab for="datasets" as={SC.DatasetsTab}>
+          <span>Datasets</span>
+        </Tab>
+        <Tab for="data-services" as={SC.DataServicesTab}>
+          <span>Data Services</span>
+        </Tab>
+        <Tab for="concepts" as={SC.ConceptsTab}>
+          <span>Concepts</span>
+        </Tab>
+        <Tab for="information-models" as={SC.InformationModelsTab}>
+          <span>Information Models</span>
+        </Tab>
+        <Pane id="datasets" as={SC.DatasetsPane}>
+          <h1>Datasets</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+          </p>
+        </Pane>
+        <Pane id="data-services" as={SC.DataServicesPane}>
+          <h1>Data Services</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+          </p>
+        </Pane>
+        <Pane id="concepts" as={SC.ConceptsPane}>
+           <h1>Concepts</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+          </p>
+        </Pane>
+        <Pane id="information-models" as={SC.InformationModelsPane}>
+           <h1>Information Models</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+          </p>
         </Pane>
       </Tabs>
     </div>

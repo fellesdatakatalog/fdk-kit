@@ -1,33 +1,26 @@
-import React, {
-  FC,
-  PropsWithChildren,
-  Children,
-  isValidElement,
-  useState
-} from 'react';
+import React, { FC, PropsWithChildren, Children, useState } from 'react';
 import { Alignment } from '@fellesdatakatalog/theme';
-
-import Tab from '../tab';
-import Pane from '../pane';
 
 import SC from './styled';
 
+import { isTab, isPane, createTab, createPane, TabClickHandler } from './utils';
+
 export interface Props {
   /**
-   * An indication whether tab is active
+   * Tabs alignment
    * @type {Alignment}
    * @default Alignment.CENTRE
    */
   tabsAlignment?: Alignment;
 }
 
-const Tabs: FC<PropsWithChildren<Props>> = ({
+export const Tabs: FC<PropsWithChildren<Props>> = ({
   tabsAlignment,
   children,
   ...props
 }) => {
   const tabsChildren = Children.map(children, child =>
-    isValidElement(child) && child.type === Tab ? child : null
+    isTab(child) ? child : null
   )?.filter(Boolean);
 
   const [activeTab, setActiveTab] = useState<string | undefined>(
@@ -36,25 +29,17 @@ const Tabs: FC<PropsWithChildren<Props>> = ({
   );
 
   const paneChild = Children.map(children, child =>
-    isValidElement(child) && child.type === Pane && child.props.id === activeTab
-      ? child
-      : null
+    isPane(child) && child.props.id === activeTab ? child : null
   )?.shift();
+
+  const onTabClick: TabClickHandler = (key: string) => () => setActiveTab(key);
 
   return (
     <SC.Tabs {...props}>
       <SC.Bar alignment={tabsAlignment ?? Alignment.CENTRE}>
-        {tabsChildren?.map(child => (
-          <SC.Tab
-            key={child.props.for}
-            active={child.props.for === activeTab}
-            onClick={() => setActiveTab(child.props.for)}
-          >
-            <SC.TabChild>{child}</SC.TabChild>
-          </SC.Tab>
-        ))}
+        {tabsChildren?.map(createTab(onTabClick, activeTab))}
       </SC.Bar>
-      <SC.Contents>{paneChild}</SC.Contents>
+      {paneChild && createPane(paneChild)}
     </SC.Tabs>
   );
 };

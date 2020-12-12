@@ -18,7 +18,7 @@ npm i @fellesdatakatalog/tabs
 
 ### Basic usage
 
-In order to use tabs component, wrap the application in global theme provider from `@fellesdatakatalog/theme`. Then, use tabs as any regular component.
+In order to use tabs component, wrap the application with `ThemeProvider` from `@fellesdatakatalog/theme`. Then, use `Tabs` as any regular component.
 
 ```tsx
 import React, { FC } from 'react';
@@ -36,14 +36,14 @@ const App: FC = () => (
       <Pane id="pane-3">Pane 3</Pane>
     </Tabs>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
 
 ### Setting default active tab
 
-If not otherwise specified, the first tab will be set to active. In order to overwrite this behaviour, a tab can be manually set to active using an `active` prop.
+If not otherwise specified, the first `Tab` will be active. In order to overwrite this behaviour, any `Tab` can be manually set to be active using an `active` prop.
 
 ```tsx
 import React, { FC } from 'react';
@@ -61,7 +61,7 @@ const App: FC = () => (
       <Pane id="pane-3">Pane 3</Pane>
     </Tabs>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
@@ -86,45 +86,54 @@ const App: FC = () => (
       <Pane id="pane-3">Pane 3</Pane>
     </Tabs>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
 
-### Custom Tab and Pane children
+### Custom tabs and panes
 
-Tab and Pane components both accept text and element nodes as children.
+`Tab` and `Pane` components are polymorphic and can thus be customised using `as` prop. Furthermore, `Tab` and `Pane` components accept arbitrary text and element nodes as children.
 
 ```tsx
 import React, { FC } from 'react';
+import styled from 'styled-components';
 import ThemeProvider from '@fellesdatakatalog/theme';
 import Tabs, { Tab, Pane } from '@fellesdatakatalog/tabs';
 import FavouriteIcon from '@material-ui/icons/Favorite'
 
+const CustomTab = styled.div`
+  font-weight: bold;
+`;
+
+const CustomPane = styled.div`
+  padding: 16px;
+`;
+
 const App: FC = () => (
   <ThemeProvider>
     <Tabs>
-      <Tab for="pane-1">
+      <Tab for="pane-1" as={CustomTab}>
         <span>Tab 1</span>
       </Tab>
-      <Tab for="pane-2" active>
+      <Tab for="pane-2" active as={CustomTab}>
         <span>Tab 2</span>
       </Tab>
-      <Tab for="pane-3">
+      <Tab for="pane-3" as={CustomTab}>
         <span>Tab 3</span>
       </Tab>
-      <Pane id="pane-1">
+      <Pane id="pane-1" as={CustomPane}>
         <div>Pane 1</div>
       </Pane>
-      <Pane id="pane-2">
+      <Pane id="pane-2" as={CustomPane}>
         <div>Pane 2</div>
       </Pane>
-      <Pane id="pane-3">
+      <Pane id="pane-3" as={CustomPane}>
         <div>Pane 3</div>
       </Pane>
     </Tabs>
   </ThemeProvider>
-)
+);
 
 export default App;
 ```
