@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.2.2...@fellesdatakatalog/tabs@1.0.0) (2020-12-12)
+
+
+### Features
+
+* **tabs:** refactor tab and pane components to make them even more customisable ([1c7b879](https://github.com/fellesdatakatalog/fdk-kit/commit/1c7b8798b23d71418013922798b363af1c425526))
+
+
+
+
+
 ## [0.2.2](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.2.1...@fellesdatakatalog/tabs@0.2.2) (2020-11-24)
 
 **Note:** Version bump only for package @fellesdatakatalog/tabs
