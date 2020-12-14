@@ -1,11 +1,11 @@
 {
   "extends": "../../tsconfig.lib.json",
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./lib"
   },
   "include": [
     "./src/**/*",
-    "./stories/**/*",
     "./types/**/*"
   ]
 }
