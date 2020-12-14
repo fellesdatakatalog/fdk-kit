@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@1.0.0...@fellesdatakatalog/tabs@1.0.1) (2020-12-14)
+
+**Note:** Version bump only for package @fellesdatakatalog/tabs
+
+
+
+
+
 # [1.0.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@0.2.2...@fellesdatakatalog/tabs@1.0.0) (2020-12-12)
 
 
