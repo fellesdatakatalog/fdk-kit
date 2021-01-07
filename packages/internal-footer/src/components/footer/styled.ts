@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { theme, Colour } from '@fellesdatakatalog/theme';
-import SkeFooterBase from '@skatteetaten/frontend-components/FooterContent';
+import SkeFooterBase from '@fellesdatakatalog/skatteetaten-frontend-components/lib/FooterContent';
 
 import FooterIllustrationSVG from '../../images/footer-illustration.svg';
 
