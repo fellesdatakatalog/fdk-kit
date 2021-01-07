@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.4.3...@fellesdatakatalog/internal-header@0.4.4) (2021-01-07)
+
+
+### Bug Fixes
+
+* use forked Skatteetaten component library ([115bd97](https://github.com/fellesdatakatalog/fdk-kit/commit/115bd973fd10b4da19c0c5c2dfb9954c029f695c))
+
+
+
+
+
 ## [0.4.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.4.2...@fellesdatakatalog/internal-header@0.4.3) (2020-12-14)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-header
