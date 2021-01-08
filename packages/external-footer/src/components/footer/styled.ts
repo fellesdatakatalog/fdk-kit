@@ -13,7 +13,7 @@ const Footer = styled.footer`
   background: ${theme.colour(Colour.NEUTRAL, 'N60')};
 
   &,
-  & > * {
+  & * {
     color: ${theme.colour(Colour.NEUTRAL, 'N0')};
   }
 `;
