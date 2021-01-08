@@ -11,7 +11,11 @@ const Footer = styled.footer`
   padding: ${theme.spacing('S48')} 0;
   font-size: ${theme.fontSize('FS14')};
   background: ${theme.colour(Colour.NEUTRAL, 'N60')};
-  color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+
+  &,
+  & > * {
+    color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+  }
 `;
 
 const Illustration = styled(FooterIllustrationSVG)`

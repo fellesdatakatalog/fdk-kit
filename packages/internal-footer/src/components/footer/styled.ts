@@ -11,7 +11,11 @@ const Footer = styled.footer`
   min-height: 200px;
   padding: ${theme.spacing('S48')} 0;
   background: ${theme.colour(Colour.NEUTRAL, 'N60')};
-  color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+
+  &,
+  & > * {
+    color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+  }
 
   @media screen and (max-width: 1100px) {
     padding: ${theme.spacing('S32')} 0;
