@@ -1,0 +1,96 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Preview,
+  Story,
+  Props
+} from '@storybook/addon-docs/dist/blocks';
+import { theme, Colour } from '@fellesdatakatalog/theme';
+import FavouriteIcon from '@material-ui/icons/Favorite'
+
+import { name, version } from '../package.json';
+
+import Alert from '../src';
+
+<Meta title='Components/Alert' />
+
+<Title>Alert</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK Alert component displays an alert message
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${Alert.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Simple alert</Subheading>
+<Subtitle>
+  Alert component uses severity "success" by default.
+</Subtitle>
+
+<Preview>
+  <Story name='Simple alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert>
+        You succeeded!
+      </Alert>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Info alert</Subheading>
+<Subtitle>
+  Alert with info message
+</Subtitle>
+
+<Preview>
+  <Story name='Info alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity="info">
+        I have some info...
+      </Alert>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Warning alert</Subheading>
+<Subtitle>
+  Alert with warning message
+</Subtitle>
+
+<Preview>
+  <Story name='Warning alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity="warning">
+        Warning, user not found!
+      </Alert>
+    </div>
+  </Story>
+</Preview>
+
+<Subheading>Error alert</Subheading>
+<Subtitle>
+  Alert with error message
+</Subtitle>
+
+<Preview>
+  <Story name='Error alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity="error">
+        An error has occured!
+      </Alert>
+    </div>
+  </Story>
+</Preview>
+
+<Heading>Props</Heading>
+<Props of={Alert} />
