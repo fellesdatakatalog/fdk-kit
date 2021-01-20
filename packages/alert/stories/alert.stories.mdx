@@ -1,0 +1,93 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Canvas,
+  Story,
+  ArgsTable
+} from '@storybook/addon-docs/dist/blocks';
+import { name, version } from '../package.json';
+
+import Alert, { Severity } from '../src';
+
+<Meta title='Components/Alert' />
+
+<Title>Alert</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK Alert component displays an alert message
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${Alert.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Simple alert</Subheading>
+<Subtitle>
+  Alert component uses severity "success" by default.
+</Subtitle>
+
+<Canvas>
+  <Story name='Simple alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert>
+        You succeeded!
+      </Alert>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Info alert</Subheading>
+<Subtitle>
+  Alert with info message
+</Subtitle>
+
+<Canvas>
+  <Story name='Info alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity={Severity.INFO}>
+        I have some info...
+      </Alert>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Warning alert</Subheading>
+<Subtitle>
+  Alert with warning message
+</Subtitle>
+
+<Canvas>
+  <Story name='Warning alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity={Severity.WARNING}>
+        Warning, user not found!
+      </Alert>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Error alert</Subheading>
+<Subtitle>
+  Alert with error message
+</Subtitle>
+
+<Canvas>
+  <Story name='Error alert'>
+    <div style={{ padding: '10px' }}>
+      <Alert severity={Severity.ERROR}>
+        An error has occured!
+      </Alert>
+    </div>
+  </Story>
+</Canvas>
+
+<Heading>Props</Heading>
+<ArgsTable of={Alert} />
