@@ -1,11 +1,13 @@
 import React, { FC, PropsWithChildren } from 'react';
-import { Severity } from '../../enums';
+import { Severity } from './enums';
 
 import SC from './styled';
 
-export interface Props {
+export interface AlertProps {
   /**
-   * The severity of the alert. This defines the color and icon used. Allowed values 'success | info | warning | error'.
+   * The severity of the alert. This defines the color and icon used.
+   * @type Severity
+   * @default Severity.SUCCESS
    */
   severity?: Severity;
 }
@@ -23,7 +25,10 @@ const icon = (severity?: Severity) => {
   }
 };
 
-export const Alert: FC<PropsWithChildren<Props>> = ({ children, severity }) => (
+export const Alert: FC<PropsWithChildren<AlertProps>> = ({
+  children,
+  severity
+}) => (
   <SC.Alert severity={severity}>
     {icon(severity)}
     {children}

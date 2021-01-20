@@ -5,16 +5,13 @@ import {
   Heading,
   Subheading,
   Source,
-  Preview,
+  Canvas,
   Story,
-  Props
+  ArgsTable
 } from '@storybook/addon-docs/dist/blocks';
-import { theme, Colour } from '@fellesdatakatalog/theme';
-import FavouriteIcon from '@material-ui/icons/Favorite'
-
 import { name, version } from '../package.json';
 
-import Alert from '../src';
+import Alert, { Severity } from '../src';
 
 <Meta title='Components/Alert' />
 
@@ -37,7 +34,7 @@ import Alert from '../src';
   Alert component uses severity "success" by default.
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Simple alert'>
     <div style={{ padding: '10px' }}>
       <Alert>
@@ -45,52 +42,52 @@ import Alert from '../src';
       </Alert>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Subheading>Info alert</Subheading>
 <Subtitle>
   Alert with info message
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Info alert'>
     <div style={{ padding: '10px' }}>
-      <Alert severity="info">
+      <Alert severity={Severity.INFO}>
         I have some info...
       </Alert>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Subheading>Warning alert</Subheading>
 <Subtitle>
   Alert with warning message
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Warning alert'>
     <div style={{ padding: '10px' }}>
-      <Alert severity="warning">
+      <Alert severity={Severity.WARNING}>
         Warning, user not found!
       </Alert>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Subheading>Error alert</Subheading>
 <Subtitle>
   Alert with error message
 </Subtitle>
 
-<Preview>
+<Canvas>
   <Story name='Error alert'>
     <div style={{ padding: '10px' }}>
-      <Alert severity="error">
+      <Alert severity={Severity.ERROR}>
         An error has occured!
       </Alert>
     </div>
   </Story>
-</Preview>
+</Canvas>
 
 <Heading>Props</Heading>
-<Props of={Alert} />
+<ArgsTable of={Alert} />
