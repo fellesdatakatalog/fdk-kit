@@ -25,8 +25,12 @@ const icon = (severity?: Severity) => {
   }
 };
 
-export const Alert: FC<PropsWithChildren<Props>> = ({ children, severity }) => (
-  <SC.Alert severity={severity}>
+export const Alert: FC<PropsWithChildren<Props>> = ({
+  children,
+  severity,
+  ...props
+}) => (
+  <SC.Alert severity={severity} {...props}>
     {icon(severity)}
     {children}
   </SC.Alert>
