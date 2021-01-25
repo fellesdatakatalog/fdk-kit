@@ -12,6 +12,7 @@ npm i @fellesdatakatalog/alert
 
 - react
 - styled-components
+- @material-ui/icons
 - @fellesdatakatalog/theme
 
 ## Usage

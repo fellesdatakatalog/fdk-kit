@@ -27,12 +27,12 @@
     "build:webpack": "cross-env TS_NODE_PROJECT=\"../../tsconfig.json\" webpack --config ../../webpack/prod.config.ts",
     "prepublishOnly": "run-s build"
   },
+  "dependencies": {
+    "@fellesdatakatalog/theme": "^0.4.2"
+  },
   "peerDependencies": {
+    "@material-ui/icons": "^4.11.2",
     "react": "^17.0.1",
     "styled-components": "^5.2.1"
-  },
-  "dependencies": {
-    "@fellesdatakatalog/theme": "^0.4.2",
-    "@material-ui/icons": "^4.11.2"
   }
 }
