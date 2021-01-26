@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
 import { theme, Colour } from '@fellesdatakatalog/theme';
 
-import { Check, Info, Warning, Error } from '@material-ui/icons';
+import Check from '@material-ui/icons/Check';
+import Info from '@material-ui/icons/Info';
+import Warning from '@material-ui/icons/Warning';
+import Error from '@material-ui/icons/Error';
+
 import { Severity } from './enums';
 
 interface Props {
