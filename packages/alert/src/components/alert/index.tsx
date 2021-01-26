@@ -1,7 +1,8 @@
 import React, { FC, PropsWithChildren } from 'react';
-import { Severity } from './enums';
 
 import SC from './styled';
+
+import { Severity } from './enums';
 
 export interface Props {
   /**

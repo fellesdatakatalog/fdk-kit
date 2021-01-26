@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { theme, Colour } from '@fellesdatakatalog/theme';
-
 import Check from '@material-ui/icons/Check';
 import Info from '@material-ui/icons/Info';
 import Warning from '@material-ui/icons/Warning';
