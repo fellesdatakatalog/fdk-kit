@@ -1,0 +1,38 @@
+{
+  "name": "@fellesdatakatalog/button",
+  "version": "0.0.0",
+  "description": "Felles datakatalog UI button component",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:fellesdatakatalog/fdk-kit.git"
+  },
+  "author": {
+    "name": "Jeff Reiffers (jeffreiffers)",
+    "email": "jeff@ouvir.no"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.15.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s build:webpack",
+    "build:webpack": "cross-env TS_NODE_PROJECT=\"../../tsconfig.json\" webpack --config ../../webpack/prod.config.ts",
+    "prepublishOnly": "run-s build"
+  },
+  "dependencies": {
+    "@fellesdatakatalog/theme": "^0.4.2"
+  },
+  "peerDependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "react": "^17.0.1",
+    "styled-components": "^5.2.1"
+  }
+}
