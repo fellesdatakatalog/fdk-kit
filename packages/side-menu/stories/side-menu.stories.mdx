@@ -1,0 +1,53 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Canvas,
+  Story,
+  ArgsTable
+} from '@storybook/addon-docs/dist/blocks';
+import { name, version } from '../package.json';
+
+import SideMenu from '../src';
+
+export const Template = (args) => {
+  return (
+    <SideMenu {...args} />)
+}
+
+<Meta title='Components/SideMenu' />
+
+<Title>SideMenu</Title>
+<Subtitle>
+  <small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+  FDK SideMenu component allow users to navigate.
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${SideMenu.displayName} from '${name}';`} language='ts' />
+
+<Subheading>Default side menu</Subheading>
+<Subtitle/>
+
+<Canvas>
+  <Story name="Default SideMenu" args={{
+        title: 'My side menu',
+        menuItems: [
+          { id: 'page1', title: 'Page 1', active: true },
+          { id: 'page2', title: 'Page 2' },
+          { id: 'page3', title: 'Page 3' }]
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Heading>Props</Heading>
+<ArgsTable of={SideMenu} />
