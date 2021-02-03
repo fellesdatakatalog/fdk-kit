@@ -11,7 +11,7 @@ interface MenuItem {
 
 export interface Props extends ComponentPropsWithoutRef<'aside'> {
   menuItems?: MenuItem[];
-  title: string;
+  title?: string;
 }
 
 export const SideMenu: FC<Props> = ({
