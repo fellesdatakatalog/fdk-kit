@@ -12,7 +12,6 @@ npm i @fellesdatakatalog/button
 
 - react
 - styled-components
-- @material-ui/icons
 - @fellesdatakatalog/theme
 
 ## Usage

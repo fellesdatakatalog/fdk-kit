@@ -1,8 +1,12 @@
 import React, { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react';
 
+import { Variant } from './enums';
+
 import SC from './styled';
 
-export interface Props extends ComponentPropsWithoutRef<'button'> {}
+export interface Props extends ComponentPropsWithoutRef<'button'> {
+  variant?: Variant;
+}
 
 export const Button: FC<PropsWithChildren<Props>> = ({
   children,

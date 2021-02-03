@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs/dist/blocks';
 import { name, version } from '../package.json';
 
-import Button from '../src';
+import Button, { Variant } from '../src';
 
 <Meta title='Components/Button' />
 
@@ -29,13 +29,26 @@ import Button from '../src';
 <Heading>Usage</Heading>
 <Source code={`import ${Button.displayName} from '${name}';`} language='ts' />
 
-<Subheading>Default button</Subheading>
+<Subheading>Primary button (default)</Subheading>
 <Subtitle/>
 
 <Canvas>
-  <Story name='Default button'>
+  <Story name='Primary button (default)'>
     <div style={{ padding: '10px' }}>
-      <Button onClick={() => console.log('You clicked me!')}>
+      <Button onClick={() => console.log('You clicked me!')} variant={Variant.PRIMARY}>
+        Click me!
+      </Button>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Secondary button</Subheading>
+<Subtitle/>
+
+<Canvas>
+  <Story name='Secondary button'>
+    <div style={{ padding: '10px' }}>
+      <Button onClick={() => console.log('You clicked me!')} variant={Variant.SECONDARY}>
         Click me!
       </Button>
     </div>
@@ -50,6 +63,19 @@ import Button from '../src';
     <div style={{ padding: '10px' }}>
       <Button disabled>
         You cannot click me!
+      </Button>
+    </div>
+  </Story>
+</Canvas>
+
+<Subheading>Tertiary button</Subheading>
+<Subtitle/>
+
+<Canvas>
+  <Story name='Tertiary button'>
+    <div style={{ padding: '10px' }}>
+      <Button onClick={() => console.log('You clicked me!')} variant={Variant.TERTIARY}>
+        Click me!
       </Button>
     </div>
   </Story>
