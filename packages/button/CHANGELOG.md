@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/button@0.2.0...@fellesdatakatalog/button@0.2.1) (2021-02-03)
+
+
+### Bug Fixes
+
+* tertiary disabled button ([8ffc419](https://github.com/fellesdatakatalog/fdk-kit/commit/8ffc419d583c1e6dc861c40ae029cad7827c9edf))
+
+
+
+
+
 # [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/button@0.1.0...@fellesdatakatalog/button@0.2.0) (2021-02-03)
 
 
