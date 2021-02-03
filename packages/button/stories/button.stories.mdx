@@ -81,5 +81,18 @@ import Button, { Variant } from '../src';
   </Story>
 </Canvas>
 
+<Subheading>Tertiary disabled button</Subheading>
+<Subtitle/>
+
+<Canvas>
+  <Story name='Tertiary disabled button'>
+    <div style={{ padding: '10px' }}>
+      <Button onClick={() => console.log('You clicked me!')} variant={Variant.TERTIARY} disabled>
+        Click me!
+      </Button>
+    </div>
+  </Story>
+</Canvas>
+
 <Heading>Props</Heading>
 <ArgsTable of={Button} />

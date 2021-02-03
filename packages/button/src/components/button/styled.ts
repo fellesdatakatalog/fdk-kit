@@ -33,11 +33,25 @@ const Button = styled.button<Props>`
             color: ${theme.colour(Colour.NEUTRAL, 'N0')};
             background: ${theme.colour(Colour.NEUTRAL, 'N70')};
           }
+
+          &:disabled {
+            cursor: default;
+            pointer-events: none;
+            color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+            background: ${theme.colour(Colour.NEUTRAL, 'N30')};
+          }
         `;
       case Variant.TERTIARY:
         return css`
           background: inherit;
           border-bottom: 1px dashed;
+          height: max-content;
+
+          &:disabled {
+            cursor: default;
+            pointer-events: none;
+            color: ${theme.colour(Colour.NEUTRAL, 'N30')};
+          }
         `;
       default:
         return css`
@@ -52,16 +66,16 @@ const Button = styled.button<Props>`
           &:hover {
             background: ${theme.colour(Colour.NEUTRAL, 'N70')};
           }
+
+          &:disabled {
+            cursor: default;
+            pointer-events: none;
+            color: ${theme.colour(Colour.NEUTRAL, 'N0')};
+            background: ${theme.colour(Colour.NEUTRAL, 'N30')};
+          }
         `;
     }
   }}
-
-  &:disabled {
-    cursor: default;
-    pointer-events: none;
-    color: ${theme.colour(Colour.NEUTRAL, 'N0')};
-    background: ${theme.colour(Colour.NEUTRAL, 'N30')};
-  }
 `;
 
 export default { Button };
