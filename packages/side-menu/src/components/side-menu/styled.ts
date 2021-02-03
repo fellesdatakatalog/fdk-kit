@@ -56,4 +56,6 @@ const MenuItem = styled.li<{ active?: boolean }>`
   }
 `;
 
-export default { SideMenu, Title, Menu, MenuItem };
+const Link = styled.a``;
+
+export default { SideMenu, Title, Menu, MenuItem, Link };

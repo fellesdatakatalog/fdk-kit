@@ -1,5 +1,4 @@
 import React, { ComponentPropsWithoutRef, FC } from 'react';
-import { Link } from 'react-scroll';
 
 import SC from './styled';
 
@@ -25,9 +24,7 @@ export const SideMenu: FC<Props> = ({
       <ul>
         {menuItems.map(({ id, title: itemTitle, active }) => (
           <SC.MenuItem key={id} active={active}>
-            <Link to={id} smooth isDynamic spy>
-              {itemTitle}
-            </Link>
+            <SC.Link href={id}>{itemTitle}</SC.Link>
           </SC.MenuItem>
         ))}
       </ul>

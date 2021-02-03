@@ -31,12 +31,7 @@
     "@fellesdatakatalog/theme": "^0.4.2"
   },
   "peerDependencies": {
-    "@material-ui/icons": "^4.11.2",
     "react": "^17.0.1",
-    "react-scroll": "1.8.1",
     "styled-components": "^5.2.1"
-  },
-  "devDependencies": {
-    "@types/react-scroll": "^1.8.2"
   }
 }
