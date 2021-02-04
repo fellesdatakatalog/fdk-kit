@@ -1,0 +1,21 @@
+name: "Deploy to Chromatic"
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  chromatic-deployment:
+    name: Build storybook and deploy current build to Chromatic
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: storybook:build
