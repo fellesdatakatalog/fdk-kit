@@ -33,7 +33,7 @@
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 --ci",
     "storybook:build": "build-storybook",
-    "storybook:deploy": "storybook-to-ghpages --script storybook:build --branch master --out docs --ci --host-token-env-variable=GITHUB_TOKEN"
+    "storybook:deploy": "storybook-to-ghpages --script storybook:build --ci --out storybook-static"
   },
   "config": {
     "commitizen": {

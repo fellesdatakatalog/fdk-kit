@@ -1,0 +1,32 @@
+name: "Deploy to NPM"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  npm-deployment:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    name: Build and deploy changed components to NPM
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+          registry-url: https://registry.npmjs.org
+      - name: Install dependencies
+        run: npm ci
+      - name: Bootstrap lerna dependencies
+        run: npx lerna bootstrap
+      - name: Configure Git user
+        run: |
+          git config --global user.email "fdk-bot@digdir.no"
+          git config --global user.name "FDK Bot"
+      - name: Build and deploy changed components to NPM
+        run: npx lerna publish --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
