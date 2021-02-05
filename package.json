@@ -32,12 +32,18 @@
     "clean:coverage": "rm -rf coverage",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 --ci",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "storybook:deploy": "storybook-to-ghpages --script storybook:build --branch master --out docs --ci --host-token-env-variable=GITHUB_TOKEN"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "storybook-deployer": {
+    "gitUsername": "FDK Bot",
+    "gitEmail": "fdk-bot@digdir.no",
+    "commitMessage": "chore(project): deploy Storybook to GitHub Pages [skip ci]"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -56,6 +62,7 @@
     "@storybook/addon-links": "^6.1.16",
     "@storybook/addons": "^6.1.16",
     "@storybook/react": "^6.1.16",
+    "@storybook/storybook-deployer": "^2.8.7",
     "@storybook/theming": "^6.1.16",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
