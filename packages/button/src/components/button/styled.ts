@@ -29,7 +29,8 @@ const Button = styled.button<Props>`
           border-radius: 4px;
           padding: ${theme.spacing('S10')} ${theme.spacing('S24')};
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: ${theme.colour(Colour.NEUTRAL, 'N0')};
             background: ${theme.colour(Colour.NEUTRAL, 'N70')};
           }
@@ -47,6 +48,10 @@ const Button = styled.button<Props>`
           border-bottom: 1px dashed;
           height: max-content;
 
+          &:focus {
+            outline: 1px dashed ${theme.colour(Colour.NEUTRAL, 'N70')};
+          }
+
           &:disabled {
             cursor: default;
             pointer-events: none;
@@ -63,7 +68,8 @@ const Button = styled.button<Props>`
           border-radius: 4px;
           padding: ${theme.spacing('S10')} ${theme.spacing('S24')};
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: ${theme.colour(Colour.NEUTRAL, 'N70')};
           }
 
