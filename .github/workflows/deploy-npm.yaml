@@ -1,4 +1,4 @@
-name: "Deploy to NPM"
+name: Deploy to NPM
 
 on:
   push:
