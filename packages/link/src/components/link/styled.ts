@@ -24,6 +24,7 @@ const Icon = styled.i`
     height: 100%;
     width: 100%;
     fill: currentColor;
+    color: currentColor;
   }
 `;
 
@@ -35,6 +36,7 @@ const ExternalLinkIcon = styled(ExternalLinkSVG)`
 
   & > path {
     fill: currentColor;
+    color: currentColor;
   }
 `;
 
@@ -42,6 +44,7 @@ const Underlined = styled.div`
   display: inline-flex;
   padding-bottom: 1px;
   border-bottom: 1px solid currentColor;
+  color: currentColor;
 `;
 
 export default { Link, Icon, ExternalLinkIcon, Underlined };
