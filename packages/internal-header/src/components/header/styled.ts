@@ -140,6 +140,7 @@ const ButtonLabel = styled.span`
 const NavigationLinks = styled.ul`
   display: none;
   margin: 0;
+  color: ${theme.colour(Colour.NEUTRAL, 'N0')};
 
   @media (min-width: 900px) {
     & {
@@ -153,7 +154,6 @@ const NavigationLinks = styled.ul`
 `;
 
 const NavigationLink = styled.li`
-  color: currentColor;
   list-style-type: none;
 
   & > * div {
@@ -172,6 +172,7 @@ const NavigationLink = styled.li`
 
 const DropdownMenu = styled(DropdownMenuBase)`
   display: flex;
+  color: ${theme.colour(Colour.NEUTRAL, 'N0')};
 `;
 
 const MenuButton = styled.button`
