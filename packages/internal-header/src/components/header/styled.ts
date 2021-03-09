@@ -155,6 +155,7 @@ const NavigationLinks = styled.ul`
 
 const NavigationLink = styled.li`
   list-style-type: none;
+  color: ${theme.colour(Colour.NEUTRAL, 'N0')};
 
   & > * div {
     border: none;
