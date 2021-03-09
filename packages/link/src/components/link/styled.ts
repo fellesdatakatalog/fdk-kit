@@ -34,9 +34,13 @@ const ExternalLinkIcon = styled(ExternalLinkSVG)`
   margin-left: ${theme.spacing('S6')};
   margin-top: -0.25rem;
 
+  &,
+  & * {
+    color: currentColor;
+  }
+
   & > path {
     fill: currentColor;
-    color: currentColor;
   }
 `;
 
