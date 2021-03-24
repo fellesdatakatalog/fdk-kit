@@ -1,4 +1,10 @@
-import React, { FC, PropsWithChildren, ReactNode, Children } from 'react';
+import React, {
+  FC,
+  PropsWithChildren,
+  ComponentType,
+  ReactNode,
+  Children
+} from 'react';
 
 import SC from './styled';
 
@@ -11,10 +17,16 @@ export interface Props {
    * @default "/"
    */
   separator?: ReactNode;
+  /**
+   * Component to render (use nav as base element)
+   * @default nav
+   */
+  as?: keyof JSX.IntrinsicElements | ComponentType<any>;
 }
 
 export const Breadcrumbs: FC<PropsWithChildren<Props>> = ({
   separator = '/',
+  as,
   children,
   ...props
 }) => {
@@ -24,7 +36,7 @@ export const Breadcrumbs: FC<PropsWithChildren<Props>> = ({
     )?.filter(Boolean) ?? [];
 
   return (
-    <SC.Breadcrumbs {...props}>
+    <SC.Breadcrumbs as={as} {...props}>
       <ol>
         {intersperse(breadcrumbs, <SC.Separator>{separator}</SC.Separator>)}
       </ol>
