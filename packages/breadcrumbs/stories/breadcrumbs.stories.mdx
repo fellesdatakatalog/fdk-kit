@@ -80,15 +80,16 @@ import SC from './styled';
 
 <Subheading>Custom breadcrumbs</Subheading>
 <Subtitle>
-  <pre style={{ display: 'inline' }}>Breadcrumb</pre> component is polymorphic and can thus be customised using
-  <pre style={{ display: 'inline' }}>as</pre> prop. Furthermore, <pre style={{ display: 'inline' }}>Breadcrumb</pre>
-  component accept arbitrary text and element nodes as children.
+  <pre style={{ display: 'inline' }}>Breadcrumbs</pre> and <pre style={{ display: 'inline' }}>Breadcrumb</pre> components
+  are polymorphic and can thus be customised using <pre style={{ display: 'inline' }}>as</pre> prop.
+  Furthermore, <pre style={{ display: 'inline' }}>Breadcrumb</pre> component accept arbitrary text and element
+  nodes as children.
 </Subtitle>
 
 <Canvas>
   <Story name='Custom breadcrumbs'>
     <div style={{ display: 'flex', padding: '10px' }}>
-      <Breadcrumbs>
+      <Breadcrumbs as={SC.Breadcrumbs}>
         <Breadcrumb as={SC.Breadcrumb}>
           <a href="#">Path 1</a>
         </Breadcrumb>

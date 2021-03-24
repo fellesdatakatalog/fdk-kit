@@ -75,7 +75,7 @@ export default App;
 
 ### Custom breadcrumbs
 
-`Breadcrumb` component is polymorphic and can thus be customised using `as` prop. Furthermore, `Breadcrumb` components accept arbitrary text and element nodes as children.
+`Breadcrumbs` and `Breadcrumb` components are polymorphic and can thus be customised using `as` prop. Furthermore, `Breadcrumb` components accept arbitrary text and element nodes as children.
 
 ```tsx
 import React, { FC } from 'react';
@@ -83,13 +83,17 @@ import styled from 'styled-components';
 import ThemeProvider from '@fellesdatakatalog/theme';
 import Breadcrumbs, { Breadcrumb } from '@fellesdatakatalog/breadcrumbs';
 
+const CustomBreadcrumbs = styled.nav`
+  padding: 16px;
+`;
+
 const CustomBreadcrumb = styled.li`
   padding: 16px;
 `;
 
 const App: FC = () => (
   <ThemeProvider>
-    <Breadcrumbs>
+    <Breadcrumbs as={CustomBreadcrumbs}>
       <Breadcrumb as={CustomBreadcrumb}>
         <a href="/path/1">Path 1</a>
       </Breadcrumb>
