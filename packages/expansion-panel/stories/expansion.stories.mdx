@@ -1,0 +1,84 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Heading,
+  Subheading,
+  Source,
+  Canvas,
+  Story,
+  ArgsTable
+} from '@storybook/addon-docs/dist/blocks';
+
+import { name, version } from '../package.json';
+
+import SC from './styled';
+
+import ExpansionPanel, {ExpansionPanelBody, ExpansionPanelHead } from '../src';
+
+<Meta title='Components/Expansion panel' />
+
+<Title>Expansion Panel</Title>
+<Subtitle>
+<small>Version {version}</small>
+</Subtitle>
+<Subtitle>
+FDK expansion panel component.
+</Subtitle>
+
+<Heading>Installation</Heading>
+<Source code={`npm i ${name}`} language='bash' />
+
+<Heading>Usage</Heading>
+<Source code={`import ${ExpansionPanel.displayName}, { ${ExpansionPanelBody.displayName}, ${ExpansionPanelHead.displayName} } from '${name}';`} language='ts' />
+
+<Subheading>Basic usage</Subheading>
+<Subtitle>
+Expansion panel component.
+</Subtitle>
+
+
+<Canvas>
+  <Story name='Basic usage'>
+    <ExpansionPanel>
+      <ExpansionPanelHead>Expand me!</ExpansionPanelHead>
+      <ExpansionPanelBody>
+        <div style={{ padding: '10px' }}>
+          Expansion panel body
+        </div>
+      </ExpansionPanelBody>
+    </ExpansionPanel>
+  </Story>
+</Canvas>
+
+<Subheading>Custom expansion indicator</Subheading>
+<Subtitle>
+  Expansion indiciator is customisable.
+</Subtitle>
+
+<Canvas>
+  <Story name='Custom expansion indicator'>
+    <ExpansionPanel
+      expansionIndicator={{
+        expand: <SC.CustomExpandIndicator />,
+        collapse: <SC.CustomCollapseIndicator />
+      }}
+    >
+      <ExpansionPanelHead>Expand me!</ExpansionPanelHead>
+      <ExpansionPanelBody>
+        <div style={{ padding: '10px' }}>
+          Expansion panel body
+        </div>
+      </ExpansionPanelBody>
+    </ExpansionPanel>
+  </Story>
+</Canvas>
+
+<Heading>{ExpansionPanel.displayName} props</Heading>
+<ArgsTable of={ExpansionPanel} />
+
+<Heading>{ExpansionPanelHead.displayName} props</Heading>
+<ArgsTable of={ExpansionPanelHead} />
+
+<Heading>{ExpansionPanelBody.displayName} props</Heading>
+<ArgsTable of={ExpansionPanelBody} />
