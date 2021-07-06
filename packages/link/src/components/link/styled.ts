@@ -29,6 +29,7 @@ const Icon = styled.i`
 `;
 
 const ExternalLinkIcon = styled(ExternalLinkSVG)`
+  flex-shrink: 0;
   height: 18px;
   width: 18px;
   margin-left: ${theme.spacing('S6')};
