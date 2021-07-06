@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.2.5...@fellesdatakatalog/link@0.2.6) (2021-07-06)
+
+
+### Bug Fixes
+
+* prevent external link icon from resizing ([498fa8e](https://github.com/fellesdatakatalog/fdk-kit/commit/498fa8edf5fd6c21dad836952f6ae160ecc010e3))
+
+
+
+
+
 ## [0.2.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.2.4...@fellesdatakatalog/link@0.2.5) (2021-03-09)
 
 **Note:** Version bump only for package @fellesdatakatalog/link
