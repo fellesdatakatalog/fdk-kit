@@ -20,16 +20,16 @@ const Footer: FC = () => (
       </SC.Column>
       <SC.Column>
         <h6>Om Felles datakatalog</h6>
-        <Link href='https://data.norge.no/guidance'>
+        <Link href='/guidance'>
           Veiledere og standarder
         </Link>
-        <Link href='https://data.norge.no/reports'>Rapporter</Link>
-        <Link href='https://data.norge.no/organizations'>Virksomheter</Link>
-        <Link href='https://data.norge.no/about'>Om Felles datakatalog</Link>
-        <Link href='https://data.norge.no/about-registration'>
+        <Link href='/reports'>Rapporter</Link>
+        <Link href='/organizations'>Virksomheter</Link>
+        <Link href='/about'>Om Felles datakatalog</Link>
+        <Link href='/about-registration'>
           Hjelp til å registrere
         </Link>
-        <Link href='https://data.norge.no/news-archive'>Aktuelt</Link>
+        <Link href='/news-archive'>Aktuelt</Link>
       </SC.Column>
       <SC.Column>
         <h6>Om nettstedet</h6>
