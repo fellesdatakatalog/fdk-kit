@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.17](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.16...@fellesdatakatalog/external-footer@0.1.17) (2021-08-04)
+
+
+### Bug Fixes
+
+* make urls relative ([2b50545](https://github.com/fellesdatakatalog/fdk-kit/commit/2b505453aff415b061f3554dabed64b81bd0f0bd))
+
+
+
+
+
 ## [0.1.16](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.15...@fellesdatakatalog/external-footer@0.1.16) (2021-07-06)
 
 **Note:** Version bump only for package @fellesdatakatalog/external-footer
