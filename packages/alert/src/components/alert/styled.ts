@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components';
 import { theme, Colour } from '@fellesdatakatalog/theme';
-import Check from '@material-ui/icons/Check';
-import Info from '@material-ui/icons/Info';
-import Warning from '@material-ui/icons/Warning';
-import Error from '@material-ui/icons/Error';
+
+import Check from '../../images/icon-alert-success-md.svg';
+import Info from '../../images/icon-alert-info-md.svg';
+import Warning from '../../images/icon-alert-warning-md.svg';
+import Error from '../../images/icon-alert-danger-md.svg';
 
 import { Severity } from './enums';
 
@@ -60,29 +61,49 @@ const Alert = styled.div<Props>`
 
 const CheckIcon = styled(Check)`
   && {
-    font-size: ${theme.fontSize('FS28')};
+    height: 24px;
+    width: 24px;
     margin-right: ${theme.spacing('S6')};
+    
+    & > path {
+      fill: ${theme.colour(Colour.GREEN, 'G50')};
+    }
   }
 `;
 
 const InfoIcon = styled(Info)`
   && {
-    font-size: ${theme.fontSize('FS28')};
+    height: 24px;
+    width: 24px;
     margin-right: ${theme.spacing('S6')};
+    
+    & > path {
+      fill: ${theme.colour(Colour.BLUE, 'B50')};
+    }
   }
 `;
 
 const WarningIcon = styled(Warning)`
   && {
-    font-size: ${theme.fontSize('FS28')};
+    height: 24px;
+    width: 24px;
     margin-right: ${theme.spacing('S6')};
+    
+    & > path {
+      fill: ${theme.colour(Colour.YELLOW, 'Y70')};
+    }
   }
 `;
 
 const ErrorIcon = styled(Error)`
   && {
-    font-size: ${theme.fontSize('FS28')};
+    height: 24px;
+    width: 24px;
     margin-right: ${theme.spacing('S6')};
+    
+    & > path {
+      fill: ${theme.colour(Colour.RED, 'R50')};
+    }
   }
 `;
 
