@@ -31,7 +31,6 @@
     "@fellesdatakatalog/theme": "^0.4.3"
   },
   "peerDependencies": {
-    "@material-ui/icons": "^4.11.2",
     "react": "^17.0.1",
     "styled-components": "^5.2.1"
   }
