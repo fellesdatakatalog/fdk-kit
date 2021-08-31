@@ -12,7 +12,7 @@
       "message": "chore(release): publish [skip ci]"
     },
     "publish": {
-      "allowBranch": "master"
+      "allowBranch": "main"
     }
   }
 }
