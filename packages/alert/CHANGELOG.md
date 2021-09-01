@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.1.5...@fellesdatakatalog/alert@0.1.6) (2021-09-01)
+
+
+### Bug Fixes
+
+* **alert:** replace material-ui/icons with svg ([276ed17](https://github.com/fellesdatakatalog/fdk-kit/commit/276ed17fb9aa8eeb34fa8e004e1e0aa1d2477905))
+
+
+
+
+
 ## [0.1.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.1.4...@fellesdatakatalog/alert@0.1.5) (2021-03-09)
 
 **Note:** Version bump only for package @fellesdatakatalog/alert
