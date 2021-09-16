@@ -12,7 +12,8 @@ export enum Colour {
   VIOLET = 'violet',
   RED = 'red',
   YELLOW = 'yellow',
-  GREEN = 'green'
+  GREEN = 'green',
+  GOLD = 'gold'
 }
 
 export enum Unit {
