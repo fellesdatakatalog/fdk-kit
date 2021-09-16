@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.4.3...@fellesdatakatalog/theme@0.4.4) (2021-09-16)
+
+
+### Bug Fixes
+
+* **theme:** add and update colors ([c21ba6d](https://github.com/fellesdatakatalog/fdk-kit/commit/c21ba6d111726a3adcee32f5c8452f0bb00e8242))
+
+
+
+
+
 ## [0.4.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.4.2...@fellesdatakatalog/theme@0.4.3) (2021-03-09)
 
 **Note:** Version bump only for package @fellesdatakatalog/theme

@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/button",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Felles datakatalog UI button component",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "prepublishOnly": "run-s build"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.4.3"
+    "@fellesdatakatalog/theme": "^0.4.4"
   },
   "peerDependencies": {
     "react": "^17.0.1",
