@@ -22,14 +22,24 @@ export default {
       N70: '#121619'
     },
     [Colour.BLUE]: {
+      B15: '#f0f3f7',
       B20: '#f0f3f7',
       B30: '#d5e1f2',
-      B50: '#335380'
+      B40: '#afc2db',
+      B45: '#89a2c4',
+      B50: '#6885ad',
+      B55: '#4b6b96',
+      B60: '#335380'
     },
     [Colour.BROWN]: {
+      B15: '#f7f2ed',
       B20: '#f7f3f0',
-      B30: '#f2e1d5',
-      B50: '#805333'
+      B30: '#dff2d5',
+      B40: '#dbc2b2',
+      B45: '#c4a289',
+      B50: '#ad8468',
+      B55: '#96694b',
+      B60: '#805333'
     },
     [Colour.CYAN]: {
       C20: '#f0f6f7',
@@ -37,16 +47,24 @@ export default {
       C50: '#2e6773'
     },
     [Colour.VIOLET]: {
+      V15: '#f4f0f7',
       V20: '#f4f0f7',
       V30: '#e4d5f2',
-      V50: '#593380'
+      V40: '#C6B2DB',
+      V45: '#a789c4',
+      V50: '#8b68ad',
+      V55: '#714b96',
+      V60: '#593380'
     },
     [Colour.RED]: {
       R10: '#f7f0f3',
+      R15: '#f7f0f3',
       R20: '#f9dae6',
       R30: '#f2d5e1',
-      R40: '#f1a9c5',
-      R50: '#d70a5a',
+      R40: '#dbb2c6',
+      R45: '#c489a6',
+      R50: '#ad688a',
+      R55: '#964b6f',
       R60: '#803353'
     },
     [Colour.YELLOW]: {
@@ -57,8 +75,24 @@ export default {
     },
     [Colour.GREEN]: {
       G10: '#f4f7f2',
+      G15: '#f0f6f7',
       G20: '#dff2d5',
-      G50: '#3e7b1f'
+      G30: '#d5edf2',
+      G40: '#b2d4db',
+      G45: '#89bbc4',
+      G50: '#68a2ad',
+      G55: '#4b8996',
+      G60: '#2e6773'
+    },
+    [Colour.GOLD]: {
+      G15: '#f7f6f0',
+      G30: '#f2edd5',
+      G40: '#dbd4af',
+      G45: '#c4bb89',
+      G50: '#ada268',
+      G55: '#96894b',
+      G60: '#807333',
+      G70: '#695c1f'
     }
   },
   [Token.FONT]: {
