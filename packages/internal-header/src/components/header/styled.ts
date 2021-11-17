@@ -6,7 +6,7 @@ import SkeBasisBase from '@fellesdatakatalog/skatteetaten-frontend-components/li
 import TopBanner from '@fellesdatakatalog/skatteetaten-frontend-components/lib/TopBanner';
 
 import LogoFDK from '../../images/fdk-publishing-logo-negative.svg';
-import LogoFDKDemo from '../../images/fdk-registration-demo-logo.svg';
+import LogoFDKDemo from '../../images/fdk-publishing-logo-negative-demo.svg';
 import UserIconBase from '../../images/icon-user-md.svg';
 
 const Header = styled.header`
@@ -94,7 +94,18 @@ const Logo = styled(LogoFDK)`
 `;
 
 const LogoDemo = styled(LogoFDKDemo)`
-  width: 145px;
+  height: 45px;
+  @media (max-width: 900px) {
+    & {
+      height: calc(35px + (55 - 35) * ((100vw - 320px) / (900 - 320)));
+    }
+  }
+  & > path {
+    fill: ${theme.colour(Colour.NEUTRAL, 'N0')};
+  }
+  & > .st1 {
+    fill: ${theme.colour(Colour.BLUE, 'B30')};
+  }
 `;
 
 const User = styled.div`
