@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.4.9...@fellesdatakatalog/internal-header@0.5.0) (2021-11-18)
+
+
+### Features
+
+* update demo logo ([fdd3c42](https://github.com/fellesdatakatalog/fdk-kit/commit/fdd3c425d5c2bd101dc6da084e981dea6e22803a))
+
+
+
+
+
 ## [0.4.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.4.8...@fellesdatakatalog/internal-header@0.4.9) (2021-09-16)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-header
