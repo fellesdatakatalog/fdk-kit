@@ -12,7 +12,7 @@ export default {
   [Token.COLOUR]: {
     [Colour.NEUTRAL]: {
       N0: '#ffffff',
-      N10: '#f7f7f7',
+      N10: '#fafafa',
       N15: '#eeeff0',
       N20: '#dfe1e2',
       N30: '#d5d7d9',
