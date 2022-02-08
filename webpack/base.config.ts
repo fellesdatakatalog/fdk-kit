@@ -6,6 +6,7 @@ import nodeExternals from 'webpack-node-externals';
 const configuration: Configuration = {
   entry: ['./src/index.ts'],
   output: {
+    globalObject: 'this',
     path: resolve('./lib'),
     filename: 'index.js',
     libraryTarget: 'umd'
