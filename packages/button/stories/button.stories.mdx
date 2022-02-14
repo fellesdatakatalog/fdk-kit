@@ -8,7 +8,7 @@ import {
   Canvas,
   Story,
   ArgsTable
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 import { name, version } from '../package.json';
 
 import Button, { Variant } from '../src';
@@ -20,7 +20,8 @@ import Button, { Variant } from '../src';
   <small>Version {version}</small>
 </Subtitle>
 <Subtitle>
-  FDK Button component allow users to take actions, and make choices, with a single tap.
+  FDK Button component allow users to take actions, and make choices, with a
+  single tap.
 </Subtitle>
 
 <Heading>Installation</Heading>
@@ -30,12 +31,15 @@ import Button, { Variant } from '../src';
 <Source code={`import ${Button.displayName} from '${name}';`} language='ts' />
 
 <Subheading>Primary button (default)</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
   <Story name='Primary button (default)'>
     <div style={{ padding: '10px' }}>
-      <Button onClick={() => console.log('You clicked me!')} variant={Variant.PRIMARY}>
+      <Button
+        onClick={() => console.log('You clicked me!')}
+        variant={Variant.PRIMARY}
+      >
         Click me!
       </Button>
     </div>
@@ -43,12 +47,15 @@ import Button, { Variant } from '../src';
 </Canvas>
 
 <Subheading>Secondary button</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
   <Story name='Secondary button'>
     <div style={{ padding: '10px' }}>
-      <Button onClick={() => console.log('You clicked me!')} variant={Variant.SECONDARY}>
+      <Button
+        onClick={() => console.log('You clicked me!')}
+        variant={Variant.SECONDARY}
+      >
         Click me!
       </Button>
     </div>
@@ -56,25 +63,26 @@ import Button, { Variant } from '../src';
 </Canvas>
 
 <Subheading>Disabled button</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
   <Story name='Disabled button'>
     <div style={{ padding: '10px' }}>
-      <Button disabled>
-        You cannot click me!
-      </Button>
+      <Button disabled>You cannot click me!</Button>
     </div>
   </Story>
 </Canvas>
 
 <Subheading>Tertiary button</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
   <Story name='Tertiary button'>
     <div style={{ padding: '10px' }}>
-      <Button onClick={() => console.log('You clicked me!')} variant={Variant.TERTIARY}>
+      <Button
+        onClick={() => console.log('You clicked me!')}
+        variant={Variant.TERTIARY}
+      >
         Click me!
       </Button>
     </div>
@@ -82,12 +90,16 @@ import Button, { Variant } from '../src';
 </Canvas>
 
 <Subheading>Tertiary disabled button</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
   <Story name='Tertiary disabled button'>
     <div style={{ padding: '10px' }}>
-      <Button onClick={() => console.log('You clicked me!')} variant={Variant.TERTIARY} disabled>
+      <Button
+        onClick={() => console.log('You clicked me!')}
+        variant={Variant.TERTIARY}
+        disabled
+      >
         Click me!
       </Button>
     </div>

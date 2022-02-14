@@ -8,7 +8,7 @@ import {
   Canvas,
   Story,
   ArgsTable
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 import { theme, Colour, Alignment } from '@fellesdatakatalog/theme';
 
 import { name, version } from '../package.json';
@@ -31,23 +31,24 @@ import SC from './styled';
 <Source code={`npm i ${name}`} language='bash' />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Tabs.displayName}, { ${Tab.displayName}, ${Pane.displayName} } from '${name}';`} language='ts' />
+<Source
+  code={`import ${Tabs.displayName}, { ${Tab.displayName}, ${Pane.displayName} } from '${name}';`}
+  language='ts'
+/>
 
 <Subheading>Basic tabs</Subheading>
-<Subtitle>
-  A basic usage example.
-</Subtitle>
+<Subtitle>A basic usage example.</Subtitle>
 
 <Canvas>
   <Story name='Basic tabs'>
     <div style={{ padding: '10px' }}>
       <Tabs>
-        <Tab for="pane-1">Tab 1</Tab>
-        <Tab for="pane-2">Tab 2</Tab>
-        <Tab for="pane-3">Tab 3</Tab>
-        <Pane id="pane-1">Pane 1</Pane>
-        <Pane id="pane-2">Pane 2</Pane>
-        <Pane id="pane-3">Pane 3</Pane>
+        <Tab for='pane-1'>Tab 1</Tab>
+        <Tab for='pane-2'>Tab 2</Tab>
+        <Tab for='pane-3'>Tab 3</Tab>
+        <Pane id='pane-1'>Pane 1</Pane>
+        <Pane id='pane-2'>Pane 2</Pane>
+        <Pane id='pane-3'>Pane 3</Pane>
       </Tabs>
     </div>
   </Story>
@@ -55,20 +56,23 @@ import SC from './styled';
 
 <Subheading>Active tab</Subheading>
 <Subtitle>
-  By default, the first tab will be active. In order to overwrite
-  this behaviour, a tab can be manually set to active using <pre style={{ display: 'inline' }}>active</pre> prop.
+  By default, the first tab will be active. In order to overwrite this
+  behaviour, a tab can be manually set to active using{' '}
+  <pre style={{ display: 'inline' }}>active</pre> prop.
 </Subtitle>
 
 <Canvas>
   <Story name='Active tab'>
     <div style={{ padding: '10px' }}>
       <Tabs>
-        <Tab for="pane-1">Tab 1</Tab>
-        <Tab for="pane-2" active>Tab 2</Tab>
-        <Tab for="pane-3">Tab 3</Tab>
-        <Pane id="pane-1">Pane 1</Pane>
-        <Pane id="pane-2">Pane 2</Pane>
-        <Pane id="pane-3">Pane 3</Pane>
+        <Tab for='pane-1'>Tab 1</Tab>
+        <Tab for='pane-2' active>
+          Tab 2
+        </Tab>
+        <Tab for='pane-3'>Tab 3</Tab>
+        <Pane id='pane-1'>Pane 1</Pane>
+        <Pane id='pane-2'>Pane 2</Pane>
+        <Pane id='pane-3'>Pane 3</Pane>
       </Tabs>
     </div>
   </Story>
@@ -77,39 +81,46 @@ import SC from './styled';
 <Subheading>Tabs alignment</Subheading>
 <Subtitle>
   By default, tabs will be centrally aligned. In order to overwrite this
-  behaviour, pass a <pre style={{ display: 'inline' }}>tabsAlignment</pre> prop to the <pre style={{ display: 'inline' }}>Tabs</pre> component.
+  behaviour, pass a <pre style={{ display: 'inline' }}>tabsAlignment</pre> prop
+  to the <pre style={{ display: 'inline' }}>Tabs</pre> component.
 </Subtitle>
 
 <Canvas>
   <Story name='Tabs alignment'>
     <div style={{ padding: '10px' }}>
       <Tabs tabsAlignment={Alignment.LEFT}>
-        <Tab for="pane-1">Tab 1</Tab>
-        <Tab for="pane-2" active>Tab 2</Tab>
-        <Tab for="pane-3">Tab 3</Tab>
-        <Pane id="pane-1">Pane 1</Pane>
-        <Pane id="pane-2">Pane 2</Pane>
-        <Pane id="pane-3">Pane 3</Pane>
+        <Tab for='pane-1'>Tab 1</Tab>
+        <Tab for='pane-2' active>
+          Tab 2
+        </Tab>
+        <Tab for='pane-3'>Tab 3</Tab>
+        <Pane id='pane-1'>Pane 1</Pane>
+        <Pane id='pane-2'>Pane 2</Pane>
+        <Pane id='pane-3'>Pane 3</Pane>
       </Tabs>
     </div>
     <div style={{ padding: '10px', marginTop: '20px' }}>
       <Tabs tabsAlignment={Alignment.CENTRE}>
-        <Tab for="pane-1">Tab 1</Tab>
-        <Tab for="pane-2" active>Tab 2</Tab>
-        <Tab for="pane-3">Tab 3</Tab>
-        <Pane id="pane-1">Pane 1</Pane>
-        <Pane id="pane-2">Pane 2</Pane>
-        <Pane id="pane-3">Pane 3</Pane>
+        <Tab for='pane-1'>Tab 1</Tab>
+        <Tab for='pane-2' active>
+          Tab 2
+        </Tab>
+        <Tab for='pane-3'>Tab 3</Tab>
+        <Pane id='pane-1'>Pane 1</Pane>
+        <Pane id='pane-2'>Pane 2</Pane>
+        <Pane id='pane-3'>Pane 3</Pane>
       </Tabs>
     </div>
     <div style={{ padding: '10px', marginTop: '20px' }}>
       <Tabs tabsAlignment={Alignment.RIGHT}>
-        <Tab for="pane-1">Tab 1</Tab>
-        <Tab for="pane-2" active>Tab 2</Tab>
-        <Tab for="pane-3">Tab 3</Tab>
-        <Pane id="pane-1">Pane 1</Pane>
-        <Pane id="pane-2">Pane 2</Pane>
-        <Pane id="pane-3">Pane 3</Pane>
+        <Tab for='pane-1'>Tab 1</Tab>
+        <Tab for='pane-2' active>
+          Tab 2
+        </Tab>
+        <Tab for='pane-3'>Tab 3</Tab>
+        <Pane id='pane-1'>Pane 1</Pane>
+        <Pane id='pane-2'>Pane 2</Pane>
+        <Pane id='pane-3'>Pane 3</Pane>
       </Tabs>
     </div>
   </Story>
@@ -117,72 +128,86 @@ import SC from './styled';
 
 <Subheading>Custom tabs and panes</Subheading>
 <Subtitle>
-  <pre style={{ display: 'inline' }}>Tab</pre> and <pre style={{ display: 'inline' }}>Pane</pre> components
-  are polymorphic and can thus be customised using <pre style={{ display: 'inline' }}>as</pre> prop.
-  Furthermore, <pre style={{ display: 'inline' }}>Tab</pre> and <pre style={{ display: 'inline' }}>Pane</pre> components
-  accept arbitrary text and element nodes as children.
+  <pre style={{ display: 'inline' }}>Tab</pre> and{' '}
+  <pre style={{ display: 'inline' }}>Pane</pre> components are polymorphic and
+  can thus be customised using <pre style={{ display: 'inline' }}>as</pre> prop.
+  Furthermore, <pre style={{ display: 'inline' }}>Tab</pre> and{' '}
+  <pre style={{ display: 'inline' }}>Pane</pre> components accept arbitrary text
+  and element nodes as children.
 </Subtitle>
 
 <Canvas>
   <Story name='Custom tabs and panes'>
     <div style={{ padding: '10px' }}>
       <Tabs>
-        <Tab for="pane-1" as={SC.Tab}>
+        <Tab for='pane-1' as={SC.Tab}>
           Tab 1
         </Tab>
-        <Tab for="pane-2" as={SC.Tab}>
+        <Tab for='pane-2' as={SC.Tab}>
           Tab 2
         </Tab>
-        <Tab for="pane-3" as={SC.Tab}>
+        <Tab for='pane-3' as={SC.Tab}>
           Tab 3
         </Tab>
-        <Pane id="pane-1" as={SC.Pane}>
+        <Pane id='pane-1' as={SC.Pane}>
           Pane 1
         </Pane>
-        <Pane id="pane-2" as={SC.Pane}>
+        <Pane id='pane-2' as={SC.Pane}>
           Pane 2
         </Pane>
-        <Pane id="pane-3" as={SC.Pane}>
+        <Pane id='pane-3' as={SC.Pane}>
           Pane 3
         </Pane>
       </Tabs>
     </div>
     <div style={{ padding: '10px', marginTop: '20px' }}>
       <Tabs>
-        <Tab for="datasets" as={SC.DatasetsTab}>
+        <Tab for='datasets' as={SC.DatasetsTab}>
           <span>Datasets</span>
         </Tab>
-        <Tab for="data-services" as={SC.DataServicesTab}>
+        <Tab for='data-services' as={SC.DataServicesTab}>
           <span>Data Services</span>
         </Tab>
-        <Tab for="concepts" as={SC.ConceptsTab}>
+        <Tab for='concepts' as={SC.ConceptsTab}>
           <span>Concepts</span>
         </Tab>
-        <Tab for="information-models" as={SC.InformationModelsTab}>
+        <Tab for='information-models' as={SC.InformationModelsTab}>
           <span>Information Models</span>
         </Tab>
-        <Pane id="datasets" as={SC.DatasetsPane}>
+        <Pane id='datasets' as={SC.DatasetsPane}>
           <h1>Datasets</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi
+            ratione illum deleniti? Cupiditate impedit ut magni et, dicta
+            temporibus voluptate quas.
           </p>
         </Pane>
-        <Pane id="data-services" as={SC.DataServicesPane}>
+        <Pane id='data-services' as={SC.DataServicesPane}>
           <h1>Data Services</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi
+            ratione illum deleniti? Cupiditate impedit ut magni et, dicta
+            temporibus voluptate quas.
           </p>
         </Pane>
-        <Pane id="concepts" as={SC.ConceptsPane}>
-           <h1>Concepts</h1>
+        <Pane id='concepts' as={SC.ConceptsPane}>
+          <h1>Concepts</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi
+            ratione illum deleniti? Cupiditate impedit ut magni et, dicta
+            temporibus voluptate quas.
           </p>
         </Pane>
-        <Pane id="information-models" as={SC.InformationModelsPane}>
-           <h1>Information Models</h1>
+        <Pane id='information-models' as={SC.InformationModelsPane}>
+          <h1>Information Models</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi ratione illum deleniti? Cupiditate impedit ut magni et, dicta temporibus voluptate quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            eveniet, error nesciunt, dicta repellat quibusdam eos ex sequi
+            ratione illum deleniti? Cupiditate impedit ut magni et, dicta
+            temporibus voluptate quas.
           </p>
         </Pane>
       </Tabs>

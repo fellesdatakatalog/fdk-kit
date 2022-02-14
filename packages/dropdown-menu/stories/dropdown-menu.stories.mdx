@@ -8,7 +8,7 @@ import {
   Subheading,
   Source,
   Story
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 
 import { name, version } from '../package.json';
 
@@ -21,14 +21,18 @@ import DropdownMenu, { Trigger, Menu } from '../src';
   <small>Version {version}</small>
 </Subtitle>
 <Subtitle>
-  FDK dropdown menu shows and hides list of menu links when clicked on dropdown label.
+  FDK dropdown menu shows and hides list of menu links when clicked on dropdown
+  label.
 </Subtitle>
 
 <Heading>Installation</Heading>
 <Source code={`npm i ${name}`} language='bash' />
 
 <Heading>Usage</Heading>
-<Source code={`import ${DropdownMenu.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${DropdownMenu.displayName} from '${name}';`}
+  language='ts'
+/>
 
 <Subheading>Basic usage</Subheading>
 
@@ -36,12 +40,10 @@ import DropdownMenu, { Trigger, Menu } from '../src';
   <Story name='Basic usage'>
     <DropdownMenu isOpen={true}>
       <Trigger>
-        <button>
-          Meny
-        </button>
+        <button>Meny</button>
       </Trigger>
       <Menu>
-        <Link href="https://data.norge.no">Søk i Felles datakatalog</Link>
+        <Link href='https://data.norge.no'>Søk i Felles datakatalog</Link>
       </Menu>
     </DropdownMenu>
   </Story>
@@ -55,4 +57,3 @@ import DropdownMenu, { Trigger, Menu } from '../src';
 
 <Heading>{Menu.displayName} props</Heading>
 <ArgsTable of={Menu} />
-
