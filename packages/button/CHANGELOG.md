@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/button@0.2.4...@fellesdatakatalog/button@0.2.5) (2022-02-14)
+
+**Note:** Version bump only for package @fellesdatakatalog/button
+
+
+
+
+
 ## [0.2.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/button@0.2.3...@fellesdatakatalog/button@0.2.4) (2021-09-16)
 
 **Note:** Version bump only for package @fellesdatakatalog/button

@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/side-menu",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Felles datakatalog UI SideMenu component",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "prepublishOnly": "run-s build"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.4.4"
+    "@fellesdatakatalog/theme": "^0.4.5"
   },
   "peerDependencies": {
     "react": "^17.0.1",

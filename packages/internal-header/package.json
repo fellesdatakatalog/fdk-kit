@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/internal-header",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Felles datakatalog UI internal header component",
   "repository": {
     "type": "git",
@@ -32,9 +32,9 @@
     "styled-components": "^5.2.1"
   },
   "dependencies": {
-    "@fellesdatakatalog/dropdown-menu": "^0.1.5",
-    "@fellesdatakatalog/link": "^0.2.7",
+    "@fellesdatakatalog/dropdown-menu": "^0.1.6",
+    "@fellesdatakatalog/link": "^0.2.8",
     "@fellesdatakatalog/skatteetaten-frontend-components": "^1.0.0",
-    "@fellesdatakatalog/theme": "^0.4.4"
+    "@fellesdatakatalog/theme": "^0.4.5"
   }
 }
