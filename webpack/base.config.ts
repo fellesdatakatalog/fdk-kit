@@ -8,8 +8,10 @@ const configuration: Configuration = {
     globalObject: 'this',
     path: resolve('./lib'),
     filename: 'index.js',
-    libraryTarget: 'umd',
-    clean: true
+    clean: true,
+    library: {
+      type: 'umd'
+    }
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
