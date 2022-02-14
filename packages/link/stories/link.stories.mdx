@@ -8,9 +8,9 @@ import {
   Preview,
   Story,
   Props
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 import { theme, Colour } from '@fellesdatakatalog/theme';
-import FavouriteIcon from '@material-ui/icons/Favorite'
+import FavouriteIcon from '@material-ui/icons/Favorite';
 
 import { name, version } from '../package.json';
 
@@ -41,9 +41,7 @@ import Link from '../src';
 <Preview>
   <Story name='Basic link'>
     <div style={{ padding: '10px' }}>
-      <Link href='#'>
-        Take me places!
-      </Link>
+      <Link href='#'>Take me places!</Link>
     </div>
   </Story>
 </Preview>
@@ -79,45 +77,49 @@ import Link from '../src';
 </Preview>
 
 <Subheading>Colour inheritance</Subheading>
-<Subtitle>
-  The link will inherit colours from its parent component.
-</Subtitle>
+<Subtitle>The link will inherit colours from its parent component.</Subtitle>
 
 <Preview>
   <Story name='Colour inheritance'>
-    <div style={
-      {
+    <div
+      style={{
         display: 'flex',
         padding: '10px',
         background: theme.colour(Colour.NEUTRAL, 'N60')({}),
         color: theme.colour(Colour.NEUTRAL, 'N0')({})
-      }
-    }>
-      <Link href='#'>
-        Take me places!
-      </Link>
+      }}
+    >
+      <Link href='#'>Take me places!</Link>
       <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
         Take me places!
       </Link>
-      <Link href='#' external icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+      <Link
+        href='#'
+        external
+        icon={<FavouriteIcon />}
+        style={{ marginLeft: '20px' }}
+      >
         Take me places!
       </Link>
     </div>
-    <div style={
-      {
+    <div
+      style={{
         display: 'flex',
         padding: '10px',
         background: theme.colour(Colour.NEUTRAL, 'N60')({}),
         color: theme.colour(Colour.RED, 'R40')({})
-      }
-    }>
-      <Link href='#'>
-        Take me places!
-      </Link>
+      }}
+    >
+      <Link href='#'>Take me places!</Link>
       <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
         Take me places!
       </Link>
-      <Link href='#' external icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+      <Link
+        href='#'
+        external
+        icon={<FavouriteIcon />}
+        style={{ marginLeft: '20px' }}
+      >
         Take me places!
       </Link>
     </div>

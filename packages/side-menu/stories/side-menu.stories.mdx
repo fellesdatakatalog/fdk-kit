@@ -8,15 +8,14 @@ import {
   Canvas,
   Story,
   ArgsTable
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 import { name, version } from '../package.json';
 
 import SideMenu from '../src';
 
-export const Template = (args) => {
-  return (
-    <SideMenu {...args} />)
-}
+export const Template = args => {
+  return <SideMenu {...args} />;
+};
 
 <Meta title='Components/SideMenu' />
 
@@ -24,9 +23,7 @@ export const Template = (args) => {
 <Subtitle>
   <small>Version {version}</small>
 </Subtitle>
-<Subtitle>
-  FDK SideMenu component allow users to navigate.
-</Subtitle>
+<Subtitle>FDK SideMenu component allow users to navigate.</Subtitle>
 
 <Heading>Installation</Heading>
 <Source code={`npm i ${name}`} language='bash' />
@@ -35,16 +32,20 @@ export const Template = (args) => {
 <Source code={`import ${SideMenu.displayName} from '${name}';`} language='ts' />
 
 <Subheading>Default side menu</Subheading>
-<Subtitle/>
+<Subtitle />
 
 <Canvas>
-  <Story name="Default SideMenu" args={{
-        title: 'My side menu',
-        menuItems: [
-          { id: 'https://data.norge.no', title: 'Page 1', active: true },
-          { id: 'https://data.norge.no', title: 'Page 2' },
-          { id: 'https://data.norge.no', title: 'Page 3' }]
-    }}>
+  <Story
+    name='Default SideMenu'
+    args={{
+      title: 'My side menu',
+      menuItems: [
+        { id: 'https://data.norge.no', title: 'Page 1', active: true },
+        { id: 'https://data.norge.no', title: 'Page 2' },
+        { id: 'https://data.norge.no', title: 'Page 3' }
+      ]
+    }}
+  >
     {Template.bind({})}
   </Story>
 </Canvas>

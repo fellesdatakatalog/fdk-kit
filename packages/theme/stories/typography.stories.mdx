@@ -5,7 +5,7 @@ import {
   Heading,
   Subheading,
   Typeset
-} from '@storybook/addon-docs/dist/blocks';
+} from '@storybook/addon-docs/blocks';
 
 import { version } from '../package.json';
 
@@ -15,7 +15,7 @@ import { createFontsStylesheet } from '../src/styles';
 <>{createFontsStylesheet()}</>
 
 <Meta
-  title="System/Typography"
+  title='System/Typography'
   parameters={{ previewTabs: { canvas: { hidden: true } } }}
 />
 
@@ -24,9 +24,14 @@ import { createFontsStylesheet } from '../src/styles';
   <small>Version {version}</small>
 </Subtitle>
 <Subtitle>
-  <a href="https://fonts.google.com/specimen/Heebo" target="_blank" style={{ fontSize: 'inherit' }}>
+  <a
+    href='https://fonts.google.com/specimen/Heebo'
+    target='_blank'
+    style={{ fontSize: 'inherit' }}
+  >
     Heebo
-  </a> is the primary brand typeface.
+  </a>{' '}
+  is the primary brand typeface.
 </Subtitle>
 <Subheading>Thin ({theme.font.weight.FW100})</Subheading>
 <Typeset

@@ -1,6 +1,5 @@
 import type { Configuration } from 'webpack';
 import { resolve } from 'path';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 
 const configuration: Configuration = {
@@ -9,7 +8,8 @@ const configuration: Configuration = {
     globalObject: 'this',
     path: resolve('./lib'),
     filename: 'index.js',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    clean: true
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
@@ -60,7 +60,7 @@ const configuration: Configuration = {
       }
     ]
   },
-  plugins: [new CleanWebpackPlugin()]
+  plugins: []
 };
 
 export default configuration;
