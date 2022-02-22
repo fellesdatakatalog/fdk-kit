@@ -36,6 +36,8 @@ export function createFontsStylesheet({
   return null;
 }
 
+export { FontStyles, ResetStyles, NormaliseStyles };
+
 export default createGlobalStyle<{ target: HTMLElement }>`
   ${ResetStyles}
   ${NormaliseStyles}
