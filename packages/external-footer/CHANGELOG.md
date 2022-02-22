@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.20](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.19...@fellesdatakatalog/external-footer@0.1.20) (2022-02-22)
+
+**Note:** Version bump only for package @fellesdatakatalog/external-footer
+
+
+
+
+
 ## [0.1.19](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.18...@fellesdatakatalog/external-footer@0.1.19) (2022-02-14)
 
 **Note:** Version bump only for package @fellesdatakatalog/external-footer
