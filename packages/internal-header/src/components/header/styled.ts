@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Colour, theme, Unit } from '@fellesdatakatalog/theme';
 import LinkBase from '@fellesdatakatalog/link';
 import DropdownMenuBase from '@fellesdatakatalog/dropdown-menu';
-import SkeBasisBase from '@fellesdatakatalog/skatteetaten-frontend-components/lib/SkeBasis';
-import TopBanner from '@fellesdatakatalog/skatteetaten-frontend-components/lib/TopBanner';
+import SkeBasisBase from '@skatteetaten/frontend-components/SkeBasis';
+import TopBanner from '@skatteetaten/frontend-components/TopBanner';
 
 import LogoFDK from '../../images/fdk-publishing-logo-negative.svg';
 import LogoFDKDemo from '../../images/fdk-publishing-logo-negative-demo.svg';

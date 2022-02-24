@@ -15,7 +15,7 @@ npm i @fellesdatakatalog/internal-header
 - @fellesdatakatalog/link
 - @fellesdatakatalog/theme
 - @fellesdatakatalog/dropdown-menu
-- @fellesdatakatalog/skatteetaten-frontend-components/lib
+- @skatteetaten/frontend-components
 
 ## Usage
 
