@@ -34,7 +34,7 @@ export default {
     [Colour.BROWN]: {
       B15: '#f7f2ed',
       B20: '#f7f3f0',
-      B30: '#dff2d5',
+      B30: '#f2e1d5',
       B40: '#dbc2b2',
       B45: '#c4a289',
       B50: '#ad8468',
