@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.5.0...@fellesdatakatalog/theme@0.5.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* brown-30 ([90adc49](https://github.com/fellesdatakatalog/fdk-kit/commit/90adc49f3e627989d5c4f2392db1f9d6acafa610))
+
+
+
+
+
 # [0.5.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/theme@0.4.5...@fellesdatakatalog/theme@0.5.0) (2022-02-22)
 
 
