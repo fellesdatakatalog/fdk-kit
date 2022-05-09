@@ -64,7 +64,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@skatteetaten/frontend-components": "^5.0.2",
+    "@skatteetaten/frontend-components": "^5.0.4",
     "react": "^17.0.2",
     "styled-components": "^5.3.3"
   },
