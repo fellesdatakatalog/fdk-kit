@@ -17,16 +17,16 @@ npm i @fellesdatakatalog/icons
 
 ### Basic usage
 
-In order expose icons to the application, wrap the application in a icon provider component exposed by the library.
-
 ```tsx
 import React, { FC } from 'react';
-import IconProvider from '@fellesdatakatalog/icons';
+import SVG from '@fellesdatakatalog/icons';
+
+const Icon1 = () => <SVG name='quality1' className='quality1-icon' />;
 
 const App: FC = () => (
-  <IconProvider>
-    <div>App</div>
-  </IconProvider>
+  <div>
+    <Icon1 />
+  </div>
 )
 
 export default App;
