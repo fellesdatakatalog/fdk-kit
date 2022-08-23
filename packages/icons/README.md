@@ -21,7 +21,7 @@ npm i @fellesdatakatalog/icons
 import React, { FC } from 'react';
 import SVG from '@fellesdatakatalog/icons';
 
-const Icon1 = () => <SVG name='quality1' className='quality1-icon' />;
+const Icon1 = () => <SVG name='checkStroke' className='checkStroke-icon' />;
 
 const App: FC = () => (
   <div>
