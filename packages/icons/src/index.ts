@@ -1,1 +1,1 @@
-export default './components/icon/svg';
+export { default, SVGTypes, SVGTypesArray } from './components/svg';
