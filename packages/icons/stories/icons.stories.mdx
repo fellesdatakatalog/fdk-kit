@@ -11,32 +11,32 @@ import {
 } from '@storybook/addon-docs/blocks';
 import { name, version } from '../package.json';
 
-import SVG, { SVGTypes } from '../src';
+import SvgIcon, { SVGTypes } from '../src';
 
-<Meta title='Components/SVG' />
+<Meta title='Components/SvgIcon' />
 
-<Title>SVG</Title>
+<Title>SvgIcon</Title>
 <Subtitle>
   <small>Version {version}</small>
 </Subtitle>
-<Subtitle>FDK SVG component displays inline svg icons.</Subtitle>
+<Subtitle>FDK SvgIcon component displays inline svg icons.</Subtitle>
 
 <Heading>Installation</Heading>
 <Source code={`npm i ${name}`} language='bash' />
 
 <Heading>Usage</Heading>
-<Source code={`import ${SVG.displayName} from '${name}';`} language='ts' />
+<Source code={`import ${SvgIcon.displayName} from '${name}';`} language='ts' />
 
-<Subheading>SVG</Subheading>
+<Subheading>SvgIcon</Subheading>
 <Subtitle />
 
 <Canvas>
-  <Story name='SVG'>
+  <Story name='SvgIcon'>
     <div style={{ padding: '10px' }}>
-      <SVG name='quality1' className='quality1-icon' />
+      <SvgIcon name='checkStroke' className='checkStroke-icon' />
     </div>
   </Story>
 </Canvas>
 
 <Heading>Props</Heading>
-<ArgsTable of={SVG} />
+<ArgsTable of={SvgIcon} />

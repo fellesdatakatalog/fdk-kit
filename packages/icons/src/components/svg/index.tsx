@@ -15,7 +15,7 @@ interface SVGProps extends DetailedHTMLProps<HTMLAttributes<SVGElement>, any> {
     name?: SVGTypes
 }
 
-export const SVG = (props: SVGProps) => {
+export const SvgIcon = (props: SVGProps) => {
     const {name, className, style, ...rest} = props;
     const {attributes, children} = data[name] || {};
 
@@ -43,6 +43,6 @@ const renderChildNodes = (nodes: INode[]): ReactNode => (
     </>
 );
 
-export default SVG;
+export default SvgIcon;
 export {SVGTypesArray} from "./types";
 export type {SVGTypes};
