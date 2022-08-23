@@ -30,10 +30,10 @@
   },
   "svg": {
     "input": "src/assets/svg",
-    "output": "src/components/icon/svg",
+    "output": "src/components/svg",
     "name": "SVG",
     "typescript": true
-},
+  },
   "peerDependencies": {
     "react": "^17.0.1",
     "styled-components": "^5.2.1"
