@@ -9,10 +9,10 @@
 // @ts-nocheck
 
 import React, {ReactNode, DetailedHTMLProps, HTMLAttributes} from "react";
-import {data, SVGTypes, INode} from "./types";
+import {data, SvgIconTypes, INode} from "./types";
 
 interface SVGProps extends DetailedHTMLProps<HTMLAttributes<SVGElement>, any> {
-    name?: SVGTypes
+    name?: SvgIconTypes
 }
 
 export const SvgIcon = (props: SVGProps) => {
@@ -44,5 +44,5 @@ const renderChildNodes = (nodes: INode[]): ReactNode => (
 );
 
 export default SvgIcon;
-export {SVGTypesArray} from "./types";
-export type {SVGTypes};
+export { SvgIconTypesArray } from './types';
+export type { SvgIconTypes };
