@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.1.0...@fellesdatakatalog/icons@0.1.3) (2022-08-26)
+
+
+### Bug Fixes
+
+* correct version number icon package ([15940d5](https://github.com/fellesdatakatalog/fdk-kit/commit/15940d58aaebff6d49d313edd8c9238a62d846e3))
+* fix wrong component name ([eee62ad](https://github.com/fellesdatakatalog/fdk-kit/commit/eee62ad17425ef5e28cf1891d8c5f9e2a22bbe74))
+
+
+
+
+
 # 0.1.0 (2022-08-26)
 
 
