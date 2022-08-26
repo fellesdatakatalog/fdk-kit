@@ -9,9 +9,7 @@ npm i @fellesdatakatalog/icons
 ```
 
 ## Dependencies
-
-- react
-- styled-components
+- React
 
 ## Usage
 
@@ -19,9 +17,9 @@ npm i @fellesdatakatalog/icons
 
 ```tsx
 import React, { FC } from 'react';
-import SVG from '@fellesdatakatalog/icons';
+import SvgIcon from '@fellesdatakatalog/icons';
 
-const Icon1 = () => <SVG name='checkStroke' className='checkStroke-icon' />;
+const Icon1 = () => <SvgIcon name='checkStroke' className='checkStroke-icon' />;
 
 const App: FC = () => (
   <div>
