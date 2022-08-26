@@ -16,7 +16,7 @@ export interface INode {
     children?: INode[]
 }
 
-interface ISVGData {
+interface ISvgIconData {
     [key: string]: {
         name: string,
         attributes?: Attributes,
@@ -24,7 +24,7 @@ interface ISVGData {
     }
 }
 
-export const data: ISVGData = {
+export const data: ISvgIconData = {
     applicationWindowStroke: {
         name: "application-window-stroke",
         attributes: {
@@ -2638,7 +2638,7 @@ export const data: ISVGData = {
     }
 };
 
-export type SVGTypes = "applicationWindowStroke" |
+export type SvgIconTypes = "applicationWindowStroke" |
 	"bookBookmarkStroke" |
 	"buildingStroke" |
 	"calendarStroke" |
@@ -2686,7 +2686,7 @@ export type SVGTypes = "applicationWindowStroke" |
 	"telephoneAnalogStroke" |
 	"triangleExclamationPointStroke";
 
-export const SVGTypesArray: SVGTypes[] = [
+export const SvgIconTypesArray: SvgIconTypes[] = [
     "applicationWindowStroke",
 	"bookBookmarkStroke",
 	"buildingStroke",
