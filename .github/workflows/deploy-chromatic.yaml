@@ -38,7 +38,7 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: storybook:build
 
-      - name: Comment on PR with safety result
+      - name: Comment on PR with chromatic result
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: Chromatic
