@@ -43,10 +43,4 @@ jobs:
         with:
           header: Chromatic
           message: |
-            ```
-            ${{ steps.chromatic.outputs.code }}
-            ---
             ${{ steps.chromatic.outputs.buildUrl }}
-            ---
-            ${{ steps.chromatic.outputs.storybookUrl }}
-            ```
