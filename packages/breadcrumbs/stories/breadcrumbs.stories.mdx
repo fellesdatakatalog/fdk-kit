@@ -10,7 +10,7 @@ import {
   ArgsTable
 } from '@storybook/addon-docs/blocks';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Breadcrumbs, { Breadcrumb } from '../src';
 
@@ -20,14 +20,14 @@ import SC from './styled';
 
 <Title>Breadcrumbs</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>
   Breadcrumbs provide users with an alternative way to navigate an application.
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source

@@ -12,7 +12,7 @@ import {
 import { theme, Colour } from '@fellesdatakatalog/theme';
 import FavouriteIcon from '@material-ui/icons/Favorite';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Link from '../src';
 
@@ -20,14 +20,14 @@ import Link from '../src';
 
 <Title>Link</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>
   FDK Link component allows for easy customisation of anchor elements.
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source code={`import ${Link.displayName} from '${name}';`} language='ts' />

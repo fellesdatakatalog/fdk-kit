@@ -10,7 +10,7 @@ import {
   Story
 } from '@storybook/addon-docs/blocks';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import DropdownMenu, { Trigger, Menu } from '../src';
 
@@ -18,7 +18,7 @@ import DropdownMenu, { Trigger, Menu } from '../src';
 
 <Title>Dropdown menu</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>
   FDK dropdown menu shows and hides list of menu links when clicked on dropdown
@@ -26,7 +26,7 @@ import DropdownMenu, { Trigger, Menu } from '../src';
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source

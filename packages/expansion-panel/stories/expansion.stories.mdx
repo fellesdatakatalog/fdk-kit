@@ -10,7 +10,7 @@ import {
   ArgsTable
 } from '@storybook/addon-docs/blocks';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import SC from './styled';
 
@@ -20,12 +20,12 @@ import ExpansionPanel, { ExpansionPanelBody, ExpansionPanelHead } from '../src';
 
 <Title>Expansion Panel</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>FDK expansion panel component.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source

@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import { theme, Colour, Alignment } from '@fellesdatakatalog/theme';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Tabs, { Tab, Pane } from '../src';
 
@@ -21,14 +21,14 @@ import SC from './styled';
 
 <Title>Tabs</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>
   Tabs make it easy to explore and switch between different views.
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source

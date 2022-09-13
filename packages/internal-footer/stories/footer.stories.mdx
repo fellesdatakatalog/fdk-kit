@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs/blocks';
 import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Footer from '../src';
 
@@ -19,15 +19,18 @@ import Footer from '../src';
 
 <Title>Internal footer</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>FDK footer component intended for internal use.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Footer.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Footer.displayName} from '${packageInfo.name}';`}
+  language='ts'
+/>
 
 <Subheading>Basic usage</Subheading>
 <Subtitle>

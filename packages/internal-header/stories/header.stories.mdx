@@ -12,7 +12,7 @@ import {
 import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
 import Link from '@fellesdatakatalog/link';
 
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Header from '../src';
 
@@ -20,12 +20,12 @@ import Header from '../src';
 
 <Title>Internal header</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>FDK header component intended for internal use.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source code={`import ${Header.displayName} from '${name}';`} language='ts' />

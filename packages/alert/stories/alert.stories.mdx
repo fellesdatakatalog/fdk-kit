@@ -9,7 +9,7 @@ import {
   Story,
   ArgsTable
 } from '@storybook/addon-docs/blocks';
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import Alert, { Severity } from '../src';
 
@@ -17,12 +17,12 @@ import Alert, { Severity } from '../src';
 
 <Title>Alert</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>FDK Alert component displays an alert message</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source code={`import ${Alert.displayName} from '${name}';`} language='ts' />

@@ -9,7 +9,7 @@ import {
   Story,
   ArgsTable
 } from '@storybook/addon-docs/blocks';
-import { name, version } from '../package.json';
+import packageInfo from '../package.json';
 
 import SvgIcon, { SvgIconTypes } from '../src';
 
@@ -17,12 +17,12 @@ import SvgIcon, { SvgIconTypes } from '../src';
 
 <Title>SvgIcon</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version {packageInfo.version}</small>
 </Subtitle>
 <Subtitle>FDK SvgIcon component displays inline svg icons.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${packageInfo.name}`} language='bash' />
 
 <Heading>Usage</Heading>
 <Source code={`import ${SvgIcon.displayName} from '${name}';`} language='ts' />

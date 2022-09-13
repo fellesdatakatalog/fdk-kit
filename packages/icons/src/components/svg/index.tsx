@@ -44,5 +44,3 @@ const renderChildNodes = (nodes: INode[]): ReactNode => (
 );
 
 export default SvgIcon;
-export { SvgIconTypesArray } from './types';
-export type { SvgIconTypes };
