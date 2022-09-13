@@ -1588,6 +1588,58 @@ export const data: ISvgIconData = {
             }
         ]
     },
+    linkExternalOutlineBold: {
+        name: "link-external-outline-bold",
+        attributes: {
+            id: "stroke",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M13.5,1.5h-5V3.5h2.59L6.63,7.96l1.42,1.41,4.45-4.46v2.58h2V2.5c0-.55-.45-1-1-1Z",
+                    fill: "#2d3741"
+                }
+            },
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M11.5,12.5H3.5V4.5h3.5V2.5H2.5c-.55,0-1,.45-1,1V13.5c0,.55,.45,1,1,1H12.5c.55,0,1-.45,1-1v-4.5h-2v3.5Z",
+                    fill: "#2d3741"
+                }
+            }
+        ]
+    },
+    linkExternalOutlineRegular: {
+        name: "link-external-outline-regular",
+        attributes: {
+            id: "stroke",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M13.5,1.9h-4.6v1.2h3.15L7.2,7.96l.85,.85L12.9,3.95v3.15h1.2V2.5c0-.33-.27-.6-.6-.6Z",
+                    fill: "#2d3741"
+                }
+            },
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M11.9,12.9H3.1V4.1h3.5v-1.2H2.5c-.33,0-.6,.27-.6,.6V13.5c0,.33,.27,.6,.6,.6H12.5c.33,0,.6-.27,.6-.6v-4.1h-1.2v3.5Z",
+                    fill: "#2d3741"
+                }
+            }
+        ]
+    },
     lockLockedStroke: {
         name: "lock-locked-stroke",
         attributes: {
@@ -2664,6 +2716,8 @@ export type SvgIconTypes = "applicationWindowStroke" |
 	"hourGlassStroke" |
 	"infoModelStroke" |
 	"laptopCursorStroke" |
+	"linkExternalOutlineBold" |
+	"linkExternalOutlineRegular" |
 	"lockLockedStroke" |
 	"lockOpenStroke" |
 	"lockSemiOpenStroke" |
@@ -2713,6 +2767,8 @@ export const SvgIconTypesArray: SvgIconTypes[] = [
 	"hourGlassStroke",
 	"infoModelStroke",
 	"laptopCursorStroke",
+	"linkExternalOutlineBold",
+	"linkExternalOutlineRegular",
 	"lockLockedStroke",
 	"lockOpenStroke",
 	"lockSemiOpenStroke",
