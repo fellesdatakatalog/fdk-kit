@@ -39,7 +39,7 @@
     "clean:coverage": "rm -rf coverage",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 --ci",
-    "storybook:build": "build-storybook --debug-webpack",
+    "storybook:build": "build-storybook",
     "storybook:deploy": "storybook-to-ghpages --script storybook:build --ci --out storybook-static"
   },
   "config": {
