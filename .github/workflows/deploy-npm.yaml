@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
 
       - name: Setup node
         uses: actions/setup-node@v1
@@ -28,12 +29,7 @@ jobs:
       - name: Bootstrap lerna dependencies
         run: npx lerna bootstrap
 
-      - name: Configure Git user
-        run: |
-          git config --global user.email "fdk-bot@digdir.no"
-          git config --global user.name "FDK Bot"
-
       - name: Build and deploy changed components to NPM
-        run: npx lerna publish --no-verify-access --yes
+        run: npx lerna publish --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
