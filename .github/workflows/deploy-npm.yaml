@@ -29,6 +29,11 @@ jobs:
       - name: Bootstrap lerna dependencies
         run: npx lerna bootstrap
 
+      - name: Configure Git user
+        run: |
+          git config --global user.email "fellesdatakatalog@digdir.no"
+          git config --global user.name "fdk-bot"
+
       - name: Build and deploy changed components to NPM
         run: npx lerna publish --yes
         env:
