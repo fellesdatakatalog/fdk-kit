@@ -8,8 +8,8 @@ updates:
       interval: "weekly"
       day: "sunday"
 
-  # Maintain dependencies for pip, pipenv, poetry
-  - package-ecosystem: "node"
+  # Maintain dependencies for node
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
