@@ -1588,6 +1588,245 @@ export const data: ISvgIconData = {
             }
         ]
     },
+    linkExternalOutlineBold: {
+        name: "link-external-outline-bold",
+        attributes: {
+            id: "stroke",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M13.5,1.5h-5V3.5h2.59L6.63,7.96l1.42,1.41,4.45-4.46v2.58h2V2.5c0-.55-.45-1-1-1Z",
+                    fill: "#2d3741"
+                }
+            },
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M11.5,12.5H3.5V4.5h3.5V2.5H2.5c-.55,0-1,.45-1,1V13.5c0,.55,.45,1,1,1H12.5c.55,0,1-.45,1-1v-4.5h-2v3.5Z",
+                    fill: "#2d3741"
+                }
+            }
+        ]
+    },
+    linkExternalOutlineRegular: {
+        name: "link-external-outline-regular",
+        attributes: {
+            id: "stroke",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M13.5,1.9h-4.6v1.2h3.15L7.2,7.96l.85,.85L12.9,3.95v3.15h1.2V2.5c0-.33-.27-.6-.6-.6Z",
+                    fill: "#2d3741"
+                }
+            },
+            {
+                name: "path",
+                type: "element",
+                attributes: {
+                    d: "M11.9,12.9H3.1V4.1h3.5v-1.2H2.5c-.33,0-.6,.27-.6,.6V13.5c0,.33,.27,.6,.6,.6H12.5c.33,0,.6-.27,.6-.6v-4.1h-1.2v3.5Z",
+                    fill: "#2d3741"
+                }
+            }
+        ]
+    },
+    listAscendingStroke: {
+        name: "list-ascending-stroke",
+        attributes: {
+            id: "sketching",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "defs",
+                type: "element",
+                children: [
+                    {
+                        name: "style",
+                        type: "print",
+                        value: ".cls-1{fill:none;stroke:#2d3741;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.2px}"
+                    }
+                ]
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "11.5",
+                    y1: "13.52",
+                    x2: "1.5",
+                    y2: "13.52"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "8.5",
+                    y1: "10",
+                    x2: "1.5",
+                    y2: "10"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "5.5",
+                    y1: "6.52",
+                    x2: "1.5",
+                    y2: "6.52"
+                }
+            },
+            {
+                name: "polyline",
+                type: "element",
+                attributes: {
+                    points: "8.5 4.5 11.5 1.5 14.5 4.5"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "11.5",
+                    y1: "10",
+                    x2: "11.5",
+                    y2: "2.5"
+                }
+            }
+        ]
+    },
+    listDescendingStroke: {
+        name: "list-descending-stroke",
+        attributes: {
+            id: "sketching",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "defs",
+                type: "element",
+                children: [
+                    {
+                        name: "style",
+                        type: "print",
+                        value: ".cls-1{fill:none;stroke:#2d3741;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.2px}"
+                    }
+                ]
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "11.5",
+                    y1: "2.52",
+                    x2: "1.5",
+                    y2: "2.52"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "8.5",
+                    y1: "6",
+                    x2: "1.5",
+                    y2: "6"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "5.5",
+                    y1: "9.52",
+                    x2: "1.5",
+                    y2: "9.52"
+                }
+            },
+            {
+                name: "polyline",
+                type: "element",
+                attributes: {
+                    points: "14.46 11.5 11.46 14.5 8.46 11.5"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "11.5",
+                    y1: "6",
+                    x2: "11.5",
+                    y2: "13.5"
+                }
+            }
+        ]
+    },
+    listUnsortedStroke: {
+        name: "list-unsorted-stroke",
+        attributes: {
+            id: "sketching",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 16 16"
+        },
+        children: [
+            {
+                name: "defs",
+                type: "element",
+                children: [
+                    {
+                        name: "style",
+                        type: "print",
+                        value: ".cls-1{fill:none;stroke:#2d3741;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.2px}"
+                    }
+                ]
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "8.5",
+                    y1: "4.52",
+                    x2: "1.5",
+                    y2: "4.52"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "14.5",
+                    y1: "8",
+                    x2: "1.5",
+                    y2: "8"
+                }
+            },
+            {
+                name: "line",
+                type: "element",
+                attributes: {
+                    x1: "11.5",
+                    y1: "11.52",
+                    x2: "1.5",
+                    y2: "11.52"
+                }
+            }
+        ]
+    },
     lockLockedStroke: {
         name: "lock-locked-stroke",
         attributes: {
@@ -2664,6 +2903,11 @@ export type SvgIconTypes = "applicationWindowStroke" |
 	"hourGlassStroke" |
 	"infoModelStroke" |
 	"laptopCursorStroke" |
+	"linkExternalOutlineBold" |
+	"linkExternalOutlineRegular" |
+	"listAscendingStroke" |
+	"listDescendingStroke" |
+	"listUnsortedStroke" |
 	"lockLockedStroke" |
 	"lockOpenStroke" |
 	"lockSemiOpenStroke" |
@@ -2713,6 +2957,11 @@ export const SvgIconTypesArray: SvgIconTypes[] = [
 	"hourGlassStroke",
 	"infoModelStroke",
 	"laptopCursorStroke",
+	"linkExternalOutlineBold",
+	"linkExternalOutlineRegular",
+	"listAscendingStroke",
+	"listDescendingStroke",
+	"listUnsortedStroke",
 	"lockLockedStroke",
 	"lockOpenStroke",
 	"lockSemiOpenStroke",
