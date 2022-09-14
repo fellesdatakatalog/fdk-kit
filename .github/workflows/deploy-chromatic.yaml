@@ -37,10 +37,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           buildScriptName: storybook:build
-
-      - name: Comment on PR with chromatic result
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          header: Chromatic
-          message: |
-            ${{ steps.chromatic.outputs.buildUrl }}
