@@ -2,11 +2,12 @@ name: Deploy to Chromatic
 
 on:
   push:
+    branches-ignore:
+      - 'develop'
 
 jobs:
   chromatic-deployment:
     name: Build storybook and deploy current build to Chromatic
-    if: github.ref != 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
