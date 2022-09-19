@@ -35,7 +35,7 @@
     "typescript": true
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": ">=17.0.1"
   },
   "devDependencies": {
     "react-svgs": "^0.3.15"
