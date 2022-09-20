@@ -35,6 +35,6 @@
     "@fellesdatakatalog/dropdown-menu": "^0.1.8",
     "@fellesdatakatalog/link": "^0.2.10",
     "@fellesdatakatalog/theme": "^0.5.1",
-    "@skatteetaten/frontend-components": "^5.0.4"
+    "@skatteetaten/frontend-components": "^5.1.0"
   }
 }
