@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/expansion-panel@0.2.4...@fellesdatakatalog/expansion-panel@0.2.5) (2022-09-21)
+
+**Note:** Version bump only for package @fellesdatakatalog/expansion-panel
+
+
+
+
+
 ## [0.2.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/expansion-panel@0.2.3...@fellesdatakatalog/expansion-panel@0.2.4) (2022-03-16)
 
 **Note:** Version bump only for package @fellesdatakatalog/expansion-panel

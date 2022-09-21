@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/external-footer",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Felles datakatalog UI external footer component",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "styled-components": "^5.2.1"
   },
   "dependencies": {
-    "@fellesdatakatalog/link": "^0.2.10",
-    "@fellesdatakatalog/theme": "^0.5.1"
+    "@fellesdatakatalog/link": "^0.2.11",
+    "@fellesdatakatalog/theme": "^0.5.2"
   }
 }

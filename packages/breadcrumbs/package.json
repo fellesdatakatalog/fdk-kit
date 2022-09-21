@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/breadcrumbs",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Felles datakatalog UI breadcrumbs component",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "prepublishOnly": "run-s build"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.5.1"
+    "@fellesdatakatalog/theme": "^0.5.2"
   },
   "peerDependencies": {
     "react": ">=17.0.1",
