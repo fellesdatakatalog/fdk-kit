@@ -4,7 +4,6 @@ on:
   push:
     branches-ignore:
       - 'develop'
-      - 'dependabot/**'
 
 jobs:
   chromatic-deployment:
@@ -33,7 +32,7 @@ jobs:
         run: npx lerna run build
 
       - name: Publish to Chromatic
-        if: github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/main' && github.actor != 'dependabot[bot]'
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -41,7 +40,7 @@ jobs:
           buildScriptName: storybook:build
 
       - name: Publish to Chromatic and auto accept changes
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.actor == 'dependabot[bot]'
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
