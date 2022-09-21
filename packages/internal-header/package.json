@@ -28,13 +28,13 @@
     "prepublishOnly": "run-s build"
   },
   "peerDependencies": {
-    "react": "^17.0.1",
+    "react": ">=17.0.1",
     "styled-components": "^5.2.1"
   },
   "dependencies": {
     "@fellesdatakatalog/dropdown-menu": "^0.1.8",
     "@fellesdatakatalog/link": "^0.2.10",
     "@fellesdatakatalog/theme": "^0.5.1",
-    "@skatteetaten/frontend-components": "^5.0.4"
+    "@skatteetaten/frontend-components": "^5.1.0"
   }
 }
