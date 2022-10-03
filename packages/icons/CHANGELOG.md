@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.3.3...@fellesdatakatalog/icons@0.4.0) (2022-10-03)
+
+
+### Bug Fixes
+
+* replace buggy list icons ([c299f36](https://github.com/fellesdatakatalog/fdk-kit/commit/c299f362b6f233a1a08f9625fe8470e56158b0ce))
+
+
+### Features
+
+* add arrow icons ([96a224d](https://github.com/fellesdatakatalog/fdk-kit/commit/96a224dee25b888a61bda3ff0ca41a7b9d1d275e))
+* add icon stories ([89abcc8](https://github.com/fellesdatakatalog/fdk-kit/commit/89abcc84a40420e2e9a21f2fb2e24947e7670c64))
+
+
+
+
+
 ## [0.3.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.3.2...@fellesdatakatalog/icons@0.3.3) (2022-09-21)
 
 **Note:** Version bump only for package @fellesdatakatalog/icons
