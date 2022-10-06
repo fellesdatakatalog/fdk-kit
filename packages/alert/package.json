@@ -28,6 +28,7 @@
     "prepublishOnly": "run-s build"
   },
   "dependencies": {
+    "@fellesdatakatalog/icons": "^0.4.0",
     "@fellesdatakatalog/theme": "^0.5.2"
   },
   "peerDependencies": {
