@@ -1,0 +1,19 @@
+name: Merge main into develop
+on:
+  workflow_run:
+    workflows:
+      - Sync main & develop
+    types:
+      - completed
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.BOT_ACCESS_TOKEN }}"
+          MERGE_LABELS: "auto-pr"
+          MERGE_FILTER_AUTHOR: "fdk-bot"
+          MERGE_METHOD: "merge"

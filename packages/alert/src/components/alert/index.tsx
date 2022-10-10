@@ -1,5 +1,6 @@
 import React, { FC, PropsWithChildren } from 'react';
 
+import SvgIcon from '@fellesdatakatalog/icons';
 import SC from './styled';
 
 import { Severity } from './enums';
@@ -14,16 +15,21 @@ export interface Props {
 }
 
 const icon = (severity?: Severity) => {
+  let alertIcon: JSX.Element;
   switch (severity) {
     case Severity.INFO:
-      return <SC.InfoIcon />;
+      alertIcon = <SvgIcon name='squareInfoStroke' />;
+      break;
     case Severity.WARNING:
-      return <SC.WarningIcon />;
+      alertIcon = <SvgIcon name='circleExclamationPointStroke' />;
+      break;
     case Severity.ERROR:
-      return <SC.ErrorIcon />;
+      alertIcon = <SvgIcon name='triangleExclamationPointStroke' />;
+      break;
     default:
-      return <SC.CheckIcon />;
+      alertIcon = <SvgIcon name='circleCheckStroke' />;
   }
+  return <SC.IconWrapper $severity={severity}>{alertIcon}</SC.IconWrapper>;
 };
 
 export const Alert: FC<PropsWithChildren<Props>> = ({
@@ -31,7 +37,7 @@ export const Alert: FC<PropsWithChildren<Props>> = ({
   severity,
   ...props
 }) => (
-  <SC.Alert severity={severity} {...props}>
+  <SC.Alert $severity={severity} {...props}>
     {icon(severity)}
     {children}
   </SC.Alert>

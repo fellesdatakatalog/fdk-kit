@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><svg id="eCEekLl1y5T1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" shape-rendering="geometricPrecision"
+  text-rendering="geometricPrecision">
+  <style>
+    <![CDATA[
+    #eCEekLl1y5T2_tr {
+      animation: eCEekLl1y5T2_tr__tr 4000ms linear infinite normal forwards
+    }
+
+    @keyframes eCEekLl1y5T2_tr__tr {
+      0% {
+        transform: translate(64px, 64px) rotate(135deg);
+        animation-timing-function: cubic-bezier(0.825, 0.005, 0.235, 1)
+      }
+
+      50% {
+        transform: translate(64px, 64px) rotate(406.328597deg);
+        animation-timing-function: cubic-bezier(0.72, 0.005, 0.26, 1)
+      }
+
+      100% {
+        transform: translate(64px, 64px) rotate(135deg)
+      }
+    }
+    ]]>
+  </style>
+  <g id="eCEekLl1y5T2_tr" transform="translate(64,64) rotate(135)">
+    <path
+      d="M64,0L2.8,0c-.742606,0-1.454797.294999-1.979899.820101C0.294999,1.345203,0,2.057394,0,2.8v122.4c0,1.546397,1.253603,2.8,2.8,2.8h61.2c35.346224,0,64-28.653776,64-64v0C128,28.653776,99.346224,0,64,0Zm.12,109.5c-25.128956,0-45.5-20.371044-45.5-45.5s20.371044-45.5,45.5-45.5s45.5,20.371044,45.5,45.5-20.371044,45.5-45.5,45.5Z"
+      transform="scale(0.670153,0.670152) translate(-64,-64)" fill="#1e2b3c" />
+  </g>
+</svg>
