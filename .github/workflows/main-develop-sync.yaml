@@ -1,0 +1,29 @@
+name: Sync main & develop
+
+on:
+  workflow_run:
+    workflows:
+      - Deploy to NPM
+    types:
+      - completed
+
+jobs:
+  sync_branches:
+    name: Create PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+
+      - name: Create PR
+        id: pr
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          source_branch: "main"
+          destination_branch: "develop"
+          pr_title: "[Automated] Merge ${{ github.ref_name }} into develop"
+          pr_body: "Automated Pull Request"
+          pr_label: "auto-pr"
