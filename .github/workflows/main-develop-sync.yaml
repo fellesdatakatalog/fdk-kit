@@ -9,6 +9,7 @@ on:
 
 jobs:
   sync_branches:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Create PR
     runs-on: ubuntu-latest
     steps:
@@ -24,6 +25,16 @@ jobs:
           github_token: ${{ secrets.BOT_ACCESS_TOKEN }}
           source_branch: "main"
           destination_branch: "develop"
-          pr_title: "[Automated] Merge ${{ github.ref_name }} into develop"
+          pr_title: "[Automated] Merge main into develop"
           pr_body: "Automated Pull Request"
           pr_label: "auto-pr"
+
+  UI-Review:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "No UI-Review required" '
+
+  UI-Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "No UI-Tests required" '
