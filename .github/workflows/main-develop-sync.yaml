@@ -29,12 +29,12 @@ jobs:
           pr_body: "Automated Pull Request"
           pr_label: "auto-pr"
 
-  UI-Review:
+  UI Review:
     runs-on: ubuntu-latest
     steps:
       - run: 'echo "No UI-Review required" '
 
-  UI-Tests:
+  UI Tests:
     runs-on: ubuntu-latest
     steps:
       - run: 'echo "No UI-Tests required" '
