@@ -28,13 +28,3 @@ jobs:
           pr_title: "[Automated] Merge main into develop"
           pr_body: "Automated Pull Request"
           pr_label: "auto-pr"
-
-  UI Review:
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo "No UI-Review required" '
-
-  UI Tests:
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo "No UI-Tests required" '
