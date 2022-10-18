@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.1.11...@fellesdatakatalog/alert@0.2.0) (2022-10-18)
+
+
+### Features
+
+* use new alert icons ([a1f0f43](https://github.com/fellesdatakatalog/fdk-kit/commit/a1f0f43ca946e99807adfe15941fa3c8d461871a))
+
+
+
+
+
 ## [0.1.11](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.1.10...@fellesdatakatalog/alert@0.1.11) (2022-09-21)
 
 **Note:** Version bump only for package @fellesdatakatalog/alert
