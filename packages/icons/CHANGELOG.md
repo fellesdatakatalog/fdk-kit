@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.4.0...@fellesdatakatalog/icons@0.6.0) (2022-10-19)
+
+
+### Features
+
+* add plus ([997e9a6](https://github.com/fellesdatakatalog/fdk-kit/commit/997e9a640d174b30ad18fef28a519a1d73281758))
+* add spinner ([ed7012c](https://github.com/fellesdatakatalog/fdk-kit/commit/ed7012cd4b76f7bf1d9f34e457b68dcb87f4f68e))
+
+
+
+
+
 # [0.5.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.4.0...@fellesdatakatalog/icons@0.5.0) (2022-10-18)
 
 
