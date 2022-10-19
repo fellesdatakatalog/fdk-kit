@@ -34,6 +34,9 @@ jobs:
           git config --global user.email "fellesdatakatalog@digdir.no"
           git config --global user.name "fdk-bot"
 
+      - name: Build (internal) dependencies
+        run: npx lerna run build
+
       - name: Build and deploy changed components to NPM
         run: npx lerna publish --yes
         env:
