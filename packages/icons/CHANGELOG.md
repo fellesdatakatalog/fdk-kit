@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.6.2...@fellesdatakatalog/icons@0.6.3) (2022-12-13)
+
+
+### Bug Fixes
+
+* replace invalid svg ([75b88ff](https://github.com/fellesdatakatalog/fdk-kit/commit/75b88ff49ab29adb6828e554da9e4876fca37456))
+
+
+
+
+
 ## [0.6.2](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.6.0...@fellesdatakatalog/icons@0.6.2) (2022-12-13)
 
 **Note:** Version bump only for package @fellesdatakatalog/icons
