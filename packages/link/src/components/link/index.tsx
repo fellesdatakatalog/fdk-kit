@@ -40,10 +40,8 @@ export const Link: FC<PropsWithChildren<Props>> = ({
 }) => (
   <SC.Link as={as} target={external ? '_blank' : undefined} {...props}>
     {icon && <SC.Icon>{icon}</SC.Icon>}
-    <SC.Underlined>
-      {children}
-      {external && <SC.ExternalLinkIcon />}
-    </SC.Underlined>
+    {children}
+    {external && <SC.ExternalLinkIcon />}
   </SC.Link>
 );
 
