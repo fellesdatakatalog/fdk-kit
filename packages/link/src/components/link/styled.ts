@@ -8,7 +8,8 @@ const Link = styled.a`
   align-items: center;
   color: currentColor !important;
   font-family: ${theme.fontFamily()};
-  text-decoration: none !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
   line-height: 1;
   cursor: pointer;
 `;
@@ -45,11 +46,4 @@ const ExternalLinkIcon = styled(ExternalLinkSVG)`
   }
 `;
 
-const Underlined = styled.div`
-  display: inline-flex;
-  padding-bottom: 1px;
-  border-bottom: 1px solid currentColor;
-  color: currentColor;
-`;
-
-export default { Link, Icon, ExternalLinkIcon, Underlined };
+export default { Link, Icon, ExternalLinkIcon };
