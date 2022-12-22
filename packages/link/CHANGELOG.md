@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.12](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.2.11...@fellesdatakatalog/link@0.2.12) (2022-12-21)
+
+
+### Bug Fixes
+
+* use link text underline instead of border ([a20d370](https://github.com/fellesdatakatalog/fdk-kit/commit/a20d370c7d73a79fd0b254847b2c9c6c3b0ecbb4))
+
+
+
+
+
 ## [0.2.11](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/link@0.2.10...@fellesdatakatalog/link@0.2.11) (2022-09-21)
 
 **Note:** Version bump only for package @fellesdatakatalog/link

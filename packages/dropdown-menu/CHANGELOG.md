@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/dropdown-menu@0.1.9...@fellesdatakatalog/dropdown-menu@0.1.10) (2022-12-21)
+
+**Note:** Version bump only for package @fellesdatakatalog/dropdown-menu
+
+
+
+
+
 ## [0.1.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/dropdown-menu@0.1.8...@fellesdatakatalog/dropdown-menu@0.1.9) (2022-09-21)
 
 **Note:** Version bump only for package @fellesdatakatalog/dropdown-menu
