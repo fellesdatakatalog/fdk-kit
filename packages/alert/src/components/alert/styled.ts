@@ -22,7 +22,7 @@ const Alert = styled.div<Props>`
         return css`
           &,
           & * {
-            color: ${theme.colour(Colour.BLUE, 'B50')};
+            color: ${theme.colour(Colour.BLUE, 'B60')};
             background: ${theme.colour(Colour.BLUE, 'B30')};
           }
         `;
@@ -38,7 +38,7 @@ const Alert = styled.div<Props>`
         return css`
           &,
           & * {
-            color: ${theme.colour(Colour.RED, 'R50')};
+            color: ${theme.colour(Colour.RED, 'R60')};
             background: ${theme.colour(Colour.RED, 'R20')};
           }
         `;
@@ -46,7 +46,7 @@ const Alert = styled.div<Props>`
         return css`
           &,
           & * {
-            color: ${theme.colour(Colour.GREEN, 'G50')};
+            color: ${theme.colour(Colour.GREEN, 'G60')};
             background: ${theme.colour(Colour.GREEN, 'G20')};
           }
         `;
@@ -63,7 +63,7 @@ const IconWrapper = styled.div<Props>`
         switch ($severity) {
           case Severity.INFO:
             return css`
-              ${theme.colour(Colour.BLUE, 'B50')};
+              ${theme.colour(Colour.BLUE, 'B60')};
             `;
           case Severity.WARNING:
             return css`
@@ -71,12 +71,12 @@ const IconWrapper = styled.div<Props>`
             `;
           case Severity.ERROR:
             return css`
-              ${theme.colour(Colour.RED, 'R50')};
+              ${theme.colour(Colour.RED, 'R60')};
             `;
           default:
             // SUCCESS
             return css`
-              ${theme.colour(Colour.GREEN, 'G50')};
+              ${theme.colour(Colour.GREEN, 'G60')};
             `;
         }
       }};
