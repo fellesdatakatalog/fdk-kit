@@ -10,7 +10,7 @@ const Link = styled.a`
   font-family: ${theme.fontFamily()};
   text-decoration: underline !important;
   text-underline-offset: 4px;
-  line-height: 1;
+  line-height: 1.3;
   cursor: pointer;
 `;
 
