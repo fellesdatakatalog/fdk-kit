@@ -82,4 +82,10 @@ const Column = styled.div`
   }
 `;
 
-export default { Footer, Illustration, Content, Column };
+const ColumnHeading = styled.div`
+  font-size: ${theme.fontSize('FS16')};
+  font-weight: ${theme.fontWeight('FW700')};
+  margin-bottom: ${theme.spacing('S16')};
+`;
+
+export default { Footer, Illustration, Content, Column, ColumnHeading };
