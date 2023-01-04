@@ -18,7 +18,8 @@
     "access": "public"
   },
   "files": [
-    "lib"
+    "lib",
+    "assets"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,7 +30,7 @@
     "prepublishOnly": "run-s build"
   },
   "svg": {
-    "input": "src/assets/svg",
+    "input": "assets/svg",
     "output": "src/components/svg",
     "name": "SvgIcon",
     "typescript": true
