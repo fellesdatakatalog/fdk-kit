@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/alert",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Felles datakatalog UI alert component",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "prepublishOnly": "run-s build"
   },
   "dependencies": {
-    "@fellesdatakatalog/icons": "^0.6.3",
+    "@fellesdatakatalog/icons": "^0.7.0",
     "@fellesdatakatalog/theme": "^0.5.2"
   },
   "peerDependencies": {

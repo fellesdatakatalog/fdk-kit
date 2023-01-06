@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/dropdown-menu",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Felles datakatalog dropdown-menu component",
   "repository": {
     "type": "git",
@@ -31,6 +31,6 @@
     "@fellesdatakatalog/theme": "^0.5.2"
   },
   "devDependencies": {
-    "@fellesdatakatalog/link": "^0.2.12"
+    "@fellesdatakatalog/link": "^0.2.13"
   }
 }

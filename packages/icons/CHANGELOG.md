@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.6.3...@fellesdatakatalog/icons@0.7.0) (2023-01-04)
+
+
+### Features
+
+* add raw svg files to package ([2726523](https://github.com/fellesdatakatalog/fdk-kit/commit/2726523ba1ac8356a546737d8a715db0baed2703))
+
+
+
+
+
 ## [0.6.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.6.2...@fellesdatakatalog/icons@0.6.3) (2022-12-13)
 
 
