@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@fellesdatakatalog/link": "^0.2.13",
-    "@fellesdatakatalog/theme": "^0.5.2"
+    "@fellesdatakatalog/theme": "^0.5.2",
+    "react-localization": "^1.0.19"
   }
 }
