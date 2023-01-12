@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.7.0...@fellesdatakatalog/icons@0.8.0) (2023-01-12)
+
+
+### Features
+
+* add new icons ([730fcf9](https://github.com/fellesdatakatalog/fdk-kit/commit/730fcf9a12cb2aad728250b62e9069b41f453baa))
+
+
+
+
+
 # [0.7.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.6.3...@fellesdatakatalog/icons@0.7.0) (2023-01-04)
 
 
