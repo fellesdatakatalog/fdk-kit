@@ -7,17 +7,17 @@ import {
   Source,
   Canvas,
   Story,
-  ArgsTable
-} from '@storybook/addon-docs/blocks';
-import { name, version } from '../package.json';
+  ArgsTable,
+} from "@storybook/addon-docs";
+import Package from "../package.json";
 
-import Button, { Variant } from '../src';
+import Button, { Variant } from "../src";
 
-<Meta title='Components/Button' />
+<Meta title="Components/Button" />
 
 <Title>Button</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>
   FDK Button component allow users to take actions, and make choices, with a
@@ -25,19 +25,22 @@ import Button, { Variant } from '../src';
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Button.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Button.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Primary button (default)</Subheading>
 <Subtitle />
 
 <Canvas>
-  <Story name='Primary button (default)'>
-    <div style={{ padding: '10px' }}>
+  <Story name="Primary button (default)">
+    <div style={{ padding: "10px" }}>
       <Button
-        onClick={() => console.log('You clicked me!')}
+        onClick={() => console.log("You clicked me!")}
         variant={Variant.PRIMARY}
       >
         Click me!
@@ -50,10 +53,10 @@ import Button, { Variant } from '../src';
 <Subtitle />
 
 <Canvas>
-  <Story name='Secondary button'>
-    <div style={{ padding: '10px' }}>
+  <Story name="Secondary button">
+    <div style={{ padding: "10px" }}>
       <Button
-        onClick={() => console.log('You clicked me!')}
+        onClick={() => console.log("You clicked me!")}
         variant={Variant.SECONDARY}
       >
         Click me!
@@ -66,8 +69,8 @@ import Button, { Variant } from '../src';
 <Subtitle />
 
 <Canvas>
-  <Story name='Disabled button'>
-    <div style={{ padding: '10px' }}>
+  <Story name="Disabled button">
+    <div style={{ padding: "10px" }}>
       <Button disabled>You cannot click me!</Button>
     </div>
   </Story>
@@ -77,10 +80,10 @@ import Button, { Variant } from '../src';
 <Subtitle />
 
 <Canvas>
-  <Story name='Tertiary button'>
-    <div style={{ padding: '10px' }}>
+  <Story name="Tertiary button">
+    <div style={{ padding: "10px" }}>
       <Button
-        onClick={() => console.log('You clicked me!')}
+        onClick={() => console.log("You clicked me!")}
         variant={Variant.TERTIARY}
       >
         Click me!
@@ -93,10 +96,10 @@ import Button, { Variant } from '../src';
 <Subtitle />
 
 <Canvas>
-  <Story name='Tertiary disabled button'>
-    <div style={{ padding: '10px' }}>
+  <Story name="Tertiary disabled button">
+    <div style={{ padding: "10px" }}>
       <Button
-        onClick={() => console.log('You clicked me!')}
+        onClick={() => console.log("You clicked me!")}
         variant={Variant.TERTIARY}
         disabled
       >

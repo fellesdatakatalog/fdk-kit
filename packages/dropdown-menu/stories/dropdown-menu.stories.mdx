@@ -7,18 +7,18 @@ import {
   Heading,
   Subheading,
   Source,
-  Story
-} from '@storybook/addon-docs/blocks';
+  Story,
+} from "@storybook/addon-docs";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import DropdownMenu, { Trigger, Menu } from '../src';
+import DropdownMenu, { Trigger, Menu } from "../src";
 
-<Meta title='Components/Dropdown menu' />
+<Meta title="Components/Dropdown menu" />
 
 <Title>Dropdown menu</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>
   FDK dropdown menu shows and hides list of menu links when clicked on dropdown
@@ -26,24 +26,24 @@ import DropdownMenu, { Trigger, Menu } from '../src';
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
 <Source
-  code={`import ${DropdownMenu.displayName} from '${name}';`}
-  language='ts'
+  code={`import ${DropdownMenu.displayName} from '${Package.name}';`}
+  language="ts"
 />
 
 <Subheading>Basic usage</Subheading>
 
 <Canvas>
-  <Story name='Basic usage'>
+  <Story name="Basic usage">
     <DropdownMenu isOpen={true}>
       <Trigger>
         <button>Meny</button>
       </Trigger>
       <Menu>
-        <Link href='https://data.norge.no'>Søk i Felles datakatalog</Link>
+        <Link href="https://data.norge.no">Søk i Felles datakatalog</Link>
       </Menu>
     </DropdownMenu>
   </Story>

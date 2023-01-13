@@ -14,7 +14,8 @@
     "plugin:import/typescript",
     "plugin:jsx-a11y/strict",
     "plugin:jest/recommended",
-    "plugin:json/recommended"
+    "plugin:json/recommended",
+    "plugin:mdx/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -89,6 +90,7 @@
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "import/no-named-as-default": "off",
+    "import/no-relative-packages": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -109,9 +111,16 @@
   },
   "overrides": [
     {
+      "files": ["**/*.js?(x)"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
       "files": ["**/*.ts?(x)"],
       "rules": {
-        "no-unused-expressions": "off"
+        "no-unused-expressions": "off",
+        "react/function-component-definition": "off"
       }
     },
     {
@@ -119,6 +128,10 @@
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
+    },
+    {
+      "files": "*.md?(x)",
+      "extends": "plugin:mdx/recommended"
     }
   ]
 }
