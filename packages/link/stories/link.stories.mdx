@@ -7,30 +7,33 @@ import {
   Source,
   Preview,
   Story,
-  Props
-} from '@storybook/addon-docs/blocks';
-import { theme, Colour } from '@fellesdatakatalog/theme';
-import FavouriteIcon from '@material-ui/icons/Favorite';
+  Props,
+} from "@storybook/addon-docs";
+import { theme, Colour } from "@fellesdatakatalog/theme";
+import FavouriteIcon from "@material-ui/icons/Favorite";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import Link from '../src';
+import Link from "../src";
 
-<Meta title='Components/Link' />
+<Meta title="Components/Link" />
 
 <Title>Link</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>
   FDK Link component allows for easy customisation of anchor elements.
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Link.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Link.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Basic link</Subheading>
 <Subtitle>
@@ -39,9 +42,9 @@ import Link from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Basic link'>
-    <div style={{ padding: '10px' }}>
-      <Link href='#'>Take me places!</Link>
+  <Story name="Basic link">
+    <div style={{ padding: "10px" }}>
+      <Link href="#">Take me places!</Link>
     </div>
   </Story>
 </Preview>
@@ -52,9 +55,9 @@ import Link from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Basic usage'>
-    <div style={{ padding: '10px' }}>
-      <Link href='#' external>
+  <Story name="Basic usage">
+    <div style={{ padding: "10px" }}>
+      <Link href="#" external>
         Take me places!
       </Link>
     </div>
@@ -67,9 +70,9 @@ import Link from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Link with an icon'>
-    <div style={{ padding: '10px' }}>
-      <Link href='#' icon={<FavouriteIcon />}>
+  <Story name="Link with an icon">
+    <div style={{ padding: "10px" }}>
+      <Link href="#" icon={<FavouriteIcon />}>
         Take me places!
       </Link>
     </div>
@@ -80,9 +83,9 @@ import Link from '../src';
 <Subtitle></Subtitle>
 
 <Preview>
-  <Story name='Multiline link'>
-    <div style={{ padding: '10px', width: '200px' }}>
-      <Link href='#'>Very very very very very very looooooong link!</Link>
+  <Story name="Multiline link">
+    <div style={{ padding: "10px", width: "200px" }}>
+      <Link href="#">Very very very very very very looooooong link!</Link>
     </div>
   </Story>
 </Preview>
@@ -91,45 +94,45 @@ import Link from '../src';
 <Subtitle>The link will inherit colours from its parent component.</Subtitle>
 
 <Preview>
-  <Story name='Colour inheritance'>
+  <Story name="Colour inheritance">
     <div
       style={{
-        display: 'flex',
-        padding: '10px',
-        background: theme.colour(Colour.NEUTRAL, 'N60')({}),
-        color: theme.colour(Colour.NEUTRAL, 'N0')({})
+        display: "flex",
+        padding: "10px",
+        background: theme.colour(Colour.NEUTRAL, "N60")({}),
+        color: theme.colour(Colour.NEUTRAL, "N0")({}),
       }}
     >
-      <Link href='#'>Take me places!</Link>
-      <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+      <Link href="#">Take me places!</Link>
+      <Link href="#" icon={<FavouriteIcon />} style={{ marginLeft: "20px" }}>
         Take me places!
       </Link>
       <Link
-        href='#'
+        href="#"
         external
         icon={<FavouriteIcon />}
-        style={{ marginLeft: '20px' }}
+        style={{ marginLeft: "20px" }}
       >
         Take me places!
       </Link>
     </div>
     <div
       style={{
-        display: 'flex',
-        padding: '10px',
-        background: theme.colour(Colour.NEUTRAL, 'N60')({}),
-        color: theme.colour(Colour.RED, 'R40')({})
+        display: "flex",
+        padding: "10px",
+        background: theme.colour(Colour.NEUTRAL, "N60")({}),
+        color: theme.colour(Colour.RED, "R40")({}),
       }}
     >
-      <Link href='#'>Take me places!</Link>
-      <Link href='#' icon={<FavouriteIcon />} style={{ marginLeft: '20px' }}>
+      <Link href="#">Take me places!</Link>
+      <Link href="#" icon={<FavouriteIcon />} style={{ marginLeft: "20px" }}>
         Take me places!
       </Link>
       <Link
-        href='#'
+        href="#"
         external
         icon={<FavouriteIcon />}
-        style={{ marginLeft: '20px' }}
+        style={{ marginLeft: "20px" }}
       >
         Take me places!
       </Link>
@@ -149,9 +152,9 @@ import Link from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Polymorphism'>
-    <div style={{ padding: '10px' }}>
-      <Link href='#' as='span'>
+  <Story name="Polymorphism">
+    <div style={{ padding: "10px" }}>
+      <Link href="#" as="span">
         Take me places!
       </Link>
     </div>

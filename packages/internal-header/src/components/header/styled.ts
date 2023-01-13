@@ -30,7 +30,7 @@ const SkeWrapper = styled.div`
   width: 100%;
   z-index: 1000;
 
-  & > div:first-child {
+  & > div:first-of-type {
     background-color: #6f2c3f;
     flex: 1 1 0;
 
@@ -39,7 +39,7 @@ const SkeWrapper = styled.div`
     }
   }
 
-  & > div:last-child {
+  & > div:last-of-type {
     background-color: #ece6e8;
     flex: 1 1 0;
     margin-left: -3px;

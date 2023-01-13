@@ -7,32 +7,32 @@ import {
   Source,
   Canvas,
   Story,
-  ArgsTable
-} from '@storybook/addon-docs/blocks';
+  ArgsTable,
+} from "@storybook/addon-docs";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import Breadcrumbs, { Breadcrumb } from '../src';
+import Breadcrumbs, { Breadcrumb } from "../src";
 
-import SC from './styled';
+import SC from "./styled";
 
-<Meta title='Components/Breadcrumbs' />
+<Meta title="Components/Breadcrumbs" />
 
 <Title>Breadcrumbs</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>
   Breadcrumbs provide users with an alternative way to navigate an application.
 </Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
 <Source
-  code={`import ${Breadcrumbs.displayName}, { ${Breadcrumb.displayName} } from '${name}';`}
-  language='ts'
+  code={`import ${Breadcrumbs.displayName}, { ${Breadcrumb.displayName} } from '${Package.name}';`}
+  language="ts"
 />
 
 <Subheading>Basic usage</Subheading>
@@ -42,8 +42,8 @@ import SC from './styled';
 </Subtitle>
 
 <Canvas>
-  <Story name='Basic usage'>
-    <div style={{ display: 'flex', padding: '10px' }}>
+  <Story name="Basic usage">
+    <div style={{ display: "flex", padding: "10px" }}>
       <Breadcrumbs>
         <Breadcrumb>Path 1</Breadcrumb>
         <Breadcrumb>Path 2</Breadcrumb>
@@ -60,21 +60,21 @@ import SC from './styled';
 </Subtitle>
 
 <Canvas>
-  <Story name='Custom separator'>
-    <div style={{ display: 'flex', padding: '10px' }}>
+  <Story name="Custom separator">
+    <div style={{ display: "flex", padding: "10px" }}>
       <Breadcrumbs
         separator={
-          <span style={{ height: '10px', width: '10px', background: 'red' }} />
+          <span style={{ height: "10px", width: "10px", background: "red" }} />
         }
       >
         <Breadcrumb>
-          <a href='#'>Path 1</a>
+          <a href="#">Path 1</a>
         </Breadcrumb>
         <Breadcrumb>
-          <a href='#'>Path 2</a>
+          <a href="#">Path 2</a>
         </Breadcrumb>
         <Breadcrumb active>
-          <a href='#'>Path 3</a>
+          <a href="#">Path 3</a>
         </Breadcrumb>
       </Breadcrumbs>
     </div>
@@ -83,25 +83,25 @@ import SC from './styled';
 
 <Subheading>Custom breadcrumbs</Subheading>
 <Subtitle>
-  <pre style={{ display: 'inline' }}>Breadcrumbs</pre> and{' '}
-  <pre style={{ display: 'inline' }}>Breadcrumb</pre> components are polymorphic
-  and can thus be customised using <pre style={{ display: 'inline' }}>as</pre>{' '}
-  prop. Furthermore, <pre style={{ display: 'inline' }}>Breadcrumb</pre>{' '}
+  <pre style={{ display: "inline" }}>Breadcrumbs</pre> and{" "}
+  <pre style={{ display: "inline" }}>Breadcrumb</pre> components are polymorphic
+  and can thus be customised using <pre style={{ display: "inline" }}>as</pre>{" "}
+  prop. Furthermore, <pre style={{ display: "inline" }}>Breadcrumb</pre>{" "}
   component accept arbitrary text and element nodes as children.
 </Subtitle>
 
 <Canvas>
-  <Story name='Custom breadcrumbs'>
-    <div style={{ display: 'flex', padding: '10px' }}>
+  <Story name="Custom breadcrumbs">
+    <div style={{ display: "flex", padding: "10px" }}>
       <Breadcrumbs as={SC.Breadcrumbs}>
         <Breadcrumb as={SC.Breadcrumb}>
-          <a href='#'>Path 1</a>
+          <a href="#">Path 1</a>
         </Breadcrumb>
         <Breadcrumb as={SC.Breadcrumb}>
-          <a href='#'>Path 2</a>
+          <a href="#">Path 2</a>
         </Breadcrumb>
         <Breadcrumb active as={SC.Breadcrumb}>
-          <a href='#'>Path 3</a>
+          <a href="#">Path 3</a>
         </Breadcrumb>
       </Breadcrumbs>
     </div>
