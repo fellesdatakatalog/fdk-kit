@@ -1,7 +1,7 @@
 export const en = {
   searchInCatalogs: 'Search in catalogs',
   searchInAllCatalogs: 'Search in all catalogs',
-  searchInDataset: 'Search in datasets',
+  searchInDatasets: 'Search in datasets',
   searchInApis: 'Search in APIs',
   searchInConcepts: 'Search in concepts',
   searchInInformationModels: 'Search in informationmodels',

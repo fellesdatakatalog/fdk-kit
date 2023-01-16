@@ -1,7 +1,7 @@
 export const nn = {
   searchInCatalogs: 'Søk i katalogar',
   searchInAllCatalogs: 'Søk i alle katalogar',
-  searchInDataset: 'Søk i datasett',
+  searchInDatasets: 'Søk i datasett',
   searchInApis: 'Søk i datatenester',
   searchInConcepts: 'Søk i omgrep',
   searchInInformationModels: 'Søk i informasjonsmodellar',
