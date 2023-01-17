@@ -11,7 +11,7 @@ interface Props {
   /**
    * Language
    */
-  language?: 'nb' | 'no' | 'en';
+  language?: string;
 }
 
 const Footer: FC<Props> = ({ language = 'nb' }) => {
