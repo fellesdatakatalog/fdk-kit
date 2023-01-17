@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.8.0...@fellesdatakatalog/icons@0.8.1) (2023-01-17)
+
+
+### Bug Fixes
+
+* missing translation footer ([80354f3](https://github.com/fellesdatakatalog/fdk-kit/commit/80354f3ff06e7e2bdbf43736b6400a68aad65d28))
+
+
+
+
+
 # [0.8.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.7.0...@fellesdatakatalog/icons@0.8.0) (2023-01-12)
 
 

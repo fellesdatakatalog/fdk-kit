@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.24...@fellesdatakatalog/external-footer@0.2.0) (2023-01-17)
+
+
+### Bug Fixes
+
+* missing translation footer ([80354f3](https://github.com/fellesdatakatalog/fdk-kit/commit/80354f3ff06e7e2bdbf43736b6400a68aad65d28))
+
+
+### Features
+
+* external-footer language support ([a27f886](https://github.com/fellesdatakatalog/fdk-kit/commit/a27f886456d99622c48207eb32594862d0da2784))
+
+
+
+
+
 ## [0.1.24](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.23...@fellesdatakatalog/external-footer@0.1.24) (2023-01-04)
 
 **Note:** Version bump only for package @fellesdatakatalog/external-footer
