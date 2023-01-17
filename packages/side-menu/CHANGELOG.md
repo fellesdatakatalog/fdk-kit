@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/side-menu@0.1.8...@fellesdatakatalog/side-menu@0.1.9) (2023-01-17)
+
+**Note:** Version bump only for package @fellesdatakatalog/side-menu
+
+
+
+
+
 ## [0.1.8](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/side-menu@0.1.7...@fellesdatakatalog/side-menu@0.1.8) (2022-09-21)
 
 **Note:** Version bump only for package @fellesdatakatalog/side-menu
