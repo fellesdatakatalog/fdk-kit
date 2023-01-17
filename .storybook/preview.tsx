@@ -5,7 +5,6 @@ import ThemeProvider, { theme } from '../packages/theme/src';
 
 addParameters({
   viewMode: 'docs',
-  options: { showRoots: true },
   docs: {
     transformSource: src => {
       const match = /^\(\) => \(([\s\S]*(.*)[\s\S]*)\)$/.exec(src);

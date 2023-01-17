@@ -14,7 +14,8 @@
     "plugin:import/typescript",
     "plugin:jsx-a11y/strict",
     "plugin:jest/recommended",
-    "plugin:json/recommended"
+    "plugin:json/recommended",
+    "plugin:mdx/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -53,19 +54,13 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "./test/**/*",
-          "./webpack/*",
-          "./.storybook/*"
-        ]
+        "devDependencies": ["./test/**/*", "./webpack/*", "./.storybook/*"]
       }
     ],
     "@typescript-eslint/no-empty-function": [
       "error",
       {
-        "allow": [
-          "arrowFunctions"
-        ]
+        "allow": ["arrowFunctions"]
       }
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -83,6 +78,7 @@
     "react/no-array-index-key": "off",
     "react/no-unused-state": "off",
     "react/jsx-curly-newline": "off",
+    "react/require-default-props": "off",
     "no-restricted-globals": "off",
     "no-use-before-define": "off",
     "no-param-reassign": "off",
@@ -94,6 +90,7 @@
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "import/no-named-as-default": "off",
+    "import/no-relative-packages": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -107,32 +104,34 @@
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".jsx",
-          ".tsx"
-        ]
+        "extensions": [".jsx", ".tsx"]
       }
     ],
     "jest/expect-expect": "off"
   },
   "overrides": [
     {
-      "files": [
-        "**/*.ts?(x)"
-      ],
+      "files": ["**/*.js?(x)"],
       "rules": {
-        "no-unused-expressions": "off"
+        "@typescript-eslint/no-var-requires": "off"
       }
     },
     {
-      "files": [
-        "**/stories/*",
-        "**/test/**/*",
-        "**/__tests__/**/*"
-      ],
+      "files": ["**/*.ts?(x)"],
+      "rules": {
+        "no-unused-expressions": "off",
+        "react/function-component-definition": "off"
+      }
+    },
+    {
+      "files": ["**/stories/*", "**/test/**/*", "**/__tests__/**/*"],
       "rules": {
         "import/no-extraneous-dependencies": "off"
       }
+    },
+    {
+      "files": "*.md?(x)",
+      "extends": "plugin:mdx/recommended"
     }
   ]
 }

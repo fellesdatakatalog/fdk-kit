@@ -7,28 +7,31 @@ import {
   Heading,
   Subheading,
   Source,
-  Story
-} from '@storybook/addon-docs/blocks';
-import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
-import Link from '@fellesdatakatalog/link';
+  Story,
+} from "@storybook/addon-docs";
+import { Colour, theme, ThemeProfile } from "@fellesdatakatalog/theme";
+import Link from "@fellesdatakatalog/link";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import Header from '../src';
+import Header from "../src";
 
-<Meta title='Components/Internal header' />
+<Meta title="Components/Internal header" />
 
 <Title>Internal header</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>FDK header component intended for internal use.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Header.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Header.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Basic usage</Subheading>
 <Subtitle>
@@ -36,8 +39,8 @@ import Header from '../src';
 </Subtitle>
 
 <Canvas>
-  <Story name='Basic usage'>
-    <Header username='Michelle' />
+  <Story name="Basic usage">
+    <Header username="Michelle" />
   </Story>
 </Canvas>
 
@@ -47,35 +50,35 @@ import Header from '../src';
 </Subtitle>
 
 <Canvas>
-  <Story name='Basic demo usage'>
-    <Header username='Michelle' useDemoLogo={true} />
+  <Story name="Basic demo usage">
+    <Header username="Michelle" useDemoLogo={true} />
   </Story>
 </Canvas>
 
 <Subtitle>Internal header with logout event handler and home url</Subtitle>
 
 <Canvas>
-  <Story name='Basic usage with logout event handler and home url'>
+  <Story name="Basic usage with logout event handler and home url">
     <Header
-      homeUrl='https://data.norge.no'
-      username='Michelle'
+      homeUrl="https://data.norge.no"
+      username="Michelle"
       onLogout={() => {}}
     />
   </Story>
 </Canvas>
 
 <Canvas>
-  <Story name='Usage with navigation links, logout event handler and home url'>
+  <Story name="Usage with navigation links, logout event handler and home url">
     <Header
-      homeUrl='https://data.norge.no'
-      username='Michelle'
+      homeUrl="https://data.norge.no"
+      username="Michelle"
       onLogout={() => {}}
     >
-      <Link href='https://data.norge.no/guidance'>Registrere data</Link>
-      <Link href='https://admin.staging.fellesdatakatalog.digdir.no'>
+      <Link href="https://data.norge.no/guidance">Registrere data</Link>
+      <Link href="https://admin.staging.fellesdatakatalog.digdir.no">
         Høste data
       </Link>
-      <Link href='https://data.norge.no' external={true}>
+      <Link href="https://data.norge.no" external={true}>
         Søk i Felles datakatalog
       </Link>
     </Header>
@@ -83,17 +86,17 @@ import Header from '../src';
 </Canvas>
 
 <Canvas>
-  <Story name='Skatteetaten usage'>
-    <Header themeProfile={ThemeProfile.SKE} username='Michelle' />
+  <Story name="Skatteetaten usage">
+    <Header themeProfile={ThemeProfile.SKE} username="Michelle" />
   </Story>
 </Canvas>
 
 <Canvas>
-  <Story name='Skatteetaten usage with system name'>
+  <Story name="Skatteetaten usage with system name">
     <Header
       themeProfile={ThemeProfile.SKE}
-      skeHomeText='Datakataloger'
-      username='Michelle'
+      skeHomeText="Datakataloger"
+      username="Michelle"
       onLogout={() => {}}
     />
   </Story>

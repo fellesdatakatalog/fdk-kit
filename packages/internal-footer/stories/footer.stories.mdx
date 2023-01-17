@@ -7,27 +7,30 @@ import {
   Source,
   Preview,
   Story,
-  Props
-} from '@storybook/addon-docs/blocks';
-import { Colour, theme, ThemeProfile } from '@fellesdatakatalog/theme';
+  Props,
+} from "@storybook/addon-docs";
+import { Colour, theme, ThemeProfile } from "@fellesdatakatalog/theme";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import Footer from '../src';
+import Footer from "../src";
 
-<Meta title='Components/Internal footer' />
+<Meta title="Components/Internal footer" />
 
 <Title>Internal footer</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>FDK footer component intended for internal use.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Footer.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Footer.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Basic usage</Subheading>
 <Subtitle>
@@ -35,7 +38,7 @@ import Footer from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Basic usage'>
+  <Story name="Basic usage">
     <Footer />
   </Story>
 </Preview>
@@ -47,7 +50,7 @@ import Footer from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Skatteetaten usage'>
+  <Story name="Skatteetaten usage">
     <Footer themeProfile={ThemeProfile.SKE} />
   </Story>
 </Preview>

@@ -1,1 +1,2 @@
-export { default, SvgIconTypes, SvgIconTypesArray } from './components/svg';
+export { default, SvgIconTypesArray } from './components/svg';
+export type { SvgIconTypes } from './components/svg';

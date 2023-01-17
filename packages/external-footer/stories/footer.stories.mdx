@@ -7,27 +7,30 @@ import {
   Source,
   Preview,
   Story,
-  Props
-} from '@storybook/addon-docs/blocks';
-import { Colour, theme } from '@fellesdatakatalog/theme';
+  Props,
+} from "@storybook/addon-docs";
+import { Colour, theme } from "@fellesdatakatalog/theme";
 
-import { name, version } from '../package.json';
+import Package from "../package.json";
 
-import Footer from '../src';
+import Footer from "../src";
 
-<Meta title='Components/External footer' />
+<Meta title="Components/External footer" />
 
 <Title>External footer</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>FDK footer component intended for external use.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${Footer.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${Footer.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Basic usage</Subheading>
 <Subtitle>
@@ -35,8 +38,14 @@ import Footer from '../src';
 </Subtitle>
 
 <Preview>
-  <Story name='Basic usage'>
+  <Story name="Basic usage">
     <Footer />
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="English footer">
+    <Footer language="en" />
   </Story>
 </Preview>
 

@@ -7,318 +7,321 @@ import {
   Source,
   Canvas,
   Story,
-  ArgsTable
-} from '@storybook/addon-docs/blocks';
-import { name, version } from '../package.json';
+  ArgsTable,
+} from "@storybook/addon-docs";
+import Package from "../package.json";
 
-import SvgIcon, { SvgIconTypes, SvgIconTypesArray } from '../src';
-import SC from './styled';
+import SvgIcon from "../src";
+import SC from "./styled";
 
-<Meta title='Components/SvgIcon' />
+<Meta title="Components/SvgIcon" />
 
 <Title>SvgIcon</Title>
 <Subtitle>
-  <small>Version {version}</small>
+  <small>Version ${Package.version}</small>
 </Subtitle>
 <Subtitle>FDK SvgIcon component displays inline svg icons.</Subtitle>
 
 <Heading>Installation</Heading>
-<Source code={`npm i ${name}`} language='bash' />
+<Source code={`npm i ${Package.name}`} language="bash" />
 
 <Heading>Usage</Heading>
-<Source code={`import ${SvgIcon.displayName} from '${name}';`} language='ts' />
+<Source
+  code={`import ${SvgIcon.displayName} from '${Package.name}';`}
+  language="ts"
+/>
 
 <Subheading>Icons</Subheading>
 
 <Canvas>
-  <Story name='applicationWindowStroke'>
-    <SC.Container title='applicationWindowStroke'>
-      <SvgIcon name='applicationWindowStroke' />
+  <Story name="applicationWindowStroke">
+    <SC.Container title="applicationWindowStroke">
+      <SvgIcon name="applicationWindowStroke" />
     </SC.Container>
   </Story>
-  <Story name='arrowDownStroke'>
+  <Story name="arrowDownStroke">
     <SC.Container>
-      <SvgIcon name='arrowDownStroke' />
+      <SvgIcon name="arrowDownStroke" />
     </SC.Container>
   </Story>
-  <Story name='arrowLeftStroke'>
+  <Story name="arrowLeftStroke">
     <SC.Container>
-      <SvgIcon name='arrowLeftStroke' />
+      <SvgIcon name="arrowLeftStroke" />
     </SC.Container>
   </Story>
-  <Story name='arrowRightStroke'>
+  <Story name="arrowRightStroke">
     <SC.Container>
-      <SvgIcon name='arrowRightStroke' />
+      <SvgIcon name="arrowRightStroke" />
     </SC.Container>
   </Story>
-  <Story name='arrowUpStroke'>
+  <Story name="arrowUpStroke">
     <SC.Container>
-      <SvgIcon name='arrowUpStroke' />
+      <SvgIcon name="arrowUpStroke" />
     </SC.Container>
   </Story>
-  <Story name='bookBookmarkStroke'>
+  <Story name="bookBookmarkStroke">
     <SC.Container>
-      <SvgIcon name='bookBookmarkStroke' />
+      <SvgIcon name="bookBookmarkStroke" />
     </SC.Container>
   </Story>
-  <Story name='buildingStroke'>
+  <Story name="buildingStroke">
     <SC.Container>
-      <SvgIcon name='buildingStroke' />
+      <SvgIcon name="buildingStroke" />
     </SC.Container>
   </Story>
-  <Story name='calendarStroke'>
+  <Story name="calendarStroke">
     <SC.Container>
-      <SvgIcon name='calendarStroke' />
+      <SvgIcon name="calendarStroke" />
     </SC.Container>
   </Story>
-  <Story name='caretDownStroke'>
+  <Story name="caretDownStroke">
     <SC.Container>
-      <SvgIcon name='caretDownStroke' />
+      <SvgIcon name="caretDownStroke" />
     </SC.Container>
   </Story>
-  <Story name='checkStroke'>
+  <Story name="checkStroke">
     <SC.Container>
-      <SvgIcon name='checkStroke' />
+      <SvgIcon name="checkStroke" />
     </SC.Container>
   </Story>
-  <Story name='chevronDoubleDownStroke'>
+  <Story name="chevronDoubleDownStroke">
     <SC.Container>
-      <SvgIcon name='chevronDoubleDownStroke' />
+      <SvgIcon name="chevronDoubleDownStroke" />
     </SC.Container>
   </Story>
-  <Story name='chevronDoubleUpStroke'>
+  <Story name="chevronDoubleUpStroke">
     <SC.Container>
-      <SvgIcon name='chevronDoubleUpStroke' />
+      <SvgIcon name="chevronDoubleUpStroke" />
     </SC.Container>
   </Story>
-  <Story name='chevronDownStroke'>
+  <Story name="chevronDownStroke">
     <SC.Container>
-      <SvgIcon name='chevronDownStroke' />
+      <SvgIcon name="chevronDownStroke" />
     </SC.Container>
   </Story>
-  <Story name='chevronUpStroke'>
+  <Story name="chevronUpStroke">
     <SC.Container>
-      <SvgIcon name='chevronUpStroke' />
+      <SvgIcon name="chevronUpStroke" />
     </SC.Container>
   </Story>
-  <Story name='circleCheckStroke'>
+  <Story name="circleCheckStroke">
     <SC.Container>
-      <SvgIcon name='circleCheckStroke' />
+      <SvgIcon name="circleCheckStroke" />
     </SC.Container>
   </Story>
-  <Story name='circleExclamationPointStroke'>
+  <Story name="circleExclamationPointStroke">
     <SC.Container>
-      <SvgIcon name='circleExclamationPointStroke' />
+      <SvgIcon name="circleExclamationPointStroke" />
     </SC.Container>
   </Story>
-  <Story name='circleMinusStroke'>
+  <Story name="circleMinusStroke">
     <SC.Container>
-      <SvgIcon name='circleMinusStroke' />
+      <SvgIcon name="circleMinusStroke" />
     </SC.Container>
   </Story>
-  <Story name='circlePlusStroke'>
+  <Story name="circlePlusStroke">
     <SC.Container>
-      <SvgIcon name='circlePlusStroke' />
+      <SvgIcon name="circlePlusStroke" />
     </SC.Container>
   </Story>
-  <Story name='clockStroke'>
+  <Story name="clockStroke">
     <SC.Container>
-      <SvgIcon name='clockStroke' />
+      <SvgIcon name="clockStroke" />
     </SC.Container>
   </Story>
-  <Story name='crossStroke'>
+  <Story name="crossStroke">
     <SC.Container>
-      <SvgIcon name='crossStroke' />
+      <SvgIcon name="crossStroke" />
     </SC.Container>
   </Story>
-  <Story name='documentClockStroke'>
+  <Story name="documentClockStroke">
     <SC.Container>
-      <SvgIcon name='documentClockStroke' />
+      <SvgIcon name="documentClockStroke" />
     </SC.Container>
   </Story>
-  <Story name='documentFileStroke'>
+  <Story name="documentFileStroke">
     <SC.Container>
-      <SvgIcon name='documentFileStroke' />
+      <SvgIcon name="documentFileStroke" />
     </SC.Container>
   </Story>
-  <Story name='envelopeClosedStroke'>
+  <Story name="envelopeClosedStroke">
     <SC.Container>
-      <SvgIcon name='envelopeClosedStroke' />
+      <SvgIcon name="envelopeClosedStroke" />
     </SC.Container>
   </Story>
-  <Story name='fdkSpinner'>
+  <Story name="fdkSpinner">
     <SC.Container>
-      <SvgIcon name='fdkSpinner' />
+      <SvgIcon name="fdkSpinner" />
     </SC.Container>
   </Story>
-  <Story name='flagTriangleStroke'>
+  <Story name="flagTriangleStroke">
     <SC.Container>
-      <SvgIcon name='flagTriangleStroke' />
+      <SvgIcon name="flagTriangleStroke" />
     </SC.Container>
   </Story>
-  <Story name='folderClosedStroke'>
+  <Story name="folderClosedStroke">
     <SC.Container>
-      <SvgIcon name='folderClosedStroke' />
+      <SvgIcon name="folderClosedStroke" />
     </SC.Container>
   </Story>
-  <Story name='gearStroke'>
+  <Story name="gearStroke">
     <SC.Container>
-      <SvgIcon name='gearStroke' />
+      <SvgIcon name="gearStroke" />
     </SC.Container>
   </Story>
-  <Story name='globeGridStroke'>
+  <Story name="globeGridStroke">
     <SC.Container>
-      <SvgIcon name='globeGridStroke' />
+      <SvgIcon name="globeGridStroke" />
     </SC.Container>
   </Story>
-  <Story name='hourGlassStroke'>
+  <Story name="hourGlassStroke">
     <SC.Container>
-      <SvgIcon name='hourGlassStroke' />
+      <SvgIcon name="hourGlassStroke" />
     </SC.Container>
   </Story>
-  <Story name='infoModelStroke'>
+  <Story name="infoModelStroke">
     <SC.Container>
-      <SvgIcon name='infoModelStroke' />
+      <SvgIcon name="infoModelStroke" />
     </SC.Container>
   </Story>
-  <Story name='laptopCursorStroke'>
+  <Story name="laptopCursorStroke">
     <SC.Container>
-      <SvgIcon name='laptopCursorStroke' />
+      <SvgIcon name="laptopCursorStroke" />
     </SC.Container>
   </Story>
-  <Story name='linkExternalOutlineBold'>
+  <Story name="linkExternalOutlineBold">
     <SC.Container>
-      <SvgIcon name='linkExternalOutlineBold' />
+      <SvgIcon name="linkExternalOutlineBold" />
     </SC.Container>
   </Story>
-  <Story name='linkExternalOutlineRegular'>
+  <Story name="linkExternalOutlineRegular">
     <SC.Container>
-      <SvgIcon name='linkExternalOutlineRegular' />
+      <SvgIcon name="linkExternalOutlineRegular" />
     </SC.Container>
   </Story>
-  <Story name='listAscendingStroke'>
+  <Story name="listAscendingStroke">
     <SC.Container>
-      <SvgIcon name='listAscendingStroke' />
+      <SvgIcon name="listAscendingStroke" />
     </SC.Container>
   </Story>
-  <Story name='listDescendingStroke'>
+  <Story name="listDescendingStroke">
     <SC.Container>
-      <SvgIcon name='listDescendingStroke' />
+      <SvgIcon name="listDescendingStroke" />
     </SC.Container>
   </Story>
-  <Story name='listUnsortedStroke'>
+  <Story name="listUnsortedStroke">
     <SC.Container>
-      <SvgIcon name='listUnsortedStroke' />
+      <SvgIcon name="listUnsortedStroke" />
     </SC.Container>
   </Story>
-  <Story name='lockLockedStroke'>
+  <Story name="lockLockedStroke">
     <SC.Container>
-      <SvgIcon name='lockLockedStroke' />
+      <SvgIcon name="lockLockedStroke" />
     </SC.Container>
   </Story>
-  <Story name='lockOpenStroke'>
+  <Story name="lockOpenStroke">
     <SC.Container>
-      <SvgIcon name='lockOpenStroke' />
+      <SvgIcon name="lockOpenStroke" />
     </SC.Container>
   </Story>
-  <Story name='lockSemiOpenStroke'>
+  <Story name="lockSemiOpenStroke">
     <SC.Container>
-      <SvgIcon name='lockSemiOpenStroke' />
+      <SvgIcon name="lockSemiOpenStroke" />
     </SC.Container>
   </Story>
-  <Story name='magnifyingGlassStroke'>
+  <Story name="magnifyingGlassStroke">
     <SC.Container>
-      <SvgIcon name='magnifyingGlassStroke' />
+      <SvgIcon name="magnifyingGlassStroke" />
     </SC.Container>
   </Story>
-  <Story name='mapPinStroke'>
+  <Story name="mapPinStroke">
     <SC.Container>
-      <SvgIcon name='mapPinStroke' />
+      <SvgIcon name="mapPinStroke" />
     </SC.Container>
   </Story>
-  <Story name='pencilSlashStroke'>
+  <Story name="pencilSlashStroke">
     <SC.Container>
-      <SvgIcon name='pencilSlashStroke' />
+      <SvgIcon name="pencilSlashStroke" />
     </SC.Container>
   </Story>
-  <Story name='pencilStroke'>
+  <Story name="pencilStroke">
     <SC.Container>
-      <SvgIcon name='pencilStroke' />
+      <SvgIcon name="pencilStroke" />
     </SC.Container>
   </Story>
-  <Story name='plusStroke'>
+  <Story name="plusStroke">
     <SC.Container>
-      <SvgIcon name='plusStroke' />
+      <SvgIcon name="plusStroke" />
     </SC.Container>
   </Story>
-  <Story name='pinLocationStroke'>
+  <Story name="pinLocationStroke">
     <SC.Container>
-      <SvgIcon name='pinLocationStroke' />
+      <SvgIcon name="pinLocationStroke" />
     </SC.Container>
   </Story>
-  <Story name='semicheckedStroke'>
+  <Story name="semicheckedStroke">
     <SC.Container>
-      <SvgIcon name='semicheckedStroke' />
+      <SvgIcon name="semicheckedStroke" />
     </SC.Container>
   </Story>
-  <Story name='shieldLockLockedStroke'>
+  <Story name="shieldLockLockedStroke">
     <SC.Container>
-      <SvgIcon name='shieldLockLockedStroke' />
+      <SvgIcon name="shieldLockLockedStroke" />
     </SC.Container>
   </Story>
-  <Story name='smileyExcitedStroke'>
+  <Story name="smileyExcitedStroke">
     <SC.Container>
-      <SvgIcon name='smileyExcitedStroke' />
+      <SvgIcon name="smileyExcitedStroke" />
     </SC.Container>
   </Story>
-  <Story name='smileyHappyStroke'>
+  <Story name="smileyHappyStroke">
     <SC.Container>
-      <SvgIcon name='smileyHappyStroke' />
+      <SvgIcon name="smileyHappyStroke" />
     </SC.Container>
   </Story>
-  <Story name='smileyNeutralStroke'>
+  <Story name="smileyNeutralStroke">
     <SC.Container>
-      <SvgIcon name='smileyNeutralStroke' />
+      <SvgIcon name="smileyNeutralStroke" />
     </SC.Container>
   </Story>
-  <Story name='smileySadStroke'>
+  <Story name="smileySadStroke">
     <SC.Container>
-      <SvgIcon name='smileySadStroke' />
+      <SvgIcon name="smileySadStroke" />
     </SC.Container>
   </Story>
-  <Story name='speakBubbleLettersStroke'>
+  <Story name="speakBubbleLettersStroke">
     <SC.Container>
-      <SvgIcon name='speakBubbleLettersStroke' />
+      <SvgIcon name="speakBubbleLettersStroke" />
     </SC.Container>
   </Story>
-  <Story name='squareInfoStroke'>
+  <Story name="squareInfoStroke">
     <SC.Container>
-      <SvgIcon name='squareInfoStroke' />
+      <SvgIcon name="squareInfoStroke" />
     </SC.Container>
   </Story>
-  <Story name='squareThreeStroke'>
+  <Story name="squareThreeStroke">
     <SC.Container>
-      <SvgIcon name='squareThreeStroke' />
+      <SvgIcon name="squareThreeStroke" />
     </SC.Container>
   </Story>
-  <Story name='starStroke'>
+  <Story name="starStroke">
     <SC.Container>
-      <SvgIcon name='starStroke' />
+      <SvgIcon name="starStroke" />
     </SC.Container>
   </Story>
-  <Story name='tagStroke'>
+  <Story name="tagStroke">
     <SC.Container>
-      <SvgIcon name='tagStroke' />
+      <SvgIcon name="tagStroke" />
     </SC.Container>
   </Story>
-  <Story name='telephoneAnalogStroke'>
+  <Story name="telephoneAnalogStroke">
     <SC.Container>
-      <SvgIcon name='telephoneAnalogStroke' />
+      <SvgIcon name="telephoneAnalogStroke" />
     </SC.Container>
   </Story>
-  <Story name='triangleExclamationPointStroke'>
+  <Story name="triangleExclamationPointStroke">
     <SC.Container>
-      <SvgIcon name='triangleExclamationPointStroke' />
+      <SvgIcon name="triangleExclamationPointStroke" />
     </SC.Container>
   </Story>
 </Canvas>

@@ -47,15 +47,9 @@ const configuration: Configuration = {
         test: /\.svg$/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: '@svgr/webpack',
             options: {
-              configFile: resolve(__dirname, '../babel.config.js')
-            }
-          },
-          {
-            loader: 'react-svg-loader',
-            options: {
-              jsx: true
+              typescript: true
             }
           }
         ]
