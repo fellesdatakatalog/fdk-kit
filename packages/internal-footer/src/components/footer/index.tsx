@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { ThemeProfile } from '@fellesdatakatalog/theme';
+
 import SkeBasis from '@skatteetaten/frontend-components/SkeBasis';
 
 import FooterContent from '../footer-content';

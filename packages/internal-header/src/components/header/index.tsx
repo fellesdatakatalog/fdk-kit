@@ -9,7 +9,10 @@ import { ThemeProfile } from '@fellesdatakatalog/theme';
 import Link from '@fellesdatakatalog/link';
 import { Menu, Trigger } from '@fellesdatakatalog/dropdown-menu';
 
+import SkeBasis from '@skatteetaten/frontend-components/SkeBasis';
+
 import SC from './styled';
+
 
 export interface Props {
   /**
@@ -119,28 +122,24 @@ const SkeProfileHeader = ({
   username,
   onLogout,
   skeHomeText
-}: Props) => (
-  <SC.SkeWrapper>
-    <div />
-    <SC.SkeBasis>
-      <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
-        <SC.Container>
-          {username && (
-            <SC.User>
-              <SC.UserIcon />
-              <SC.UserName>{username}</SC.UserName>
-            </SC.User>
-          )}
-          {onLogout && (
-            <SC.LogoutButton onClick={onLogout}>
-              <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
-            </SC.LogoutButton>
-          )}
-        </SC.Container>
-      </SC.SkeHeader>
-    </SC.SkeBasis>
-    <div />
-  </SC.SkeWrapper>
+}: Props) => (  
+  <SkeBasis>
+    <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
+      <SC.Container>
+        {username && (
+          <SC.User>
+            <SC.UserIcon />
+            <SC.UserName>{username}</SC.UserName>
+          </SC.User>
+        )}
+        {onLogout && (
+          <SC.LogoutButton onClick={onLogout}>
+            <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
+          </SC.LogoutButton>
+        )}
+      </SC.Container>
+    </SC.SkeHeader>
+  </SkeBasis>  
 );
 
 export const Header: FC<PropsWithChildren<Props>> = ({
