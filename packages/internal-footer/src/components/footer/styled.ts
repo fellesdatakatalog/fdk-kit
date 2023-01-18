@@ -39,6 +39,8 @@ const Illustration = styled(FooterIllustrationSVG)`
 `;
 
 const SkeFooter = styled(SkeFooterBase)`
+  font-size: ${theme.fontSize('FS16')};
+
   & > footer > div {
     max-width: 100%;
     display: flex;
