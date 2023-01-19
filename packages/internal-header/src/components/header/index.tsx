@@ -13,7 +13,6 @@ import SkeBasis from '@skatteetaten/frontend-components/SkeBasis';
 
 import SC from './styled';
 
-
 export interface Props {
   /**
    * Which theme profile to use when rendering Footer
@@ -29,7 +28,7 @@ export interface Props {
   /**
    * Use demo logo when ThemeProfile.FDK
    * @type {boolean}
-   * * @default {false}
+   * @default {false}
    */
   useDemoLogo?: boolean;
   /**
@@ -78,7 +77,7 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
   return (
     <SC.Header>
       <SC.Container>
-        <SC.Link href={homeUrl}>
+        <SC.Link href={homeUrl} aria-label='Gå til hovedsiden'>
           {useDemoLogo ? <SC.LogoDemo /> : <SC.Logo />}
         </SC.Link>
         {Children.count(renderNavigationLinks()) > 0 && (
@@ -122,7 +121,7 @@ const SkeProfileHeader = ({
   username,
   onLogout,
   skeHomeText
-}: Props) => (  
+}: Props) => (
   <SkeBasis>
     <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
       <SC.Container>
@@ -139,7 +138,7 @@ const SkeProfileHeader = ({
         )}
       </SC.Container>
     </SC.SkeHeader>
-  </SkeBasis>  
+  </SkeBasis>
 );
 
 export const Header: FC<PropsWithChildren<Props>> = ({
