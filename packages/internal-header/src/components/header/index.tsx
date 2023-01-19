@@ -9,6 +9,8 @@ import { ThemeProfile } from '@fellesdatakatalog/theme';
 import Link from '@fellesdatakatalog/link';
 import { Menu, Trigger } from '@fellesdatakatalog/dropdown-menu';
 
+import SkeBasis from '@skatteetaten/frontend-components/SkeBasis';
+
 import SC from './styled';
 
 export interface Props {
@@ -26,7 +28,7 @@ export interface Props {
   /**
    * Use demo logo when ThemeProfile.FDK
    * @type {boolean}
-   * * @default {false}
+   * @default {false}
    */
   useDemoLogo?: boolean;
   /**
@@ -75,7 +77,7 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
   return (
     <SC.Header>
       <SC.Container>
-        <SC.Link href={homeUrl}>
+        <SC.Link href={homeUrl} aria-label='Gå til hovedsiden'>
           {useDemoLogo ? <SC.LogoDemo /> : <SC.Logo />}
         </SC.Link>
         {Children.count(renderNavigationLinks()) > 0 && (
@@ -120,27 +122,23 @@ const SkeProfileHeader = ({
   onLogout,
   skeHomeText
 }: Props) => (
-  <SC.SkeWrapper>
-    <div />
-    <SC.SkeBasis>
-      <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
-        <SC.Container>
-          {username && (
-            <SC.User>
-              <SC.UserIcon />
-              <SC.UserName>{username}</SC.UserName>
-            </SC.User>
-          )}
-          {onLogout && (
-            <SC.LogoutButton onClick={onLogout}>
-              <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
-            </SC.LogoutButton>
-          )}
-        </SC.Container>
-      </SC.SkeHeader>
-    </SC.SkeBasis>
-    <div />
-  </SC.SkeWrapper>
+  <SkeBasis>
+    <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
+      <SC.Container>
+        {username && (
+          <SC.User>
+            <SC.UserIcon />
+            <SC.UserName>{username}</SC.UserName>
+          </SC.User>
+        )}
+        {onLogout && (
+          <SC.LogoutButton onClick={onLogout}>
+            <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
+          </SC.LogoutButton>
+        )}
+      </SC.Container>
+    </SC.SkeHeader>
+  </SkeBasis>
 );
 
 export const Header: FC<PropsWithChildren<Props>> = ({

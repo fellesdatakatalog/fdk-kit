@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Colour, theme, Unit } from '@fellesdatakatalog/theme';
 import LinkBase from '@fellesdatakatalog/link';
 import DropdownMenuBase from '@fellesdatakatalog/dropdown-menu';
-import SkeBasisBase from '@skatteetaten/frontend-components/SkeBasis';
 import TopBanner from '@skatteetaten/frontend-components/TopBanner';
 
 import LogoFDK from '../../images/fdk-publishing-logo-negative.svg';
@@ -50,14 +49,12 @@ const SkeWrapper = styled.div`
   }
 `;
 
-const SkeBasis = styled(SkeBasisBase)`
-  flex-grow: 2;
-  max-width: 1140px;
-`;
-
 const SkeHeader = styled(TopBanner)`
   max-width: 1140px;
   width: 100%;
+  & * {
+    font-size: ${theme.fontSize('FS16')};
+  }
 `;
 
 const Container = styled.div`
@@ -244,7 +241,6 @@ const DropdownMenuItem = styled.li`
 export default {
   Header,
   SkeWrapper,
-  SkeBasis,
   SkeHeader,
   Container,
   Link,

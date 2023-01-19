@@ -7,14 +7,16 @@ import TwitterIcon from '../../images/twitter.svg';
 import SC from './styled';
 import { localization } from '../../utils/localization/localization';
 
-interface Props {
+export interface Props {
   /**
    * Language
+   * @type {string}
+   * @default 'nb'
    */
-  language?: 'nb' | 'no' | 'en';
+  language?: string;
 }
 
-const Footer: FC<Props> = ({ language = 'nb' }) => {
+export const Footer: FC<Props> = ({ language = 'nb' }) => {
   localization.setLanguage(language);
 
   return (

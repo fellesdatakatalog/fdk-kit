@@ -7,6 +7,7 @@ const Content = styled.div`
   width: 100%;
   max-width: 1140px;
   z-index: 1;
+  font-size: ${theme.fontSize('FS16')};
 
   @media screen and (max-width: 1400px) {
     max-width: 100%;
