@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
-import { theme, Colour } from '@fellesdatakatalog/theme';
+import styled, { css } from "styled-components";
+import { theme, Colour } from "@fellesdatakatalog/theme";
 
-const Tab = styled.div<{ active: boolean }>`
+const Tab = styled.li<{ active: boolean }>`
   display: flex;
   border: solid transparent;
   border-width: 1px 1px 0 1px;
@@ -16,24 +16,24 @@ const Tab = styled.div<{ active: boolean }>`
     active &&
     css`
       position: relative;
-      border-color: ${theme.colour(Colour.NEUTRAL, 'N60')};
+      border-color: ${theme.colour(Colour.NEUTRAL, "N60")};
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: -10000%;
         width: 10000%;
-        border-bottom: 1px solid ${theme.colour(Colour.NEUTRAL, 'N60')};
+        border-bottom: 1px solid ${theme.colour(Colour.NEUTRAL, "N60")};
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         right: -10000%;
         bottom: 0;
         width: 10000%;
-        border-bottom: 1px solid ${theme.colour(Colour.NEUTRAL, 'N60')};
+        border-bottom: 1px solid ${theme.colour(Colour.NEUTRAL, "N60")};
       }
     `}
 `;
