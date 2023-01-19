@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/expansion-panel",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Felles datakatalog UI expansion-panel component",
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
     "styled-components": "^5.3.6"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.5.3"
+    "@fellesdatakatalog/theme": "^0.5.4"
   }
 }

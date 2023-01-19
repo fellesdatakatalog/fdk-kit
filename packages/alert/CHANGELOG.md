@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.6](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.3.5...@fellesdatakatalog/alert@0.3.6) (2023-01-19)
+
+
+### Bug Fixes
+
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 ## [0.3.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/alert@0.3.4...@fellesdatakatalog/alert@0.3.5) (2023-01-17)
 
 **Note:** Version bump only for package @fellesdatakatalog/alert

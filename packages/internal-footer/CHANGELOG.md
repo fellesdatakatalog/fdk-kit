@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.18](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.3.17...@fellesdatakatalog/internal-footer@0.3.18) (2023-01-19)
+
+
+### Bug Fixes
+
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 ## [0.3.17](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.3.16...@fellesdatakatalog/internal-footer@0.3.17) (2023-01-17)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-footer
