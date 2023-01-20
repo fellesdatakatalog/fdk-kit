@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.10](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/side-menu@0.1.9...@fellesdatakatalog/side-menu@0.1.10) (2023-01-19)
+
+
+### Bug Fixes
+
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 ## [0.1.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/side-menu@0.1.8...@fellesdatakatalog/side-menu@0.1.9) (2023-01-17)
 
 **Note:** Version bump only for package @fellesdatakatalog/side-menu

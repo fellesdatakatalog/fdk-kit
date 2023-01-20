@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.10](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.5.9...@fellesdatakatalog/internal-header@0.5.10) (2023-01-19)
+
+
+### Bug Fixes
+
+* add aria-label attribute to internal header link ([a6a8def](https://github.com/fellesdatakatalog/fdk-kit/commit/a6a8def166990d59e43a34cc312dbca8955a523f))
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 ## [0.5.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.5.8...@fellesdatakatalog/internal-header@0.5.9) (2023-01-17)
 
 **Note:** Version bump only for package @fellesdatakatalog/internal-header

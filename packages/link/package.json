@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/link",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Felles datakatalog UI link component",
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
     "styled-components": "^5.3.6"
   },
   "dependencies": {
-    "@fellesdatakatalog/theme": "^0.5.3"
+    "@fellesdatakatalog/theme": "^0.5.4"
   }
 }

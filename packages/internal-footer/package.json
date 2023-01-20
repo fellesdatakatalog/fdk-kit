@@ -1,6 +1,6 @@
 {
   "name": "@fellesdatakatalog/internal-footer",
-  "version": "0.3.17",
+  "version": "0.3.18",
   "description": "Felles datakatalog UI internal footer component",
   "repository": {
     "type": "git",
@@ -32,8 +32,8 @@
     "styled-components": "^5.3.6"
   },
   "dependencies": {
-    "@fellesdatakatalog/link": "^0.2.14",
-    "@fellesdatakatalog/theme": "^0.5.3",
+    "@fellesdatakatalog/link": "^0.2.15",
+    "@fellesdatakatalog/theme": "^0.5.4",
     "@skatteetaten/frontend-components": "^6.0.3"
   }
 }

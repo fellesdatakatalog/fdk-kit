@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.9](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@1.0.8...@fellesdatakatalog/tabs@1.0.9) (2023-01-19)
+
+
+### Bug Fixes
+
+* change div to li ([60e6b5f](https://github.com/fellesdatakatalog/fdk-kit/commit/60e6b5f9ae8bfe6b0c7a1ee839d6d399caedfb12))
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 ## [1.0.8](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/tabs@1.0.7...@fellesdatakatalog/tabs@1.0.8) (2023-01-17)
 
 **Note:** Version bump only for package @fellesdatakatalog/tabs

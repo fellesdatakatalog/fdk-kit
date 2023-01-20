@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.2.0...@fellesdatakatalog/external-footer@0.2.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* change type to string ([60c8638](https://github.com/fellesdatakatalog/fdk-kit/commit/60c863852fc3b73d51460f06874eb685207feebf))
+* ske footer + header and bump versions ([bb72b1b](https://github.com/fellesdatakatalog/fdk-kit/commit/bb72b1b84f8552d620fc4f41f887f06899310c7c))
+
+
+
+
+
 # [0.2.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.1.24...@fellesdatakatalog/external-footer@0.2.0) (2023-01-17)
 
 
