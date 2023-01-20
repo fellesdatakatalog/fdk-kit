@@ -22,35 +22,7 @@ const Header = styled.header`
   z-index: 1000;
 `;
 
-const SkeWrapper = styled.div`
-  color: ${theme.colour(Colour.NEUTRAL, 'N70')};
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  z-index: 1000;
-
-  & > div:first-of-type {
-    background-color: #6f2c3f;
-    flex: 1 1 0;
-
-    @media (max-width: 960px) {
-      display: none;
-    }
-  }
-
-  & > div:last-of-type {
-    background-color: #ece6e8;
-    flex: 1 1 0;
-    margin-left: -3px;
-
-    @media (max-width: 960px) {
-      display: none;
-    }
-  }
-`;
-
 const SkeHeader = styled(TopBanner)`
-  max-width: 1140px;
   width: 100%;
   & * {
     font-size: ${theme.fontSize('FS16')};
@@ -240,7 +212,6 @@ const DropdownMenuItem = styled.li`
 
 export default {
   Header,
-  SkeWrapper,
   SkeHeader,
   Container,
   Link,
