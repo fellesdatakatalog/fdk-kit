@@ -105,7 +105,7 @@
     "@typescript-eslint/parser": "^5.48.1",
     "airbnb-js-shims": "^2.2.1",
     "babel-loader": "^9.1.2",
-    "babel-plugin-styled-components": "^1.13.3",
+    "babel-plugin-styled-components": "^2.0.7",
     "chromatic": "^6.4.1",
     "clean-webpack-plugin": "^4.0.0",
     "commitizen": "^4.2.6",
