@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.11](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.5.10...@fellesdatakatalog/internal-header@0.5.11) (2023-01-20)
+
+
+### Bug Fixes
+
+* ske header should have full width ([907f1b9](https://github.com/fellesdatakatalog/fdk-kit/commit/907f1b9b2365678b5c8daf63bf98566620524419))
+
+
+
+
+
 ## [0.5.10](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.5.9...@fellesdatakatalog/internal-header@0.5.10) (2023-01-19)
 
 
