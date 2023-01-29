@@ -39,6 +39,7 @@ export const Footer: FC<Props> = ({ language = 'nb' }) => {
           <Link href='/reports'>{localization.reports}</Link>
           <Link href='/organizations'>{localization.organizations}</Link>
           <Link href='/about'>{localization.about}</Link>
+          <Link href='/accessibility'>{localization.accessibility}</Link>
           <Link href='/about-registration'>
             {localization.aboutRegistration}
           </Link>
