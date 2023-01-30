@@ -11,7 +11,7 @@ export const en = {
   reports: 'Reports',
   organizations: 'Organizations',
   news: 'News',
-  accessibility: "Accessability",
+  accessibility: "Accessibility",
   aboutTheWebsite: 'About the website',
   directorateOfDigitizationManages:
     'The Directorate of Digitization manages the National Data Catalog.',

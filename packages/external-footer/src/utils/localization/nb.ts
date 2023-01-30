@@ -11,7 +11,7 @@ export const nb = {
   reports: 'Rapporter',
   organizations: 'Virksomheter',
   news: 'Aktuelt',
-  accessibility: "Tilgjenglighetserklæring",
+  accessibility: "Tilgjengelighet",
   aboutTheWebsite: 'Om nettstedet',
   directorateOfDigitizationManages:
     'Digitaliseringsdirektoratet forvalter Felles datakatalog.',
