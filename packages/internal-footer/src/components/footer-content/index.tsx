@@ -21,6 +21,9 @@ const FooterContent: FC = () => (
       <Link href='https://www.digdir.no/om-oss/informasjonskapsler/707'>
         Informasjonskapsler
       </Link>
+      <Link href="https://uustatus.no/nb/erklaringer/publisert/8020b962-b706-4cdf-ab8b-cdb5f480a696">
+        Tilgjengelighetserklæring
+      </Link>
     </SC.Column>
     <SC.Column>
       <Link href='mailto:fellesdatakatalog@digdir.no' icon={<EmailIcon />}>
