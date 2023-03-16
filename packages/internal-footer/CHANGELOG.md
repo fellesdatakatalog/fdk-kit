@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.3.18...@fellesdatakatalog/internal-footer@0.4.0) (2023-02-01)
+
+
+### Features
+
+* add tilgjengelighetserklæring to internal footer ([d17d4c7](https://github.com/fellesdatakatalog/fdk-kit/commit/d17d4c7ef67d9f4eacb95b719f7379841217003d))
+
+
+
+
+
 ## [0.3.18](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.3.17...@fellesdatakatalog/internal-footer@0.3.18) (2023-01-19)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.2.1...@fellesdatakatalog/external-footer@0.3.0) (2023-01-31)
+
+
+### Features
+
+* add new link 'Tilgjenglighetserklæring' to footer ([#201](https://github.com/fellesdatakatalog/fdk-kit/issues/201)) ([2f02812](https://github.com/fellesdatakatalog/fdk-kit/commit/2f0281245e03c1e687056ff297b5e5bf2b6024bd))
+
+
+
+
+
 ## [0.2.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.2.0...@fellesdatakatalog/external-footer@0.2.1) (2023-01-19)
 
 
