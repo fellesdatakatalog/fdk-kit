@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.8.3...@fellesdatakatalog/icons@0.8.4) (2023-03-16)
+
+
+### Bug Fixes
+
+* remove id from all svgs ([cd6b322](https://github.com/fellesdatakatalog/fdk-kit/commit/cd6b3225fea963491edfbece6741953c7ced0d9c))
+
+
+
+
+
 ## [0.8.3](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.8.2...@fellesdatakatalog/icons@0.8.3) (2023-01-31)
 
 
