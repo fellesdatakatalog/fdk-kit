@@ -10,6 +10,7 @@ import Link from '@fellesdatakatalog/link';
 import { Menu, Trigger } from '@fellesdatakatalog/dropdown-menu';
 
 import SkeBasis from '@skatteetaten/frontend-components/SkeBasis';
+import { localization } from '../../localization/localization';
 
 import SC from './styled';
 
@@ -46,6 +47,15 @@ export interface Props {
    * @type {string}
    */
   skeHomeText?: string;
+
+  /* Link to the administration interface of concept catalogs*/
+  manageConceptCatalogUrl?: string;
+
+  /**
+   * Determine whether the link to the administration interface should be displayed.
+   * Only users with administrator permissions have access to the interface.
+   */
+  showConceptCatalogUrl?: boolean;
 }
 
 export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
@@ -53,7 +63,9 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
   useDemoLogo,
   username,
   onLogout,
-  children
+  children,
+  manageConceptCatalogUrl,
+  showConceptCatalogUrl
 }) => {
   const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
 
@@ -103,9 +115,16 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
               <SC.Menu>
                 <li>
                   <SC.LogoutButton onClick={onLogout}>
-                    <span>Logg ut</span>
+                    <span>{localization.logout}</span>
                   </SC.LogoutButton>
                 </li>
+                {showConceptCatalogUrl && (
+                  <li>
+                    <SC.ManageLink href={manageConceptCatalogUrl}>
+                      {localization.manageConceptCatalog}
+                    </SC.ManageLink>
+                  </li>
+                )}
                 {renderDropdownLinks()}
               </SC.Menu>
             </Menu>
@@ -133,7 +152,7 @@ const SkeProfileHeader = ({
         )}
         {onLogout && (
           <SC.LogoutButton onClick={onLogout}>
-            <SC.ButtonLabel>Logg ut</SC.ButtonLabel>
+            <SC.ButtonLabel>{localization.logout}</SC.ButtonLabel>
           </SC.LogoutButton>
         )}
       </SC.Container>
@@ -163,6 +182,7 @@ export const Header: FC<PropsWithChildren<Props>> = ({
       useDemoLogo={useDemoLogo}
       username={username}
       onLogout={onLogout}
+      showConceptCatalogUrl={true}
     >
       {children}
     </FdkProfileHeader>

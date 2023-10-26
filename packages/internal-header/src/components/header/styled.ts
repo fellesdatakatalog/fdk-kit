@@ -111,6 +111,10 @@ const LogoutButton = styled.button`
   white-space: nowrap;
 `;
 
+const ManageLink = styled.a`
+  padding-top: 20px;
+`
+
 const ButtonLabel = styled.span`
   color: currentColor;
   font-size: ${theme.fontSize('FS16')};
@@ -227,5 +231,6 @@ export default {
   DropdownMenu,
   MenuButton,
   Menu,
-  DropdownMenuItem
+  DropdownMenuItem,
+  ManageLink
 };
