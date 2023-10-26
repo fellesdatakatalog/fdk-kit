@@ -172,7 +172,9 @@ export const Header: FC<PropsWithChildren<Props>> = ({
   username,
   onLogout,
   skeHomeText,
-  children
+  children,
+  showManageConceptCatalogsUrl,
+  manageConceptCatalogsUrl
 }) =>
   themeProfile === ThemeProfile.SKE ? (
     <SkeProfileHeader
@@ -187,7 +189,8 @@ export const Header: FC<PropsWithChildren<Props>> = ({
       useDemoLogo={useDemoLogo}
       username={username}
       onLogout={onLogout}
-      showManageConceptCatalogsUrl={true}
+      showManageConceptCatalogsUrl={showManageConceptCatalogsUrl}
+      manageConceptCatalogsUrl={manageConceptCatalogsUrl}
     >
       {children}
     </FdkProfileHeader>
