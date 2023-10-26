@@ -111,8 +111,9 @@ const LogoutButton = styled.button`
   white-space: nowrap;
 `;
 
-const ManageLink = styled.a`
-  padding-top: 20px;
+const HorizontalLineContainer = styled.div`
+  padding-top: 15px;
+  padding-bottom: 5px;
 `
 
 const ButtonLabel = styled.span`
@@ -232,5 +233,5 @@ export default {
   MenuButton,
   Menu,
   DropdownMenuItem,
-  ManageLink
+  HorizontalLineContainer
 };

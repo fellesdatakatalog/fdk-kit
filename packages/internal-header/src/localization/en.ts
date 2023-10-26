@@ -1,4 +1,4 @@
 export const en = {
   logout: "Log out",
-  manageConceptCatalog: "Manage concept catalog"
+  manageConceptCatalogs: "Manage the catalogs",
 };

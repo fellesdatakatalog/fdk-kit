@@ -49,13 +49,13 @@ export interface Props {
   skeHomeText?: string;
 
   /* Link to the administration interface of concept catalogs*/
-  manageConceptCatalogUrl?: string;
+  manageConceptCatalogsUrl?: string;
 
   /**
    * Determine whether the link to the administration interface should be displayed.
    * Only users with administrator permissions have access to the interface.
    */
-  showConceptCatalogUrl?: boolean;
+  showManageConceptCatalogsUrl?: boolean;
 }
 
 export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
@@ -64,8 +64,8 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
   username,
   onLogout,
   children,
-  manageConceptCatalogUrl,
-  showConceptCatalogUrl
+  manageConceptCatalogsUrl,
+  showManageConceptCatalogsUrl
 }) => {
   const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
 
@@ -118,12 +118,17 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
                     <span>{localization.logout}</span>
                   </SC.LogoutButton>
                 </li>
-                {showConceptCatalogUrl && (
-                  <li>
-                    <SC.ManageLink href={manageConceptCatalogUrl}>
-                      {localization.manageConceptCatalog}
-                    </SC.ManageLink>
-                  </li>
+                {showManageConceptCatalogsUrl && (
+                  <>
+                    <SC.HorizontalLineContainer>
+                      <hr />
+                    </SC.HorizontalLineContainer>
+                    <li>
+                      <a href={manageConceptCatalogsUrl}>
+                        {localization.manageConceptCatalogs}
+                      </a>
+                    </li>
+                  </>
                 )}
                 {renderDropdownLinks()}
               </SC.Menu>
@@ -182,7 +187,7 @@ export const Header: FC<PropsWithChildren<Props>> = ({
       useDemoLogo={useDemoLogo}
       username={username}
       onLogout={onLogout}
-      showConceptCatalogUrl={true}
+      showManageConceptCatalogsUrl={true}
     >
       {children}
     </FdkProfileHeader>
