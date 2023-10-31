@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.6.0...@fellesdatakatalog/internal-header@0.7.0) (2023-10-31)
+
+
+### Features
+
+* add link to catalog-admin in internal-header ([bfcbe8e](https://github.com/fellesdatakatalog/fdk-kit/commit/bfcbe8edccef9c0fe3696bbfc2deffc430395492))
+
+
+
+
+
 # [0.6.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.5.11...@fellesdatakatalog/internal-header@0.6.0) (2023-10-27)
 
 
