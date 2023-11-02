@@ -7,6 +7,8 @@ import TopBanner from '@skatteetaten/frontend-components/TopBanner';
 import LogoFDK from '../../images/fdk-publishing-logo-negative.svg';
 import LogoFDKDemo from '../../images/fdk-publishing-logo-negative-demo.svg';
 import UserIconBase from '../../images/icon-user-md.svg';
+import LeaveIconBase from '../../images/leave-icon.svg'
+ 
 
 const Header = styled.header`
   background: ${theme.colour(Colour.NEUTRAL, 'N60')};
@@ -80,6 +82,7 @@ const LogoDemo = styled(LogoFDKDemo)`
 const User = styled.div`
   align-items: center;
   display: flex;
+  padding-right: 10px;
 `;
 
 const UserIcon = styled(UserIconBase)`
@@ -90,6 +93,26 @@ const UserIcon = styled(UserIconBase)`
     fill: currentColor;
   }
 `;
+
+const LeaveIcon = styled(LeaveIconBase)`
+  color: #0062ba;
+  margin-right: 0.5em;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin: 0px;
+  padding-right: 5px;
+
+  & > path {
+    fill: currentColor;
+  }
+`
+
+const LogoutContainer = styled.li`
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+`
 
 const UserName = styled.span`
   max-width: 120px;
@@ -109,6 +132,7 @@ const LogoutButton = styled.button`
   cursor: pointer;
   padding: 0;
   white-space: nowrap;
+  color: #0062ba;
 `;
 
 const HorizontalLineContainer = styled.div`
@@ -208,6 +232,11 @@ const DropdownMenuItem = styled.li`
   display: none;
   list-style-type: none;
 
+  & >  a {
+    text-decoration: none !important;
+  }
+  
+
   @media (max-width: 900px) {
     & {
       display: flex;
@@ -233,5 +262,7 @@ export default {
   MenuButton,
   Menu,
   DropdownMenuItem,
-  HorizontalLineContainer
+  HorizontalLineContainer,
+  LeaveIcon,
+  LogoutContainer,
 };
