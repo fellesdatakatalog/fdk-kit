@@ -113,16 +113,8 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
           {onLogout && (
             <Menu>
               <SC.Menu>
-                <li>
-                  <SC.LogoutButton onClick={onLogout}>
-                    <span>{localization.logout}</span>
-                  </SC.LogoutButton>
-                </li>
                 {showManageConceptCatalogsUrl && (
                   <>
-                    <SC.HorizontalLineContainer>
-                      <hr />
-                    </SC.HorizontalLineContainer>
                     <li>
                       <a href={manageConceptCatalogsUrl}>
                         {localization.manageConceptCatalogs}
@@ -131,6 +123,13 @@ export const FdkProfileHeader: FC<PropsWithChildren<Props>> = ({
                   </>
                 )}
                 {renderDropdownLinks()}
+
+                <SC.LogoutContainer>
+                  <SC.LeaveIcon />
+                  <SC.LogoutButton onClick={onLogout}>
+                    <span>{localization.logout}</span>
+                  </SC.LogoutButton>
+                </SC.LogoutContainer>
               </SC.Menu>
             </Menu>
           )}
@@ -144,7 +143,9 @@ const SkeProfileHeader = ({
   homeUrl,
   username,
   onLogout,
-  skeHomeText
+  skeHomeText,
+  showManageConceptCatalogsUrl,
+  manageConceptCatalogsUrl
 }: Props) => (
   <SkeBasis>
     <SC.SkeHeader compact homeUrl={homeUrl} homeText={skeHomeText}>
@@ -156,9 +157,18 @@ const SkeProfileHeader = ({
           </SC.User>
         )}
         {onLogout && (
-          <SC.LogoutButton onClick={onLogout}>
-            <SC.ButtonLabel>{localization.logout}</SC.ButtonLabel>
-          </SC.LogoutButton>
+          <>
+            {showManageConceptCatalogsUrl && (
+              <SC.User>
+                <a href={manageConceptCatalogsUrl}>
+                  {localization.manageConceptCatalogs}
+                </a>
+              </SC.User>
+            )}
+            <SC.LogoutButton onClick={onLogout}>
+              <span>{localization.logout}</span>
+            </SC.LogoutButton>
+          </>
         )}
       </SC.Container>
     </SC.SkeHeader>
@@ -182,6 +192,8 @@ export const Header: FC<PropsWithChildren<Props>> = ({
       username={username}
       onLogout={onLogout}
       skeHomeText={skeHomeText}
+      showManageConceptCatalogsUrl={showManageConceptCatalogsUrl}
+      manageConceptCatalogsUrl={manageConceptCatalogsUrl}
     />
   ) : (
     <FdkProfileHeader
