@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.7.0...@fellesdatakatalog/internal-header@0.8.0) (2023-11-03)
+
+
+### Features
+
+* update header design ([eb5230b](https://github.com/fellesdatakatalog/fdk-kit/commit/eb5230b995cd1328e09b11e05e9c0de1badc4149))
+
+
+
+
+
 # [0.7.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-header@0.6.0...@fellesdatakatalog/internal-header@0.7.0) (2023-10-31)
 
 
