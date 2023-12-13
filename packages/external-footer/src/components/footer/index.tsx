@@ -39,11 +39,12 @@ export const Footer: FC<Props> = ({ language = 'nb' }) => {
           <Link href='/reports'>{localization.reports}</Link>
           <Link href='/organizations'>{localization.organizations}</Link>
           <Link href='/about'>{localization.about}</Link>
-          <Link href='https://uustatus.no/nb/erklaringer/publisert/8020b962-b706-4cdf-ab8b-cdb5f480a696'>{localization.accessibility}</Link>
+          <Link href='https://uustatus.no/nb/erklaringer/publisert/8020b962-b706-4cdf-ab8b-cdb5f480a696'>
+            {localization.accessibility}
+          </Link>
           <Link href='/about-registration'>
             {localization.aboutRegistration}
           </Link>
-          <Link href='/news-archive'>{localization.news}</Link>
         </SC.Column>
         <SC.Column>
           <SC.ColumnHeading>{localization.aboutTheWebsite}</SC.ColumnHeading>
