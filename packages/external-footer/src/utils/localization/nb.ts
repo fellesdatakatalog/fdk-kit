@@ -10,13 +10,11 @@ export const nb = {
   guidance: 'Veiledere og standarder',
   reports: 'Rapporter',
   organizations: 'Virksomheter',
-  news: 'Aktuelt',
-  accessibility: "Tilgjengelighetserklæring",
+  accessibility: 'Tilgjengelighetserklæring',
   aboutTheWebsite: 'Om nettstedet',
   directorateOfDigitizationManages:
     'Digitaliseringsdirektoratet forvalter Felles datakatalog.',
   privacyStatement: 'Personvernerklæring',
   cookies: 'Informasjonskapsler',
-  contact: 'Kontakt',
-  nationalDataCatalogOnTwitter: 'Felles datakatalog på Twitter'
+  contact: 'Kontakt'
 };

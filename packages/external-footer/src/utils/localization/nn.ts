@@ -10,13 +10,11 @@ export const nn = {
   guidance: 'Rettleiarar og standardar',
   reports: 'Rapportar',
   organizations: 'Verksemder',
-  news: 'Aktuelt',
-  accessibility: "Tilgjengelegheitserklæring",
+  accessibility: 'Tilgjengelegheitserklæring',
   aboutTheWebsite: 'Om nettstaden',
   directorateOfDigitizationManages:
     'Digitaliseringsdirektoratet forvaltar Felles datakatalog.',
   privacyStatement: 'Personvernerklæring',
   cookies: 'Informasjonskapslar',
-  contact: 'Kontakt',
-  nationalDataCatalogOnTwitter: 'Felles datakatalog på Twitter'
+  contact: 'Kontakt'
 };
