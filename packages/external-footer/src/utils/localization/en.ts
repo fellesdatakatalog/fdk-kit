@@ -10,13 +10,11 @@ export const en = {
   guidance: 'Guides and standards',
   reports: 'Reports',
   organizations: 'Organizations',
-  news: 'News',
-  accessibility: "Accessibility",
+  accessibility: 'Accessibility',
   aboutTheWebsite: 'About the website',
   directorateOfDigitizationManages:
     'The Directorate of Digitization manages the National Data Catalog.',
   privacyStatement: 'Privacy statement',
   cookies: 'Cookies',
-  contact: 'Contact',
-  nationalDataCatalogOnTwitter: 'Twitter'
+  contact: 'Contact'
 };
