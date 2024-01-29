@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.4.0...@fellesdatakatalog/internal-footer@0.5.0) (2023-12-13)
+
+
+### Features
+
+* remove footer twitter link ([9b354eb](https://github.com/fellesdatakatalog/fdk-kit/commit/9b354eb686b70c0087b13f52d70e9e33a2941436))
+
+
+
+
+
 # [0.4.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/internal-footer@0.3.18...@fellesdatakatalog/internal-footer@0.4.0) (2023-02-01)
 
 
