@@ -34,6 +34,6 @@
   "dependencies": {
     "@fellesdatakatalog/link": "^0.2.15",
     "@fellesdatakatalog/theme": "^0.5.4",
-    "@skatteetaten/frontend-components": "^6.0.3"
+    "@skatteetaten/frontend-components": "^10.0.1"
   }
 }

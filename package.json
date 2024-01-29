@@ -70,7 +70,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@skatteetaten/frontend-components": "^6.0.3",
+    "@skatteetaten/frontend-components": "^10.0.1",
     "react": "^17.0.2",
     "react-localization": "^1.0.19",
     "styled-components": "^5.3.6"
