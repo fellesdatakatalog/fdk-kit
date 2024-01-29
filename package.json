@@ -88,7 +88,7 @@
     "@storybook/addons": "^6.5.15",
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/manager-webpack5": "^6.5.15",
-    "@storybook/react": "^6.5.15",
+    "@storybook/react": "^7.6.10",
     "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/theming": "^6.5.15",
     "@svgr/webpack": "^6.5.1",
