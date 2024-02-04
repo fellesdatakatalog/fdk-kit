@@ -33,7 +33,7 @@ jobs:
 
       - name: Publish to Chromatic
         if: github.ref != 'refs/heads/main' && github.actor != 'dependabot[bot]'
-        uses: chromaui/action@v1
+        uses: chromaui/action@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
@@ -41,7 +41,7 @@ jobs:
 
       - name: Publish to Chromatic and auto accept changes
         if: github.ref == 'refs/heads/main' || github.actor == 'dependabot[bot]'
-        uses: chromaui/action@v1
+        uses: chromaui/action@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
