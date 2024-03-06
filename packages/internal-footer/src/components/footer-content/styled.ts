@@ -22,7 +22,7 @@ const Content = styled.div`
   }
 `;
 
-const Column = styled.div`
+const Column = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
