@@ -48,7 +48,7 @@ const Content = styled.div`
   }
 `;
 
-const Column = styled.div`
+const Column = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -82,7 +82,7 @@ const Column = styled.div`
   }
 `;
 
-const ColumnHeading = styled.div`
+const ColumnHeading = styled.li`
   font-size: ${theme.fontSize('FS16')};
   font-weight: ${theme.fontWeight('FW700')};
   margin-bottom: ${theme.spacing('S16')};

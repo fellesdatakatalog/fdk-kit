@@ -23,48 +23,84 @@ export const Footer: FC<Props> = ({ language = 'nb' }) => {
       <SC.Content>
         <SC.Column>
           <SC.ColumnHeading>{localization.searchInCatalogs}</SC.ColumnHeading>
-          <Link href='/search-all'>{localization.searchInAllCatalogs}</Link>
-          <Link href='/datasets'>{localization.searchInDatasets}</Link>
-          <Link href='/apis'>{localization.searchInApis}</Link>
-          <Link href='/concepts'>{localization.searchInConcepts}</Link>
-          <Link href='/informationmodels'>
-            {localization.searchInInformationModels}
-          </Link>
+          <li>
+            <Link href='/search-all'>{localization.searchInAllCatalogs}</Link>
+          </li>
+          <li>
+            <Link href='/datasets'>{localization.searchInDatasets}</Link>
+          </li>
+          <li>
+            <Link href='/apis'>{localization.searchInApis}</Link>
+          </li>
+          <li>
+            <Link href='/concepts'>{localization.searchInConcepts}</Link>
+          </li>
+          <li>
+            <Link href='/informationmodels'>
+              {localization.searchInInformationModels}
+            </Link>
+          </li>
         </SC.Column>
         <SC.Column>
           <SC.ColumnHeading>{localization.about}</SC.ColumnHeading>
-          <Link href='/guidance'>{localization.guidance}</Link>
-          <Link href='/reports'>{localization.reports}</Link>
-          <Link href='/organizations'>{localization.organizations}</Link>
-          <Link href='/about'>{localization.about}</Link>
-          <Link href='https://uustatus.no/nb/erklaringer/publisert/8020b962-b706-4cdf-ab8b-cdb5f480a696'>
-            {localization.accessibility}
-          </Link>
-          <Link href='/about-registration'>
-            {localization.aboutRegistration}
-          </Link>
+          <li>
+            <Link href='/guidance'>{localization.guidance}</Link>
+          </li>
+          <li>
+            <Link href='/reports'>{localization.reports}</Link>
+          </li>
+          <li>
+            <Link href='/organizations'>{localization.organizations}</Link>
+          </li>
+          <li>
+            <Link href='/about'>{localization.about}</Link>
+          </li>
+          <li>
+            <Link href='https://uustatus.no/nb/erklaringer/publisert/8020b962-b706-4cdf-ab8b-cdb5f480a696'>
+              {localization.accessibility}
+            </Link>
+          </li>
+          <li>
+            <Link href='/about-registration'>
+              {localization.aboutRegistration}
+            </Link>
+          </li>
         </SC.Column>
         <SC.Column>
           <SC.ColumnHeading>{localization.aboutTheWebsite}</SC.ColumnHeading>
-          <p>{localization.directorateOfDigitizationManages}</p>
-          <Link
-            href='https://www.digdir.no/om-oss/personvernerklaering/706'
-            external
-          >
-            {localization.privacyStatement}
-          </Link>
-          <Link
-            href='https://www.digdir.no/om-oss/informasjonskapsler/707'
-            external
-          >
-            {localization.cookies}
-          </Link>
+          <li>
+            <p>{localization.directorateOfDigitizationManages}</p>
+          </li>
+          <li>
+            <Link
+              href='https://www.digdir.no/om-oss/personvernerklaering/706'
+              external
+            >
+              {localization.privacyStatement}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href='https://www.digdir.no/om-oss/informasjonskapsler/707'
+              external
+            >
+              {localization.cookies}
+            </Link>
+          </li>
         </SC.Column>
         <SC.Column>
           <SC.ColumnHeading>{localization.contact}</SC.ColumnHeading>
-          <Link href='mailto:fellesdatakatalog@digdir.no' icon={<EmailIcon />}>
-            fellesdatakatalog@digdir.no
-          </Link>
+          <li>
+            <p>{localization.contactEmail}</p>
+          </li>
+          <li>
+            <Link
+              href='mailto:fellesdatakatalog@digdir.no'
+              icon={<EmailIcon />}
+            >
+              fellesdatakatalog@digdir.no
+            </Link>
+          </li>
         </SC.Column>
       </SC.Content>
     </SC.Footer>
