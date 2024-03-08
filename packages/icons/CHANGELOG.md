@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.8.4...@fellesdatakatalog/icons@0.8.5) (2024-03-08)
+
+
+### Bug Fixes
+
+* a11y change column div to list in footer ([e4116c8](https://github.com/fellesdatakatalog/fdk-kit/commit/e4116c886ac6ae36d2c6d952ad6e30e6ec9b69fa))
+
+
+
+
+
 ## [0.8.4](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/icons@0.8.3...@fellesdatakatalog/icons@0.8.4) (2023-03-16)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.4.0...@fellesdatakatalog/external-footer@0.4.1) (2024-03-08)
+
+
+### Bug Fixes
+
+* a11y change column div to list in footer ([e4116c8](https://github.com/fellesdatakatalog/fdk-kit/commit/e4116c886ac6ae36d2c6d952ad6e30e6ec9b69fa))
+
+
+
+
+
 # [0.4.0](https://github.com/fellesdatakatalog/fdk-kit/compare/@fellesdatakatalog/external-footer@0.3.0...@fellesdatakatalog/external-footer@0.4.0) (2023-12-13)
 
 
