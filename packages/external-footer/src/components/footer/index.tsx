@@ -14,6 +14,8 @@ export interface Props {
   language?: string;
 }
 
+
+
 export const Footer: FC<Props> = ({ language = 'nb' }) => {
   localization.setLanguage(language);
 
@@ -44,7 +46,7 @@ export const Footer: FC<Props> = ({ language = 'nb' }) => {
         <SC.Column>
           <SC.ColumnHeading>{localization.about}</SC.ColumnHeading>
           <li>
-            <Link href='/guidance'>{localization.guidance}</Link>
+            <Link href='/docs'>{localization.guidance}</Link>
           </li>
           <li>
             <Link href='/reports'>{localization.reports}</Link>
