@@ -7,7 +7,7 @@ export const nn = {
   searchInInformationModels: 'Søk i informasjonsmodellar',
   about: 'Om Felles datakatalog',
   aboutRegistration: 'Hjelp til å registrera',
-  guidance: 'Rettleiarar og standardar',
+  guidance: 'Brukerveileiing',
   reports: 'Rapportar',
   organizations: 'Verksemder',
   accessibility: 'Tilgjengelegheitserklæring',

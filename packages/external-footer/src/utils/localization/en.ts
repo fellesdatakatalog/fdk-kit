@@ -7,7 +7,7 @@ export const en = {
   searchInInformationModels: 'Search in informationmodels',
   about: 'About',
   aboutRegistration: 'Help to register',
-  guidance: 'Guides and standards',
+  guidance: 'User guide',
   reports: 'Reports',
   organizations: 'Organizations',
   accessibility: 'Accessibility',
